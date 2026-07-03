@@ -150,3 +150,176 @@ console.log(0 / 0);
 // ✔ parseInt()
 // ✔ parseFloat()
 // ✔ NaN
+
+
+
+
+
+
+// =========================================
+// JavaScript Practice Questions
+// Chapter 05 - Type Conversion
+// =========================================
+
+// =========================================
+// Theory Questions
+// =========================================
+
+// Q1. What is Type Conversion?
+
+// Q2. What are the two types of Type Conversion in JavaScript?
+
+// Q3. What is Implicit Type Conversion (Type Coercion)?
+
+// Q4. What is Explicit Type Conversion (Type Casting)?
+
+// Q5. What is the difference between Type Conversion and Type Casting?
+
+// Q6. What is NaN?
+
+// Q7. What is the difference between Number() and parseInt()?
+
+// =========================================
+// Predict the Output
+// =========================================
+
+// Q8.
+// console.log("10" + 5);
+
+// Q9.
+// console.log("10" - 5);
+
+// Q10.
+// console.log("10" * 5);
+
+// Q11.
+// console.log(true + 1);
+
+// Q12.
+// console.log(false + 5);
+
+// Q13.
+// console.log(null + 10);
+
+// Q14.
+// console.log(undefined + 10);
+
+// =========================================
+// Number()
+// =========================================
+
+// Q15.
+// What is the output?
+
+// console.log(Number("100"));
+// console.log(Number("100px"));
+// console.log(Number(true));
+// console.log(Number(false));
+// console.log(Number(null));
+
+// =========================================
+// String()
+// =========================================
+
+// Q16.
+// Convert the following into String.
+
+// 100
+// true
+// null
+
+// =========================================
+// Boolean()
+// =========================================
+
+// Q17.
+// Predict the output.
+
+// console.log(Boolean(1));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean("JavaScript"));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+
+// =========================================
+// parseInt() & parseFloat()
+// =========================================
+
+// Q18.
+// Find the output.
+
+// console.log(parseInt("100"));
+// console.log(parseInt("100.99"));
+// console.log(parseInt("100px"));
+// console.log(parseInt("Hello"));
+
+// Q19.
+// Find the output.
+
+// console.log(parseFloat("99.99"));
+// console.log(parseFloat("100.75px"));
+// console.log(parseFloat("Hello"));
+
+// =========================================
+// Coding Questions
+// =========================================
+
+// Q20.
+// Convert the string "250" into a number and print its data type.
+
+// Q21.
+// Convert the number 500 into a string and print its data type.
+
+// Q22.
+// Convert the following values into Boolean:
+// 0
+// 1
+// ""
+// "Hello"
+
+// Q23.
+// Write a program that asks you to store your age as a string
+// and convert it into a number.
+
+// Q24.
+// Find the difference between:
+// Number("100px")
+// parseInt("100px")
+
+// =========================================
+// Interview Questions
+// =========================================
+
+// Q25.
+// Why does "10" + 5 return "105"
+// but "10" - 5 returns 5?
+
+// Q26.
+// Why does typeof Number("100") return "number"?
+
+// Q27.
+// What is the output?
+
+// console.log(Number(""));
+// console.log(Boolean(" "));
+
+// Q28.
+// Explain the difference between:
+// null
+// undefined
+// NaN
+
+// =========================================
+// Challenge Questions
+// =========================================
+
+// Q29.
+// Predict the output.
+
+// console.log("5" + 2 * 3);
+
+// Q30.
+// Predict the output.
+
+// console.log(Number(true) + Number(false));
