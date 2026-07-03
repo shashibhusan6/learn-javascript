@@ -193,3 +193,98 @@ console.log(password === "admin123");
 // ✔ Strings are compared alphabetically.
 // ✔ true behaves like 1.
 // ✔ false behaves like 0.
+
+
+// =========================================
+// JavaScript Practice Questions
+// Chapter 06 - Comparison Operators
+// =========================================
+
+// =========================================
+// Theory Questions
+// =========================================
+
+// Q1. What are Comparison Operators?
+
+// Q2. Name all Comparison Operators in JavaScript.
+
+// Q3. What is the difference between == and ===?
+
+// Q4. What is the difference between != and !==?
+
+// =========================================
+// Predict the Output
+// =========================================
+
+// Q5.
+
+// console.log(10 == "10");
+
+// Q6.
+
+// console.log(10 === "10");
+
+// Q7.
+
+// console.log(20 != "20");
+
+// Q8.
+
+// console.log(20 !== "20");
+
+// =========================================
+// Output Based Questions
+// =========================================
+
+// Q9.
+
+// console.log(15 > 10);
+// console.log(15 < 10);
+// console.log(15 >= 15);
+// console.log(15 <= 10);
+
+// Q10.
+
+// console.log("apple" < "banana");
+// console.log("cat" > "bat");
+// console.log("A" < "a");
+
+// =========================================
+// Coding Questions
+// =========================================
+
+// Q11.
+// Write a program to check whether a person is eligible
+// to vote using the >= operator.
+
+// Example:
+// age = 18
+// Output: Eligible to Vote
+
+// Q12.
+// Write a program to compare two numbers and print:
+// "Equal" or "Not Equal"
+
+// =========================================
+// Interview Questions
+// =========================================
+
+// Bonus 1.
+// Why is === preferred over == in JavaScript?
+
+// Bonus 2.
+// What will be the output?
+
+// console.log(null == undefined);
+// console.log(null === undefined);
+
+// Bonus 3.
+// What will be the output?
+
+// console.log(true == 1);
+// console.log(false == 0);
+
+// Bonus 4.
+// Explain why the following returns true.
+
+// console.log(0 == false);
