@@ -1,0 +1,641 @@
+/*
+=========================================
+        08_LoopsAns.js
+        WHILE LOOP ANSWERS
+=========================================
+*/
+
+// =====================================
+// EASY (1-15)
+// =====================================
+
+// Q1. Print numbers from 1 to 10.
+let i = 1;
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+
+// Q2. Print numbers from 10 to 1.
+i = 10;
+while (i >= 1) {
+    console.log(i);
+    i--;
+}
+
+// Q3. Print even numbers from 1 to 20.
+i = 2;
+while (i <= 20) {
+    console.log(i);
+    i += 2;
+}
+
+// Q4. Print odd numbers from 1 to 20.
+i = 1;
+while (i <= 20) {
+    console.log(i);
+    i += 2;
+}
+
+// Q5. Sum of numbers from 1 to 10.
+i = 1;
+let sum = 0;
+
+while (i <= 10) {
+    sum += i;
+    i++;
+}
+console.log(sum);
+
+// Q6. Sum of even numbers from 1 to 50.
+i = 2;
+sum = 0;
+
+while (i <= 50) {
+    sum += i;
+    i += 2;
+}
+console.log(sum);
+
+// Q7. Multiplication table of 7.
+i = 1;
+
+while (i <= 10) {
+    console.log(`7 x ${i} = ${7 * i}`);
+    i++;
+}
+
+// Q8. Print numbers from 50 to 100.
+i = 50;
+
+while (i <= 100) {
+    console.log(i);
+    i++;
+}
+
+// Q9. Print numbers from 100 to 50.
+i = 100;
+
+while (i >= 50) {
+    console.log(i);
+    i--;
+}
+
+// Q10. Squares from 1 to 10.
+i = 1;
+
+while (i <= 10) {
+    console.log(i * i);
+    i++;
+}
+
+// Q11. Cubes from 1 to 10.
+i = 1;
+
+while (i <= 10) {
+    console.log(i * i * i);
+    i++;
+}
+
+// Q12. Count numbers from 1 to 100.
+i = 1;
+let count = 0;
+
+while (i <= 100) {
+    count++;
+    i++;
+}
+
+console.log(count);
+
+// Q13. Numbers divisible by 3 (1-30).
+i = 1;
+
+while (i <= 30) {
+    if (i % 3 === 0) {
+        console.log(i);
+    }
+    i++;
+}
+
+// Q14. Numbers divisible by both 3 and 5.
+i = 1;
+
+while (i <= 100) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(i);
+    }
+    i++;
+}
+
+// Q15. Factorial of 5.
+let num = 5;
+let fact = 1;
+
+while (num > 0) {
+    fact *= num;
+    num--;
+}
+
+console.log(fact);
+
+// =====================================
+// MEDIUM (16-30)
+// =====================================
+
+// Q16. Factorial of user-given number.
+num = 6;
+fact = 1;
+
+while (num > 0) {
+    fact *= num;
+    num--;
+}
+
+console.log(fact);
+
+// Q17. Reverse a number.
+num = 1234;
+let reverse = 0;
+
+while (num > 0) {
+    let digit = num % 10;
+    reverse = reverse * 10 + digit;
+    num = Math.floor(num / 10);
+}
+
+console.log(reverse);
+
+// Q18. Count digits.
+num = 123456;
+count = 0;
+
+while (num > 0) {
+    count++;
+    num = Math.floor(num / 10);
+}
+
+console.log(count);
+
+// Q19. Sum of digits.
+num = 12345;
+sum = 0;
+
+while (num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+}
+
+console.log(sum);
+
+// Q20. Product of digits.
+num = 1234;
+let product = 1;
+
+while (num > 0) {
+    product *= num % 10;
+    num = Math.floor(num / 10);
+}
+
+console.log(product);
+
+// Q21. Palindrome number.
+num = 1221;
+
+let temp = num;
+reverse = 0;
+
+while (temp > 0) {
+    reverse = reverse * 10 + (temp % 10);
+    temp = Math.floor(temp / 10);
+}
+
+if (reverse === num)
+    console.log("Palindrome");
+else
+    console.log("Not Palindrome");
+
+// Q22. Largest digit.
+num = 938472;
+let largest = 0;
+
+while (num > 0) {
+    let digit = num % 10;
+
+    if (digit > largest)
+        largest = digit;
+
+    num = Math.floor(num / 10);
+}
+
+console.log(largest);
+
+// Q23. Smallest digit.
+num = 938472;
+let smallest = 9;
+
+while (num > 0) {
+    let digit = num % 10;
+
+    if (digit < smallest)
+        smallest = digit;
+
+    num = Math.floor(num / 10);
+}
+
+console.log(smallest);
+
+// Q24. Count even digits.
+num = 12345678;
+count = 0;
+
+while (num > 0) {
+    let digit = num % 10;
+
+    if (digit % 2 === 0)
+        count++;
+
+    num = Math.floor(num / 10);
+}
+
+console.log(count);
+
+// Q25. Count odd digits.
+num = 12345678;
+count = 0;
+
+while (num > 0) {
+    let digit = num % 10;
+
+    if (digit % 2 !== 0)
+        count++;
+
+    num = Math.floor(num / 10);
+}
+
+console.log(count);
+
+// Q26. Fibonacci series.
+let n = 10;
+let a = 0;
+let b = 1;
+i = 1;
+
+while (i <= n) {
+    console.log(a);
+
+    let next = a + b;
+    a = b;
+    b = next;
+
+    i++;
+}
+
+// Q27. x^n
+let x = 2;
+let power = 5;
+let result = 1;
+
+while (power > 0) {
+    result *= x;
+    power--;
+}
+
+console.log(result);
+
+// Q28. GCD
+let num1 = 24;
+let num2 = 36;
+
+while (num2 !== 0) {
+    let rem = num1 % num2;
+    num1 = num2;
+    num2 = rem;
+}
+
+console.log(num1);
+
+// Q29. LCM
+num1 = 12;
+num2 = 18;
+
+let a1 = num1;
+let b1 = num2;
+
+while (b1 !== 0) {
+    let rem = a1 % b1;
+    a1 = b1;
+    b1 = rem;
+}
+
+let gcd = a1;
+let lcm = (num1 * num2) / gcd;
+
+console.log(lcm);
+
+// Q30. Decimal to Binary.
+num = 13;
+let binary = "";
+
+while (num > 0) {
+    binary = (num % 2) + binary;
+    num = Math.floor(num / 2);
+}
+
+console.log(binary);
+
+// =====================================
+// HARD (31-45)
+// =====================================
+
+// Q31. Prime Number
+num = 29;
+
+i = 2;
+let prime = true;
+
+while (i <= Math.sqrt(num)) {
+    if (num % i === 0) {
+        prime = false;
+        break;
+    }
+    i++;
+}
+
+console.log(prime ? "Prime" : "Not Prime");
+
+// Q32. Prime numbers from 1 to N.
+n = 50;
+
+let current = 2;
+
+while (current <= n) {
+
+    let divisor = 2;
+    prime = true;
+
+    while (divisor <= Math.sqrt(current)) {
+
+        if (current % divisor === 0) {
+            prime = false;
+            break;
+        }
+
+        divisor++;
+    }
+
+    if (prime)
+        console.log(current);
+
+    current++;
+}
+
+// Q33. Armstrong (3-digit)
+num = 153;
+
+temp = num;
+sum = 0;
+
+while (temp > 0) {
+    let digit = temp % 10;
+    sum += digit ** 3;
+    temp = Math.floor(temp / 10);
+}
+
+console.log(sum === num ? "Armstrong" : "Not Armstrong");
+
+// Q34. Armstrong (Any digits)
+num = 9474;
+
+temp = num;
+count = 0;
+
+while (temp > 0) {
+    count++;
+    temp = Math.floor(temp / 10);
+}
+
+temp = num;
+sum = 0;
+
+while (temp > 0) {
+    let digit = temp % 10;
+    sum += digit ** count;
+    temp = Math.floor(temp / 10);
+}
+
+console.log(sum === num ? "Armstrong" : "Not Armstrong");
+
+// Q35. Perfect Number
+num = 28;
+
+i = 1;
+sum = 0;
+
+while (i < num) {
+    if (num % i === 0)
+        sum += i;
+
+    i++;
+}
+
+console.log(sum === num ? "Perfect" : "Not Perfect");
+
+// Q36. Perfect numbers from 1 to N.
+n = 100;
+num = 1;
+
+while (num <= n) {
+
+    i = 1;
+    sum = 0;
+
+    while (i < num) {
+        if (num % i === 0)
+            sum += i;
+
+        i++;
+    }
+
+    if (sum === num)
+        console.log(num);
+
+    num++;
+}
+
+// Q37. Strong Number
+num = 145;
+
+temp = num;
+sum = 0;
+
+while (temp > 0) {
+
+    let digit = temp % 10;
+
+    fact = 1;
+
+    while (digit > 0) {
+        fact *= digit;
+        digit--;
+    }
+
+    sum += fact;
+
+    temp = Math.floor(temp / 10);
+}
+
+console.log(sum === num ? "Strong" : "Not Strong");
+
+// Q38. Second Largest Digit
+num = 9837642;
+
+let first = -1;
+let second = -1;
+
+while (num > 0) {
+
+    let digit = num % 10;
+
+    if (digit > first) {
+        second = first;
+        first = digit;
+    } else if (digit > second && digit !== first) {
+        second = digit;
+    }
+
+    num = Math.floor(num / 10);
+}
+
+console.log(second);
+
+// Q39. Sum of Prime Digits
+num = 123456789;
+sum = 0;
+
+while (num > 0) {
+
+    let digit = num % 10;
+
+    if (digit === 2 || digit === 3 || digit === 5 || digit === 7)
+        sum += digit;
+
+    num = Math.floor(num / 10);
+}
+
+console.log(sum);
+
+// Q40. Remove all occurrences of a digit.
+num = 122352;
+let removeDigit = 2;
+
+temp = num;
+let newNum = 0;
+let place = 1;
+
+while (temp > 0) {
+
+    let digit = temp % 10;
+
+    if (digit !== removeDigit) {
+        newNum += digit * place;
+        place *= 10;
+    }
+
+    temp = Math.floor(temp / 10);
+}
+
+console.log(newNum);
+
+// Q41. Coprime Numbers
+num1 = 14;
+num2 = 25;
+
+a1 = num1;
+b1 = num2;
+
+while (b1 !== 0) {
+    let rem = a1 % b1;
+    a1 = b1;
+    b1 = rem;
+}
+
+console.log(a1 === 1 ? "Coprime" : "Not Coprime");
+
+// Q42. Happy Number
+num = 19;
+
+let seen = [];
+
+while (num !== 1 && !seen.includes(num)) {
+
+    seen.push(num);
+
+    sum = 0;
+
+    while (num > 0) {
+        let digit = num % 10;
+        sum += digit * digit;
+        num = Math.floor(num / 10);
+    }
+
+    num = sum;
+}
+
+console.log(num === 1 ? "Happy Number" : "Not Happy");
+
+// Q43. Rotate number right by k positions.
+num = 12345;
+let k = 2;
+
+let str = num.toString();
+
+k = k % str.length;
+
+let rotated = str.slice(-k) + str.slice(0, str.length - k);
+
+console.log(rotated);
+
+// Q44. Fibonacci until next term exceeds N.
+n = 100;
+
+a = 0;
+b = 1;
+
+while (a <= n) {
+
+    console.log(a);
+
+    let next = a + b;
+    a = b;
+    b = next;
+}
+
+// Q45. Number Guessing Game
+
+/*
+const prompt = require("prompt-sync")();
+
+let secret = Math.floor(Math.random() * 100) + 1;
+
+let guess;
+let attempts = 0;
+
+while (guess !== secret) {
+
+    guess = Number(prompt("Enter your guess: "));
+    attempts++;
+
+    if (guess > secret)
+        console.log("Too High");
+    else if (guess < secret)
+        console.log("Too Low");
+    else
+        console.log("Correct!");
+}
+
+console.log("Attempts:", attempts);
+*/
+
+
+
