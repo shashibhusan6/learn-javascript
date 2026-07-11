@@ -1024,3 +1024,322 @@ do {
 } while (num > 0);
 
 console.log(binary);
+
+
+
+/*
+=========================================
+DO-WHILE LOOP PRACTICE SET
+Part 3 (Q31–Q45)
+=========================================
+*/
+
+// Q31. Check whether a number is prime.
+let num = 17;
+let i = 2;
+let isPrime = true;
+
+if (num <= 1) {
+    isPrime = false;
+} else {
+    do {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
+        i++;
+    } while (i <= Math.sqrt(num));
+}
+
+console.log(isPrime ? "Prime" : "Not Prime");
+
+
+// Q32. Print all prime numbers from 1 to N.
+let n = 20;
+let current = 2;
+
+do {
+    let j = 2;
+    let prime = true;
+
+    if (current <= 1) {
+        prime = false;
+    } else {
+        do {
+            if (current % j === 0 && current !== j) {
+                prime = false;
+                break;
+            }
+            j++;
+        } while (j < current);
+    }
+
+    if (prime) {
+        console.log(current);
+    }
+
+    current++;
+} while (current <= n);
+
+
+// Q33. Check whether a 3-digit number is an Armstrong number.
+num = 153;
+let temp = num;
+let sum = 0;
+
+do {
+    let digit = temp % 10;
+    sum += digit * digit * digit;
+    temp = Math.floor(temp / 10);
+} while (temp > 0);
+
+console.log(sum === num ? "Armstrong" : "Not Armstrong");
+
+
+// Q34. Check whether a number is an Armstrong number for any number of digits.
+num = 9474;
+temp = num;
+
+let digits = 0;
+
+do {
+    digits++;
+    temp = Math.floor(temp / 10);
+} while (temp > 0);
+
+temp = num;
+sum = 0;
+
+do {
+    let digit = temp % 10;
+    sum += digit ** digits;
+    temp = Math.floor(temp / 10);
+} while (temp > 0);
+
+console.log(sum === num ? "Armstrong" : "Not Armstrong");
+
+
+// Q35. Check whether a number is a perfect number.
+num = 28;
+i = 1;
+sum = 0;
+
+do {
+    if (num % i === 0) {
+        sum += i;
+    }
+    i++;
+} while (i < num);
+
+console.log(sum === num ? "Perfect Number" : "Not Perfect");
+
+
+// Q36. Print all perfect numbers from 1 to N.
+n = 100;
+let number = 1;
+
+do {
+    let divisor = 1;
+    sum = 0;
+
+    do {
+        if (number % divisor === 0) {
+            sum += divisor;
+        }
+        divisor++;
+    } while (divisor < number);
+
+    if (sum === number && number !== 1) {
+        console.log(number);
+    }
+
+    number++;
+} while (number <= n);
+
+
+// Q37. Check whether a number is a strong number.
+num = 145;
+temp = num;
+sum = 0;
+
+do {
+    let digit = temp % 10;
+    let fact = 1;
+    let k = 1;
+
+    do {
+        fact *= k;
+        k++;
+    } while (k <= digit);
+
+    sum += fact;
+    temp = Math.floor(temp / 10);
+
+} while (temp > 0);
+
+console.log(sum === num ? "Strong Number" : "Not Strong");
+
+
+// Q38. Find the second largest digit in a number.
+num = 95874329;
+let largest = -1;
+let secondLargest = -1;
+
+do {
+    let digit = num % 10;
+
+    if (digit > largest) {
+        secondLargest = largest;
+        largest = digit;
+    } else if (digit > secondLargest && digit !== largest) {
+        secondLargest = digit;
+    }
+
+    num = Math.floor(num / 10);
+
+} while (num > 0);
+
+console.log(secondLargest);
+
+
+// Q39. Find the sum of all prime digits in a number.
+num = 123456789;
+sum = 0;
+
+do {
+    let digit = num % 10;
+
+    if (digit === 2 || digit === 3 || digit === 5 || digit === 7) {
+        sum += digit;
+    }
+
+    num = Math.floor(num / 10);
+
+} while (num > 0);
+
+console.log(sum);
+
+
+// Q40. Remove all occurrences of a given digit from a number.
+num = 122352;
+let removeDigit = 2;
+let result = 0;
+let place = 1;
+
+do {
+    let digit = num % 10;
+
+    if (digit !== removeDigit) {
+        result = digit * place + result;
+        place *= 10;
+    }
+
+    num = Math.floor(num / 10);
+
+} while (num > 0);
+
+console.log(result);
+
+
+// Q41. Check whether two numbers are coprime.
+let num1 = 14;
+let num2 = 25;
+let gcd = 1;
+
+i = 1;
+
+do {
+    if (num1 % i === 0 && num2 % i === 0) {
+        gcd = i;
+    }
+    i++;
+} while (i <= num1 && i <= num2);
+
+console.log(gcd === 1 ? "Coprime" : "Not Coprime");
+
+
+// Q42. Determine whether a number is a happy number.
+num = 19;
+
+let seen = new Set();
+
+do {
+
+    let total = 0;
+    temp = num;
+
+    do {
+        let digit = temp % 10;
+        total += digit * digit;
+        temp = Math.floor(temp / 10);
+    } while (temp > 0);
+
+    num = total;
+
+    if (seen.has(num)) {
+        break;
+    }
+
+    seen.add(num);
+
+} while (num !== 1);
+
+console.log(num === 1 ? "Happy Number" : "Not Happy Number");
+
+
+// Q43. Rotate a number to the right by k positions.
+num = 12345;
+let k = 2;
+
+let str = num.toString();
+
+k = k % str.length;
+
+let rotated =
+    str.slice(str.length - k) +
+    str.slice(0, str.length - k);
+
+console.log(rotated);
+
+
+// Q44. Print Fibonacci numbers until the next term exceeds N.
+n = 50;
+
+let a = 0;
+let b = 1;
+
+do {
+    console.log(a);
+
+    let c = a + b;
+    a = b;
+    b = c;
+
+} while (a <= n);
+
+
+// Q45. Create a number guessing game using a do-while loop.
+
+// Run this in a browser.
+
+let secret = Math.floor(Math.random() * 100) + 1;
+let guess;
+let attempts = 0;
+
+do {
+
+    guess = Number(prompt("Enter your guess (1-100):"));
+
+    attempts++;
+
+    if (guess > secret) {
+        console.log("Too High");
+    } else if (guess < secret) {
+        console.log("Too Low");
+    } else {
+        console.log("Correct!");
+    }
+
+} while (guess !== secret);
+
+console.log("Attempts =", attempts);
