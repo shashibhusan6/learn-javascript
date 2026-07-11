@@ -639,3 +639,153 @@ console.log("Attempts:", attempts);
 
 
 
+
+
+
+/*
+
+DO-WHILE LOOP PRACTICE SET
+Part 1 (Q1–Q15)
+===============
+
+*/
+
+// Q1. Print numbers from 1 to 10 using a do-while loop.
+let i = 1;
+
+do {
+    console.log(i);
+    i++;
+} while (i <= 10);
+
+// Q2. Print numbers from 10 to 1 in reverse order.
+i = 10;
+
+do {
+    console.log(i);
+    i--;
+} while (i >= 1);
+
+// Q3. Print all even numbers from 1 to 20.
+i = 2;
+
+do {
+    console.log(i);
+    i += 2;
+} while (i <= 20);
+
+// Q4. Print all odd numbers from 1 to 20.
+i = 1;
+
+do {
+    console.log(i);
+    i += 2;
+} while (i <= 20);
+
+// Q5. Find the sum of numbers from 1 to 10.
+i = 1;
+let sum = 0;
+
+do {
+    sum += i;
+    i++;
+} while (i <= 10);
+
+console.log(sum);
+
+// Q6. Find the sum of even numbers from 1 to 50.
+i = 2;
+sum = 0;
+
+do {
+    sum += i;
+    i += 2;
+} while (i <= 50);
+
+console.log(sum);
+
+// Q7. Print the multiplication table of 7.
+i = 1;
+
+do {
+    console.log(`7 x ${i} = ${7 * i}`);
+    i++;
+} while (i <= 10);
+
+// Q8. Print numbers from 50 to 100.
+i = 50;
+
+do {
+    console.log(i);
+    i++;
+} while (i <= 100);
+
+// Q9. Print numbers from 100 to 50.
+i = 100;
+
+do {
+    console.log(i);
+    i--;
+} while (i >= 50);
+
+// Q10. Print the squares of numbers from 1 to 10.
+i = 1;
+
+do {
+    console.log(i * i);
+    i++;
+} while (i <= 10);
+
+// Q11. Print the cubes of numbers from 1 to 10.
+i = 1;
+
+do {
+    console.log(i * i * i);
+    i++;
+} while (i <= 10);
+
+// Q12. Count how many numbers are there from 1 to 100.
+i = 1;
+let count = 0;
+
+do {
+    count++;
+    i++;
+} while (i <= 100);
+
+console.log(count);
+
+// Q13. Print numbers divisible by 3 between 1 and 30.
+i = 1;
+
+do {
+    if (i % 3 === 0) {
+        console.log(i);
+    }
+    i++;
+} while (i <= 30);
+
+// Q14. Print numbers divisible by both 3 and 5 between 1 and 100.
+i = 1;
+
+do {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(i);
+    }
+    i++;
+} while (i <= 100);
+
+// Q15. Calculate the factorial of 5.
+i = 1;
+let fact = 1;
+
+do {
+    fact *= i;
+    i++;
+} while (i <= 5);
+
+console.log(fact);
+
+
+
+
