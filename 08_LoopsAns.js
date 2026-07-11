@@ -789,3 +789,238 @@ console.log(fact);
 
 
 
+
+/*
+=========================================
+DO-WHILE LOOP PRACTICE SET
+Part 2 (Q16–Q30)
+=========================================
+*/
+
+// Q16. Calculate the factorial of a user-given number.
+let n = 5;
+let i = 1;
+let fact = 1;
+
+do {
+    fact *= i;
+    i++;
+} while (i <= n);
+
+console.log(fact);
+
+
+// Q17. Reverse a number.
+let num = 1234;
+let rev = 0;
+
+do {
+    let digit = num % 10;
+    rev = rev * 10 + digit;
+    num = Math.floor(num / 10);
+} while (num > 0);
+
+console.log(rev);
+
+
+// Q18. Count the digits in a number.
+num = 123456;
+let count = 0;
+
+do {
+    count++;
+    num = Math.floor(num / 10);
+} while (num > 0);
+
+console.log(count);
+
+
+// Q19. Find the sum of digits of a number.
+num = 12345;
+let sum = 0;
+
+do {
+    let digit = num % 10;
+    sum += digit;
+    num = Math.floor(num / 10);
+} while (num > 0);
+
+console.log(sum);
+
+
+// Q20. Find the product of digits of a number.
+num = 1234;
+let product = 1;
+
+do {
+    let digit = num % 10;
+    product *= digit;
+    num = Math.floor(num / 10);
+} while (num > 0);
+
+console.log(product);
+
+
+// Q21. Check whether a number is a palindrome.
+num = 121;
+let temp = num;
+rev = 0;
+
+do {
+    let digit = temp % 10;
+    rev = rev * 10 + digit;
+    temp = Math.floor(temp / 10);
+} while (temp > 0);
+
+if (rev === num) {
+    console.log("Palindrome");
+} else {
+    console.log("Not Palindrome");
+}
+
+
+// Q22. Find the largest digit in a number.
+num = 583729;
+let largest = 0;
+
+do {
+    let digit = num % 10;
+
+    if (digit > largest) {
+        largest = digit;
+    }
+
+    num = Math.floor(num / 10);
+} while (num > 0);
+
+console.log(largest);
+
+
+// Q23. Find the smallest digit in a number.
+num = 583729;
+let smallest = 9;
+
+do {
+    let digit = num % 10;
+
+    if (digit < smallest) {
+        smallest = digit;
+    }
+
+    num = Math.floor(num / 10);
+} while (num > 0);
+
+console.log(smallest);
+
+
+// Q24. Count how many even digits a number contains.
+num = 123456789;
+count = 0;
+
+do {
+    let digit = num % 10;
+
+    if (digit % 2 === 0) {
+        count++;
+    }
+
+    num = Math.floor(num / 10);
+} while (num > 0);
+
+console.log(count);
+
+
+// Q25. Count how many odd digits a number contains.
+num = 123456789;
+count = 0;
+
+do {
+    let digit = num % 10;
+
+    if (digit % 2 !== 0) {
+        count++;
+    }
+
+    num = Math.floor(num / 10);
+} while (num > 0);
+
+console.log(count);
+
+
+// Q26. Print the Fibonacci series for n terms.
+n = 10;
+let a = 0;
+let b = 1;
+i = 1;
+
+do {
+    console.log(a);
+
+    let c = a + b;
+    a = b;
+    b = c;
+
+    i++;
+} while (i <= n);
+
+
+// Q27. Compute x raised to the power n without using Math.pow().
+let x = 2;
+n = 5;
+let power = 1;
+
+i = 1;
+
+do {
+    power *= x;
+    i++;
+} while (i <= n);
+
+console.log(power);
+
+
+// Q28. Find the GCD (HCF) of two numbers using a do-while loop.
+let num1 = 24;
+let num2 = 36;
+let gcd = 1;
+i = 1;
+
+do {
+    if (num1 % i === 0 && num2 % i === 0) {
+        gcd = i;
+    }
+
+    i++;
+} while (i <= num1 && i <= num2);
+
+console.log(gcd);
+
+
+// Q29. Find the LCM of two numbers.
+num1 = 12;
+num2 = 18;
+
+let max = num1 > num2 ? num1 : num2;
+let lcm = max;
+
+do {
+    if (lcm % num1 === 0 && lcm % num2 === 0) {
+        break;
+    }
+
+    lcm++;
+} while (true);
+
+console.log(lcm);
+
+
+// Q30. Convert a decimal number to binary using a do-while loop.
+num = 13;
+let binary = "";
+
+do {
+    binary = (num % 2) + binary;
+    num = Math.floor(num / 2);
+} while (num > 0);
+
+console.log(binary);
