@@ -390,3 +390,103 @@ Parameter     -> Variable in function definition
 Argument      -> Actual value passed during function call
 
 */
+
+
+
+
+
+/*
+=================================================
+        09_Functions.js
+        BASIC FUNCTION PRACTICE
+=================================================
+*/
+
+
+// Q1. Create a function that prints "Hello World".
+
+
+// Q2. Create a function that prints your name.
+
+
+// Q3. Create a function that prints numbers from 1 to 10.
+
+
+// Q4. Create a function that accepts a number
+// and prints whether it is positive or negative.
+
+
+// Q5. Create a function that accepts a number
+// and prints whether it is even or odd.
+
+
+// Q6. Create a function that accepts two numbers
+// and prints their sum.
+
+
+// Q7. Create a function that accepts two numbers
+// and prints their difference.
+
+
+// Q8. Create a function that accepts two numbers
+// and prints their product.
+
+
+// Q9. Create a function that accepts two numbers
+// and prints their division.
+
+
+// Q10. Create a function that accepts two numbers
+// and returns the larger number.
+
+
+// Q11. Create a function that accepts two numbers
+// and returns the smaller number.
+
+
+// Q12. Create a function that accepts a number
+// and returns its square.
+
+
+// Q13. Create a function that accepts a number
+// and returns its cube.
+
+
+// Q14. Create a function that accepts a number
+// and returns its square root.
+
+
+// Q15. Create a function that accepts a number
+// and returns its factorial.
+
+
+// Q16. Create a function that accepts a number
+// and returns the sum from 1 to that number.
+
+// Example:
+// sum(5) → 15
+// 1 + 2 + 3 + 4 + 5 = 15
+
+
+// Q17. Create a function that accepts a number
+// and returns whether the number is divisible by 5.
+
+
+// Q18. Create a function that accepts age
+// and returns whether a person is eligible to vote.
+
+
+// Q19. Create a function that accepts marks
+// and returns the grade.
+
+// 90 or above → A
+// 75 to 89   → B
+// 60 to 74   → C
+// 40 to 59   → D
+// Below 40   → Fail
+
+
+// Q20. Create a function that accepts three numbers
+// and returns the largest number.
+
+
