@@ -339,3 +339,228 @@ Instructions:
 // [1,2,2,3,4,4,5] -> [1,2,3,4,5]
 
 
+// END  //
+
+
+/*
+=========================================
+09_FunctionsPractice.js
+JavaScript Functions - Hard Practice (15 Questions)
+=========================================
+
+Instructions:
+- Solve each problem using functions.
+- Break the solution into smaller helper functions whenever possible.
+- Try not to use built-in methods unless necessary.
+- Focus on logic building.
+*/
+
+//////////////////////////////////////////////////
+// Question 1
+//////////////////////////////////////////////////
+
+// Create a function named isPrime(num)
+// that returns true if the number is prime,
+// otherwise returns false.
+
+
+
+//////////////////////////////////////////////////
+// Question 2
+//////////////////////////////////////////////////
+
+// Create a function named printPrimes(limit)
+// that returns an array of all prime numbers from 1 to limit.
+//
+// Example:
+// printPrimes(20)
+// -> [2,3,5,7,11,13,17,19]
+
+
+
+//////////////////////////////////////////////////
+// Question 3
+//////////////////////////////////////////////////
+
+// Create a function named fibonacci(n)
+// that returns the nth Fibonacci number.
+//
+// Example:
+// fibonacci(7) -> 13
+
+
+
+//////////////////////////////////////////////////
+// Question 4
+//////////////////////////////////////////////////
+
+// Create a function named fibonacciSeries(n)
+// that returns the first n Fibonacci numbers as an array.
+//
+// Example:
+// fibonacciSeries(6)
+// -> [0,1,1,2,3,5]
+
+
+
+//////////////////////////////////////////////////
+// Question 5
+//////////////////////////////////////////////////
+
+// Create a function named isArmstrong(num)
+// that returns true if the number is an Armstrong number,
+// otherwise returns false.
+//
+// Example:
+// 153 -> true
+// 371 -> true
+// 123 -> false
+
+
+
+//////////////////////////////////////////////////
+// Question 6
+//////////////////////////////////////////////////
+
+// Create a function named findMissingNumber(arr)
+// The array contains numbers from 1 to n with one number missing.
+// Return the missing number.
+//
+// Example:
+// [1,2,3,5,6] -> 4
+
+
+
+//////////////////////////////////////////////////
+// Question 7
+//////////////////////////////////////////////////
+
+// Create a function named rotateArray(arr, k)
+// that returns a new array rotated to the right by k positions.
+//
+// Example:
+// rotateArray([1,2,3,4,5],2)
+// -> [4,5,1,2,3]
+
+
+
+//////////////////////////////////////////////////
+// Question 8
+//////////////////////////////////////////////////
+
+// Create a function named areAnagrams(str1, str2)
+// that returns true if both strings are anagrams,
+// otherwise returns false.
+//
+// Example:
+// "listen", "silent" -> true
+
+
+
+//////////////////////////////////////////////////
+// Question 9
+//////////////////////////////////////////////////
+
+// Create a function named longestWord(sentence)
+// that returns the longest word in the sentence.
+//
+// Example:
+// "I love JavaScript programming"
+// -> "programming"
+
+
+
+//////////////////////////////////////////////////
+// Question 10
+//////////////////////////////////////////////////
+
+// Create a function named frequencyCounter(arr)
+// that returns an object containing the frequency of every element.
+//
+// Example:
+// [1,2,2,3,3,3]
+//
+// Returns:
+// {
+//   1:1,
+//   2:2,
+//   3:3
+// }
+
+
+
+//////////////////////////////////////////////////
+// Question 11
+//////////////////////////////////////////////////
+
+// Create a function named flattenArray(arr)
+// that returns a flattened array.
+//
+// Example:
+// [1,[2,[3,4],5],6]
+// -> [1,2,3,4,5,6]
+
+
+
+//////////////////////////////////////////////////
+// Question 12
+//////////////////////////////////////////////////
+
+// Create a function named deepEqual(obj1, obj2)
+// that returns true if both objects have the same keys
+// and values (including nested objects), otherwise false.
+
+
+
+//////////////////////////////////////////////////
+// Question 13
+//////////////////////////////////////////////////
+
+// Create a function named groupByLength(words)
+// that groups words by their length.
+//
+// Example:
+// ["hi","cat","dog","hello"]
+//
+// Returns:
+// {
+//   2:["hi"],
+//   3:["cat","dog"],
+//   5:["hello"]
+// }
+
+
+
+//////////////////////////////////////////////////
+// Question 14
+//////////////////////////////////////////////////
+
+// Create a function named memoizedFactorial()
+// that caches previously calculated factorial values
+// so repeated calculations are faster.
+//
+// Example:
+// const factorial = memoizedFactorial();
+// factorial(5); // Calculates
+// factorial(5); // Uses cached value
+
+
+
+//////////////////////////////////////////////////
+// Question 15
+//////////////////////////////////////////////////
+
+// Create a function named compose(...functions)
+// that accepts multiple functions and returns a new function
+// that executes them from right to left.
+//
+// Example:
+//
+// const addOne = x => x + 1;
+// const double = x => x * 2;
+//
+// const result = compose(double, addOne);
+//
+// result(5)
+// -> 12
+// (5 + 1) * 2
