@@ -151,3 +151,191 @@ Instructions:
 
 
 // END //
+
+
+
+/*
+=========================================
+09_FunctionsPractice.js
+JavaScript Functions - Medium Practice (15 Questions)
+=========================================
+
+Instructions:
+- Solve each question using functions.
+- Return values whenever possible.
+- Avoid global variables.
+- Use only the concepts you've learned so far.
+*/
+
+//////////////////////////////////////////////////
+// Question 1
+//////////////////////////////////////////////////
+
+// Create a function named reverseString(str)
+// that returns the reversed version of the string.
+//
+// Example:
+// reverseString("hello") -> "olleh"
+
+
+
+//////////////////////////////////////////////////
+// Question 2
+//////////////////////////////////////////////////
+
+// Create a function named countVowels(str)
+// that returns the total number of vowels in a string.
+//
+// Example:
+// countVowels("JavaScript") -> 3
+
+
+
+//////////////////////////////////////////////////
+// Question 3
+//////////////////////////////////////////////////
+
+// Create a function named factorial(num)
+// that returns the factorial of a number.
+//
+// Example:
+// factorial(5) -> 120
+
+
+
+//////////////////////////////////////////////////
+// Question 4
+//////////////////////////////////////////////////
+
+// Create a function named isPalindrome(str)
+// that returns true if the string is a palindrome,
+// otherwise returns false.
+//
+// Example:
+// "madam" -> true
+// "hello" -> false
+
+
+
+//////////////////////////////////////////////////
+// Question 5
+//////////////////////////////////////////////////
+
+// Create a function named findLargest(arr)
+// that returns the largest number from an array.
+//
+// Example:
+// [10, 5, 8, 25] -> 25
+
+
+
+//////////////////////////////////////////////////
+// Question 6
+//////////////////////////////////////////////////
+
+// Create a function named findSmallest(arr)
+// that returns the smallest number from an array.
+
+
+
+//////////////////////////////////////////////////
+// Question 7
+//////////////////////////////////////////////////
+
+// Create a function named countEvenNumbers(arr)
+// that returns how many even numbers are present in the array.
+//
+// Example:
+// [1,2,3,4,5,6] -> 3
+
+
+
+//////////////////////////////////////////////////
+// Question 8
+//////////////////////////////////////////////////
+
+// Create a function named sumArray(arr)
+// that returns the sum of all elements in the array.
+
+
+
+//////////////////////////////////////////////////
+// Question 9
+//////////////////////////////////////////////////
+
+// Create a function named averageArray(arr)
+// that returns the average of all array elements.
+
+
+
+//////////////////////////////////////////////////
+// Question 10
+//////////////////////////////////////////////////
+
+// Create a function named removeSpaces(str)
+// that returns the string after removing all spaces.
+//
+// Example:
+// "Hello World JS" -> "HelloWorldJS"
+
+
+
+//////////////////////////////////////////////////
+// Question 11
+//////////////////////////////////////////////////
+
+// Create a function named capitalizeFirstLetter(str)
+// that returns the string with its first letter capitalized.
+//
+// Example:
+// "javascript" -> "Javascript"
+
+
+
+//////////////////////////////////////////////////
+// Question 12
+//////////////////////////////////////////////////
+
+// Create a function named countOccurrences(arr, value)
+// that returns how many times 'value' appears in the array.
+//
+// Example:
+// countOccurrences([1,2,3,2,4,2],2) -> 3
+
+
+
+//////////////////////////////////////////////////
+// Question 13
+//////////////////////////////////////////////////
+
+// Create a function named mergeArrays(arr1, arr2)
+// that returns a new array containing elements of both arrays.
+//
+// Example:
+// [1,2] + [3,4] -> [1,2,3,4]
+
+
+
+//////////////////////////////////////////////////
+// Question 14
+//////////////////////////////////////////////////
+
+// Create a function named findSecondLargest(arr)
+// that returns the second largest unique number in the array.
+//
+// Example:
+// [10,20,40,30] -> 30
+
+
+
+//////////////////////////////////////////////////
+// Question 15
+//////////////////////////////////////////////////
+
+// Create a function named removeDuplicates(arr)
+// that returns a new array after removing duplicate values.
+//
+// Example:
+// [1,2,2,3,4,4,5] -> [1,2,3,4,5]
+
+
