@@ -755,3 +755,292 @@ console.log(isEligibleToVote(20));
 console.log(isEligibleToVote(16));
 
 
+
+
+/*
+=========================================
+09_FunctionsPractice.js
+JavaScript Functions - Medium Practice (Solutions)
+=========================================
+*/
+
+//////////////////////////////////////////////////
+// Question 1
+//////////////////////////////////////////////////
+
+function reverseString(str) {
+    let reversed = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+
+    return reversed;
+}
+
+console.log(reverseString("hello"));
+
+
+//////////////////////////////////////////////////
+// Question 2
+//////////////////////////////////////////////////
+
+function countVowels(str) {
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        let ch = str[i].toLowerCase();
+
+        if (
+            ch === "a" ||
+            ch === "e" ||
+            ch === "i" ||
+            ch === "o" ||
+            ch === "u"
+        ) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countVowels("JavaScript"));
+
+
+//////////////////////////////////////////////////
+// Question 3
+//////////////////////////////////////////////////
+
+function factorial(num) {
+    let fact = 1;
+
+    for (let i = 1; i <= num; i++) {
+        fact *= i;
+    }
+
+    return fact;
+}
+
+console.log(factorial(5));
+
+
+//////////////////////////////////////////////////
+// Question 4
+//////////////////////////////////////////////////
+
+function isPalindrome(str) {
+    let reversed = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+
+    return str === reversed;
+}
+
+console.log(isPalindrome("madam"));
+console.log(isPalindrome("hello"));
+
+
+//////////////////////////////////////////////////
+// Question 5
+//////////////////////////////////////////////////
+
+function findLargest(arr) {
+    let largest = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+
+    return largest;
+}
+
+console.log(findLargest([10, 5, 8, 25]));
+
+
+//////////////////////////////////////////////////
+// Question 6
+//////////////////////////////////////////////////
+
+function findSmallest(arr) {
+    let smallest = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < smallest) {
+            smallest = arr[i];
+        }
+    }
+
+    return smallest;
+}
+
+console.log(findSmallest([10, 5, 8, 25]));
+
+
+//////////////////////////////////////////////////
+// Question 7
+//////////////////////////////////////////////////
+
+function countEvenNumbers(arr) {
+    let count = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+
+//////////////////////////////////////////////////
+// Question 8
+//////////////////////////////////////////////////
+
+function sumArray(arr) {
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+
+    return sum;
+}
+
+console.log(sumArray([10, 20, 30, 40]));
+
+
+//////////////////////////////////////////////////
+// Question 9
+//////////////////////////////////////////////////
+
+function averageArray(arr) {
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+
+    return sum / arr.length;
+}
+
+console.log(averageArray([10, 20, 30, 40]));
+
+
+//////////////////////////////////////////////////
+// Question 10
+//////////////////////////////////////////////////
+
+function removeSpaces(str) {
+    let result = "";
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] !== " ") {
+            result += str[i];
+        }
+    }
+
+    return result;
+}
+
+console.log(removeSpaces("Hello World JS"));
+
+
+//////////////////////////////////////////////////
+// Question 11
+//////////////////////////////////////////////////
+
+function capitalizeFirstLetter(str) {
+    return str[0].toUpperCase() + str.slice(1);
+}
+
+console.log(capitalizeFirstLetter("javascript"));
+
+
+//////////////////////////////////////////////////
+// Question 12
+//////////////////////////////////////////////////
+
+function countOccurrences(arr, value) {
+    let count = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === value) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countOccurrences([1, 2, 3, 2, 4, 2], 2));
+
+
+//////////////////////////////////////////////////
+// Question 13
+//////////////////////////////////////////////////
+
+function mergeArrays(arr1, arr2) {
+    let merged = [];
+
+    for (let i = 0; i < arr1.length; i++) {
+        merged.push(arr1[i]);
+    }
+
+    for (let i = 0; i < arr2.length; i++) {
+        merged.push(arr2[i]);
+    }
+
+    return merged;
+}
+
+console.log(mergeArrays([1, 2], [3, 4]));
+
+
+//////////////////////////////////////////////////
+// Question 14
+//////////////////////////////////////////////////
+
+function findSecondLargest(arr) {
+    let largest = -Infinity;
+    let secondLargest = -Infinity;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > largest) {
+            secondLargest = largest;
+            largest = arr[i];
+        } else if (arr[i] > secondLargest && arr[i] !== largest) {
+            secondLargest = arr[i];
+        }
+    }
+
+    return secondLargest;
+}
+
+console.log(findSecondLargest([10, 20, 40, 30]));
+
+
+//////////////////////////////////////////////////
+// Question 15
+//////////////////////////////////////////////////
+
+function removeDuplicates(arr) {
+    let unique = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (!unique.includes(arr[i])) {
+            unique.push(arr[i]);
+        }
+    }
+
+    return unique;
+}
+
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
