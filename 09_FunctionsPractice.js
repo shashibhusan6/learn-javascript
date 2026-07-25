@@ -1044,3 +1044,359 @@ function removeDuplicates(arr) {
 }
 
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+
+
+
+
+
+
+
+
+/*
+=========================================
+09_FunctionsPractice.js
+JavaScript Functions - Hard Practice (Solutions)
+=========================================
+*/
+
+//////////////////////////////////////////////////
+// Question 1
+//////////////////////////////////////////////////
+
+function isPrime(num) {
+    if (num < 2) {
+        return false;
+    }
+
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(isPrime(17));
+console.log(isPrime(20));
+
+
+//////////////////////////////////////////////////
+// Question 2
+//////////////////////////////////////////////////
+
+function printPrimes(limit) {
+    let primes = [];
+
+    for (let i = 2; i <= limit; i++) {
+        if (isPrime(i)) {
+            primes.push(i);
+        }
+    }
+
+    return primes;
+}
+
+console.log(printPrimes(20));
+
+
+//////////////////////////////////////////////////
+// Question 3
+//////////////////////////////////////////////////
+
+function fibonacci(n) {
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+
+    let first = 0;
+    let second = 1;
+
+    for (let i = 2; i <= n; i++) {
+        let next = first + second;
+        first = second;
+        second = next;
+    }
+
+    return second;
+}
+
+console.log(fibonacci(7));
+
+
+//////////////////////////////////////////////////
+// Question 4
+//////////////////////////////////////////////////
+
+function fibonacciSeries(n) {
+    let series = [];
+
+    if (n >= 1) series.push(0);
+    if (n >= 2) series.push(1);
+
+    let first = 0;
+    let second = 1;
+
+    for (let i = 3; i <= n; i++) {
+        let next = first + second;
+        series.push(next);
+        first = second;
+        second = next;
+    }
+
+    return series;
+}
+
+console.log(fibonacciSeries(6));
+
+
+//////////////////////////////////////////////////
+// Question 5
+//////////////////////////////////////////////////
+
+function isArmstrong(num) {
+    let original = num;
+    let sum = 0;
+    let digits = num.toString().length;
+
+    while (num > 0) {
+        let digit = num % 10;
+        sum += digit ** digits;
+        num = Math.floor(num / 10);
+    }
+
+    return sum === original;
+}
+
+console.log(isArmstrong(153));
+console.log(isArmstrong(123));
+
+
+//////////////////////////////////////////////////
+// Question 6
+//////////////////////////////////////////////////
+
+function findMissingNumber(arr) {
+    let n = arr.length + 1;
+
+    let expectedSum = (n * (n + 1)) / 2;
+    let actualSum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        actualSum += arr[i];
+    }
+
+    return expectedSum - actualSum;
+}
+
+console.log(findMissingNumber([1, 2, 3, 5, 6]));
+
+
+//////////////////////////////////////////////////
+// Question 7
+//////////////////////////////////////////////////
+
+function rotateArray(arr, k) {
+    let result = [];
+    let n = arr.length;
+
+    k = k % n;
+
+    for (let i = n - k; i < n; i++) {
+        result.push(arr[i]);
+    }
+
+    for (let i = 0; i < n - k; i++) {
+        result.push(arr[i]);
+    }
+
+    return result;
+}
+
+console.log(rotateArray([1, 2, 3, 4, 5], 2));
+
+
+//////////////////////////////////////////////////
+// Question 8
+//////////////////////////////////////////////////
+
+function areAnagrams(str1, str2) {
+    let s1 = str1.toLowerCase().split("").sort().join("");
+    let s2 = str2.toLowerCase().split("").sort().join("");
+
+    return s1 === s2;
+}
+
+console.log(areAnagrams("listen", "silent"));
+console.log(areAnagrams("cat", "dog"));
+
+
+//////////////////////////////////////////////////
+// Question 9
+//////////////////////////////////////////////////
+
+function longestWord(sentence) {
+    let words = sentence.split(" ");
+    let longest = words[0];
+
+    for (let i = 1; i < words.length; i++) {
+        if (words[i].length > longest.length) {
+            longest = words[i];
+        }
+    }
+
+    return longest;
+}
+
+console.log(longestWord("I love JavaScript programming"));
+
+
+//////////////////////////////////////////////////
+// Question 10
+//////////////////////////////////////////////////
+
+function frequencyCounter(arr) {
+    let frequency = {};
+
+    for (let i = 0; i < arr.length; i++) {
+        if (frequency[arr[i]]) {
+            frequency[arr[i]]++;
+        } else {
+            frequency[arr[i]] = 1;
+        }
+    }
+
+    return frequency;
+}
+
+console.log(frequencyCounter([1, 2, 2, 3, 3, 3]));
+
+
+//////////////////////////////////////////////////
+// Question 11
+//////////////////////////////////////////////////
+
+function flattenArray(arr) {
+    let result = [];
+
+    for (let item of arr) {
+        if (Array.isArray(item)) {
+            result.push(...flattenArray(item));
+        } else {
+            result.push(item);
+        }
+    }
+
+    return result;
+}
+
+console.log(flattenArray([1, [2, [3, 4], 5], 6]));
+
+
+//////////////////////////////////////////////////
+// Question 12
+//////////////////////////////////////////////////
+
+function deepEqual(obj1, obj2) {
+    let keys1 = Object.keys(obj1);
+    let keys2 = Object.keys(obj2);
+
+    if (keys1.length !== keys2.length) {
+        return false;
+    }
+
+    for (let key of keys1) {
+        if (typeof obj1[key] === "object" && obj1[key] !== null) {
+            if (!deepEqual(obj1[key], obj2[key])) {
+                return false;
+            }
+        } else if (obj1[key] !== obj2[key]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(
+    deepEqual(
+        { a: 1, b: { c: 2 } },
+        { a: 1, b: { c: 2 } }
+    )
+);
+
+
+//////////////////////////////////////////////////
+// Question 13
+//////////////////////////////////////////////////
+
+function groupByLength(words) {
+    let groups = {};
+
+    for (let word of words) {
+        let length = word.length;
+
+        if (!groups[length]) {
+            groups[length] = [];
+        }
+
+        groups[length].push(word);
+    }
+
+    return groups;
+}
+
+console.log(groupByLength(["hi", "cat", "dog", "hello"]));
+
+
+//////////////////////////////////////////////////
+// Question 14
+//////////////////////////////////////////////////
+
+function memoizedFactorial() {
+    let cache = {};
+
+    return function (num) {
+        if (cache[num]) {
+            console.log("Using Cached Value");
+            return cache[num];
+        }
+
+        let fact = 1;
+
+        for (let i = 1; i <= num; i++) {
+            fact *= i;
+        }
+
+        cache[num] = fact;
+        console.log("Calculated");
+
+        return fact;
+    };
+}
+
+const factorial = memoizedFactorial();
+
+console.log(factorial(5));
+console.log(factorial(5));
+
+
+//////////////////////////////////////////////////
+// Question 15
+//////////////////////////////////////////////////
+
+function compose(...functions) {
+    return function (value) {
+        for (let i = functions.length - 1; i >= 0; i--) {
+            value = functions[i](value);
+        }
+
+        return value;
+    };
+}
+
+const addOne = x => x + 1;
+const double = x => x * 2;
+
+const result = compose(double, addOne);
+
+console.log(result(5));
