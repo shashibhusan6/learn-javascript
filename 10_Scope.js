@@ -468,3 +468,195 @@ function state() {
 }
 
 state();
+
+
+
+
+
+
+/*
+=========================================
+10_Scope_Practice_Solutions_Easy.js
+JavaScript Scope - Easy Solutions
+=========================================
+*/
+
+//////////////////////////////////////////////////
+// Question 1
+//////////////////////////////////////////////////
+
+// Create a global variable named company.
+// Print it inside a function.
+
+let company = "OpenAI";
+
+function showCompany() {
+    console.log(company);
+}
+
+showCompany();
+
+// Output:
+// OpenAI
+
+//////////////////////////////////////////////////
+// Question 2
+//////////////////////////////////////////////////
+
+// Create a variable inside a function.
+// Try printing it outside the function.
+
+function test() {
+    let message = "Hello";
+    console.log(message);
+}
+
+test();
+
+// console.log(message);
+
+// Output:
+// Hello
+// ReferenceError: message is not defined
+
+//////////////////////////////////////////////////
+// Question 3
+//////////////////////////////////////////////////
+
+// Declare a variable using let inside an if block.
+// Print it inside the block.
+
+if (true) {
+    let language = "JavaScript";
+    console.log(language);
+}
+
+// Output:
+// JavaScript
+
+//////////////////////////////////////////////////
+// Question 4
+//////////////////////////////////////////////////
+
+// Declare a variable using let inside an if block.
+// Try printing it outside the block.
+
+if (true) {
+    let city = "Bhubaneswar";
+}
+
+// console.log(city);
+
+// Output:
+// ReferenceError: city is not defined
+
+//////////////////////////////////////////////////
+// Question 5
+//////////////////////////////////////////////////
+
+// Create a global variable score = 100.
+// Print it from two different functions.
+
+let score = 100;
+
+function first() {
+    console.log(score);
+}
+
+function second() {
+    console.log(score);
+}
+
+first();
+second();
+
+// Output:
+// 100
+// 100
+
+//////////////////////////////////////////////////
+// Question 6
+//////////////////////////////////////////////////
+
+// Create two functions.
+// Each function should have its own variable named count.
+
+function functionOne() {
+    let count = 10;
+    console.log(count);
+}
+
+function functionTwo() {
+    let count = 20;
+    console.log(count);
+}
+
+functionOne();
+functionTwo();
+
+// Output:
+// 10
+// 20
+
+//////////////////////////////////////////////////
+// Question 7
+//////////////////////////////////////////////////
+
+// Declare a variable using const inside a block.
+// Print it inside the block.
+
+{
+    const PI = 3.14159;
+    console.log(PI);
+}
+
+// Output:
+// 3.14159
+
+//////////////////////////////////////////////////
+// Question 8
+//////////////////////////////////////////////////
+
+// Create a function that declares a local variable age.
+// Return the value instead of printing it.
+
+function getAge() {
+    let age = 21;
+    return age;
+}
+
+console.log(getAge());
+
+// Output:
+// 21
+
+//////////////////////////////////////////////////
+// Question 9
+//////////////////////////////////////////////////
+
+// Predict the output.
+
+let city = "Delhi";
+
+function display() {
+    console.log(city);
+}
+
+display();
+
+// Output:
+// Delhi
+
+//////////////////////////////////////////////////
+// Question 10
+//////////////////////////////////////////////////
+
+// Predict the output.
+
+{
+    let x = 50;
+    console.log(x);
+}
+
+// Output:
+// 50
