@@ -184,3 +184,287 @@ Interview Notes
 
 
 
+
+
+/*
+=========================================
+10_Scope_Practice.js
+JavaScript Scope - Practice Questions
+=========================================
+
+Instructions:
+- Solve each question yourself.
+- Predict the output before running the code.
+- Focus on understanding variable scope.
+*/
+
+//////////////////////////////////////////////////
+// Easy (1-10)
+//////////////////////////////////////////////////
+
+// Question 1
+// Create a global variable named company.
+// Print it inside a function.
+
+// Question 2
+// Create a variable inside a function.
+// Try printing it outside the function.
+// What happens?
+
+// Question 3
+// Declare a variable using let inside an if block.
+// Print it inside the block.
+
+// Question 4
+// Declare a variable using let inside an if block.
+// Try printing it outside the block.
+
+// Question 5
+// Create a global variable score = 100.
+// Print it from two different functions.
+
+// Question 6
+// Create two functions.
+// Each function should have its own variable named count.
+// Print both values.
+
+// Question 7
+// Declare a variable using const inside a block.
+// Print it inside the block.
+
+// Question 8
+// Create a function that declares a local variable age.
+// Return the value instead of printing it.
+
+// Question 9
+// Predict the output.
+
+let city = "Delhi";
+
+function display() {
+    console.log(city);
+}
+
+display();
+
+// Question 10
+// Predict the output.
+
+{
+    let x = 50;
+    console.log(x);
+}
+
+//////////////////////////////////////////////////
+// Medium (11-20)
+//////////////////////////////////////////////////
+
+// Question 11
+// Predict the output.
+
+let a = 10;
+
+function test() {
+    let a = 20;
+    console.log(a);
+}
+
+test();
+console.log(a);
+
+// Question 12
+// Predict the output.
+
+let name = "John";
+
+function greet() {
+    console.log(name);
+}
+
+greet();
+
+// Question 13
+// Predict the output.
+
+function demo() {
+    let number = 5;
+
+    if (true) {
+        console.log(number);
+    }
+}
+
+demo();
+
+// Question 14
+// Predict the output.
+
+if (true) {
+    let language = "JavaScript";
+}
+
+// console.log(language);
+
+// Question 15
+// Create two nested blocks.
+// Declare a variable in the outer block.
+// Access it from the inner block.
+
+// Question 16
+// Create a function inside another function.
+// Access the outer function's variable.
+
+// Question 17
+// Predict the output.
+
+let x = 100;
+
+function one() {
+    console.log(x);
+}
+
+one();
+
+// Question 18
+// Create three nested functions.
+// Print a global variable from the innermost function.
+
+// Question 19
+// Write a program demonstrating variable shadowing.
+
+// Question 20
+// Explain why the following code gives an error.
+
+function test() {
+    let age = 22;
+}
+
+// console.log(age);
+
+//////////////////////////////////////////////////
+// Hard (21-30)
+//////////////////////////////////////////////////
+
+// Question 21
+// Predict the output.
+
+let x = 10;
+
+function outer() {
+    let x = 20;
+
+    function inner() {
+        console.log(x);
+    }
+
+    inner();
+}
+
+outer();
+
+// Question 22
+// Predict the output.
+
+let value = 1;
+
+{
+    let value = 2;
+
+    {
+        let value = 3;
+        console.log(value);
+    }
+
+    console.log(value);
+}
+
+console.log(value);
+
+// Question 23
+// Predict the output.
+
+let a = 5;
+
+function first() {
+
+    let a = 10;
+
+    function second() {
+        console.log(a);
+    }
+
+    second();
+}
+
+first();
+
+// Question 24
+// Predict the output.
+
+let message = "Hello";
+
+function one() {
+
+    function two() {
+        console.log(message);
+    }
+
+    two();
+}
+
+one();
+
+// Question 25
+// Predict the output.
+
+let num = 100;
+
+function test() {
+
+    if (true) {
+        let num = 200;
+        console.log(num);
+    }
+
+    console.log(num);
+}
+
+test();
+
+// Question 26
+// Create three nested blocks.
+// Declare variables in each block.
+// Print all accessible variables from the innermost block.
+
+// Question 27
+// Explain how JavaScript searches for variables using the Scope Chain.
+
+// Question 28
+// Create an example where a local variable shadows a global variable.
+
+// Question 29
+// Create a function that contains another function.
+// Demonstrate that the inner function can access the outer function's variable
+// but the outer function cannot access the inner function's variable.
+
+// Question 30
+// Without running the code,
+// explain the output.
+
+let country = "India";
+
+function state() {
+    let stateName = "Odisha";
+
+    function city() {
+        let cityName = "Bhubaneswar";
+
+        console.log(country);
+        console.log(stateName);
+        console.log(cityName);
+    }
+
+    city();
+}
+
+state();
