@@ -1268,3 +1268,44 @@ state();
 // ✓ parent function variable
 // ✓ global variable
 // because of JavaScript's lexical scope.
+
+
+
+
+/*
+=========================================
+Conclusion
+=========================================
+
+✔ Scope determines where a variable can be accessed.
+
+✔ JavaScript has three types of scope:
+   - Global Scope
+   - Function Scope
+   - Block Scope
+
+✔ Variables declared with let and const are block scoped.
+
+✔ Variables declared with var are function scoped.
+
+✔ JavaScript follows Lexical Scope, meaning a function can access
+   variables from its own scope and its outer (parent) scopes.
+
+✔ When a variable is not found in the current scope, JavaScript
+   searches the parent scopes until it reaches the global scope.
+   This process is called the Scope Chain.
+
+✔ A variable declared inside a function or block cannot be accessed
+   from outside that function or block.
+
+✔ Variable Shadowing occurs when a local variable has the same name
+   as a variable in an outer scope.
+
+✔ Best Practice:
+   - Prefer const whenever the value should not change.
+   - Use let when reassignment is needed.
+   - Avoid var in modern JavaScript because it can lead to
+     unexpected behaviour due to function scoping.
+
+*/
+
