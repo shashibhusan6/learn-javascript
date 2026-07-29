@@ -660,3 +660,302 @@ display();
 
 // Output:
 // 50
+
+
+
+
+/*
+=================================================
+        10_Scope_Practice_Answers.js
+        Medium Level (Q11 - Q20)
+=================================================
+*/
+
+
+//////////////////////////////////////////////////
+// Question 11
+// Predict the output.
+//////////////////////////////////////////////////
+
+let a = 10;
+
+function test() {
+    let a = 20;
+    console.log(a);
+}
+
+test();
+console.log(a);
+
+/*
+Output:
+20
+10
+
+Explanation:
+The variable 'a' inside the function is local.
+It shadows the global variable.
+*/
+
+
+//////////////////////////////////////////////////
+// Question 12
+// Predict the output.
+//////////////////////////////////////////////////
+
+let name = "John";
+
+function greet() {
+    console.log(name);
+}
+
+greet();
+
+/*
+Output:
+John
+
+Explanation:
+The function accesses the global variable 'name'
+because there is no local variable with the same name.
+*/
+
+
+//////////////////////////////////////////////////
+// Question 13
+// Predict the output.
+//////////////////////////////////////////////////
+
+function demo() {
+
+    let number = 5;
+
+    if (true) {
+        console.log(number);
+    }
+
+}
+
+demo();
+
+/*
+Output:
+5
+
+Explanation:
+The variable 'number' belongs to the function scope.
+The if block can access variables declared outside it.
+*/
+
+
+//////////////////////////////////////////////////
+// Question 14
+// Predict the output.
+//////////////////////////////////////////////////
+
+if (true) {
+    let language = "JavaScript";
+}
+
+// console.log(language);
+
+/*
+Output:
+ReferenceError
+
+Explanation:
+'language' is declared with let inside the block.
+It cannot be accessed outside the block.
+*/
+
+
+//////////////////////////////////////////////////
+// Question 15
+// Create two nested blocks.
+// Declare a variable in the outer block.
+// Access it from the inner block.
+//////////////////////////////////////////////////
+
+{
+    let city = "Bhubaneswar";
+
+    {
+        console.log(city);
+    }
+}
+
+/*
+Output:
+Bhubaneswar
+
+Explanation:
+Inner blocks can access variables
+declared in outer blocks.
+*/
+
+
+//////////////////////////////////////////////////
+// Question 16
+// Create a function inside another function.
+// Access the outer function's variable.
+//////////////////////////////////////////////////
+
+function outer() {
+
+    let message = "Hello";
+
+    function inner() {
+        console.log(message);
+    }
+
+    inner();
+}
+
+outer();
+
+/*
+Output:
+Hello
+
+Explanation:
+The inner function can access
+variables of the outer function.
+*/
+
+
+//////////////////////////////////////////////////
+// Question 17
+// Predict the output.
+//////////////////////////////////////////////////
+
+let x = 100;
+
+function one() {
+    console.log(x);
+}
+
+one();
+
+/*
+Output:
+100
+
+Explanation:
+The function accesses the global variable.
+*/
+
+
+//////////////////////////////////////////////////
+// Question 18
+// Create three nested functions.
+// Print a global variable from the innermost function.
+//////////////////////////////////////////////////
+
+let company = "OpenAI";
+
+function first() {
+
+    function second() {
+
+        function third() {
+            console.log(company);
+        }
+
+        third();
+    }
+
+    second();
+}
+
+first();
+
+/*
+Output:
+OpenAI
+
+Explanation:
+Nested functions can access
+global variables.
+*/
+
+
+//////////////////////////////////////////////////
+// Question 19
+// Write a program demonstrating variable shadowing.
+//////////////////////////////////////////////////
+
+let number = 50;
+
+function display() {
+
+    let number = 100;
+
+    console.log(number);
+}
+
+display();
+
+console.log(number);
+
+/*
+Output:
+100
+50
+
+Explanation:
+The local variable shadows
+the global variable inside the function.
+*/
+
+
+//////////////////////////////////////////////////
+// Question 20
+// Explain why the following code gives an error.
+//////////////////////////////////////////////////
+
+function testAge() {
+    let age = 22;
+}
+
+// console.log(age);
+
+/*
+Output:
+ReferenceError
+
+Explanation:
+'age' is declared inside the function.
+Its scope is limited to that function.
+It cannot be accessed outside.
+*/
+
+
+//////////////////////////////////////////////////
+// QUICK REVISION
+//////////////////////////////////////////////////
+
+/*
+
+1. Local variables can shadow global variables.
+
+2. Inner blocks can access outer block variables.
+
+3. Outer blocks cannot access inner block variables.
+
+4. Inner functions can access outer function variables.
+
+5. Functions can access global variables.
+
+6. Variables declared with let are block scoped.
+
+7. Variables declared inside a function cannot be
+   accessed outside the function.
+
+8. Variable shadowing occurs when a local variable
+   has the same name as a global variable.
+
+*/
+
+
+
+
