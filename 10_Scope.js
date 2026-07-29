@@ -959,3 +959,312 @@ It cannot be accessed outside.
 
 
 
+
+/*
+=========================================
+10_Scope_Practice_Solutions_Hard.js
+JavaScript Scope - Hard Solutions
+=========================================
+*/
+
+//////////////////////////////////////////////////
+// Question 21
+//////////////////////////////////////////////////
+
+let x = 10;
+
+function outer() {
+    let x = 20;
+
+    function inner() {
+        console.log(x);
+    }
+
+    inner();
+}
+
+outer();
+
+// Output:
+// 20
+
+// Explanation:
+// inner() first looks for x in its own scope.
+// It doesn't find one, so it checks its parent (outer()).
+// It finds x = 20, so it prints 20.
+
+
+//////////////////////////////////////////////////
+// Question 22
+//////////////////////////////////////////////////
+
+let value = 1;
+
+{
+    let value = 2;
+
+    {
+        let value = 3;
+        console.log(value);
+    }
+
+    console.log(value);
+}
+
+console.log(value);
+
+// Output:
+// 3
+// 2
+// 1
+
+// Explanation:
+// Each block has its own variable named value.
+// The innermost variable shadows the outer ones.
+
+
+//////////////////////////////////////////////////
+// Question 23
+//////////////////////////////////////////////////
+
+let a = 5;
+
+function first() {
+
+    let a = 10;
+
+    function second() {
+        console.log(a);
+    }
+
+    second();
+}
+
+first();
+
+// Output:
+// 10
+
+// Explanation:
+// second() uses the nearest accessible variable a,
+// which belongs to first().
+
+
+//////////////////////////////////////////////////
+// Question 24
+//////////////////////////////////////////////////
+
+let message = "Hello";
+
+function one() {
+
+    function two() {
+        console.log(message);
+    }
+
+    two();
+}
+
+one();
+
+// Output:
+// Hello
+
+// Explanation:
+// message is global.
+// Since neither one() nor two() declare message,
+// JavaScript finds it in the global scope.
+
+
+//////////////////////////////////////////////////
+// Question 25
+//////////////////////////////////////////////////
+
+let num = 100;
+
+function test() {
+
+    if (true) {
+        let num = 200;
+        console.log(num);
+    }
+
+    console.log(num);
+}
+
+test();
+
+// Output:
+// 200
+// 100
+
+// Explanation:
+// num = 200 exists only inside the if block.
+// Outside the block, test() uses the global num.
+
+
+//////////////////////////////////////////////////
+// Question 26
+//////////////////////////////////////////////////
+
+{
+    let a = 10;
+
+    {
+        let b = 20;
+
+        {
+            let c = 30;
+
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+    }
+}
+
+// Output:
+// 10
+// 20
+// 30
+
+// Explanation:
+// The innermost block can access variables
+// declared in all outer blocks.
+
+
+//////////////////////////////////////////////////
+// Question 27
+//////////////////////////////////////////////////
+
+// Scope Chain Example
+
+let country = "India";
+
+function state() {
+
+    let stateName = "Odisha";
+
+    function city() {
+
+        let cityName = "Bhubaneswar";
+
+        console.log(cityName);
+        console.log(stateName);
+        console.log(country);
+    }
+
+    city();
+}
+
+state();
+
+// Output:
+// Bhubaneswar
+// Odisha
+// India
+
+// Explanation:
+// city() searches:
+// 1. Its own scope
+// 2. Parent scope (state())
+// 3. Global scope
+
+
+//////////////////////////////////////////////////
+// Question 28
+//////////////////////////////////////////////////
+
+// Variable Shadowing
+
+let user = "Admin";
+
+function login() {
+
+    let user = "Guest";
+
+    console.log(user);
+}
+
+login();
+
+console.log(user);
+
+// Output:
+// Guest
+// Admin
+
+// Explanation:
+// The local user hides (shadows) the global user
+// inside login().
+
+
+//////////////////////////////////////////////////
+// Question 29
+//////////////////////////////////////////////////
+
+function outer() {
+
+    let message = "Outer Variable";
+
+    function inner() {
+
+        let secret = "Inner Variable";
+
+        console.log(message);
+        console.log(secret);
+    }
+
+    inner();
+
+    // console.log(secret); // Error
+}
+
+outer();
+
+// Output:
+// Outer Variable
+// Inner Variable
+
+// Explanation:
+// inner() can access message because it belongs to
+// the parent scope.
+// outer() cannot access secret because it belongs
+// only to inner().
+
+
+//////////////////////////////////////////////////
+// Question 30
+//////////////////////////////////////////////////
+
+let countryName = "India";
+
+function state() {
+
+    let stateName = "Odisha";
+
+    function city() {
+
+        let cityName = "Bhubaneswar";
+
+        console.log(countryName);
+        console.log(stateName);
+        console.log(cityName);
+    }
+
+    city();
+}
+
+state();
+
+// Output:
+// India
+// Odisha
+// Bhubaneswar
+
+// Explanation:
+// city() can access:
+// ✓ its own variable
+// ✓ parent function variable
+// ✓ global variable
+// because of JavaScript's lexical scope.
