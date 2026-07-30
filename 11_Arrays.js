@@ -226,3 +226,314 @@ Now:
 [10, 25, 30, 40, 50]
 
 */
+
+
+
+
+
+
+/*
+=================================================
+        11_Arrays.js
+        COMMIT 2 - BASIC ARRAY OPERATIONS
+=================================================
+
+Today we learn:
+
+1. push()
+2. pop()
+3. unshift()
+4. shift()
+5. Using for loop with arrays
+*/
+
+
+// =================================================
+// 1. push()
+// =================================================
+
+/*
+push() adds an element to the END of an array.
+*/
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+fruits.push("Orange");
+
+console.log(fruits);
+
+/*
+Output:
+["Apple", "Banana", "Mango", "Orange"]
+*/
+
+
+// =================================================
+// 2. pop()
+// =================================================
+
+/*
+pop() removes the LAST element of an array.
+*/
+
+let fruits2 = ["Apple", "Banana", "Mango"];
+
+fruits2.pop();
+
+console.log(fruits2);
+
+/*
+Output:
+["Apple", "Banana"]
+*/
+
+
+// =================================================
+// 3. unshift()
+// =================================================
+
+/*
+unshift() adds an element to the BEGINNING
+of an array.
+*/
+
+let fruits3 = ["Banana", "Mango"];
+
+fruits3.unshift("Apple");
+
+console.log(fruits3);
+
+/*
+Output:
+["Apple", "Banana", "Mango"]
+*/
+
+
+// =================================================
+// 4. shift()
+// =================================================
+
+/*
+shift() removes the FIRST element of an array.
+*/
+
+let fruits4 = ["Apple", "Banana", "Mango"];
+
+fruits4.shift();
+
+console.log(fruits4);
+
+/*
+Output:
+["Banana", "Mango"]
+*/
+
+
+// =================================================
+// 5. PUSH WITH MULTIPLE VALUES
+// =================================================
+
+let numbers = [10, 20];
+
+numbers.push(30, 40, 50);
+
+console.log(numbers);
+
+/*
+Output:
+[10, 20, 30, 40, 50]
+*/
+
+
+// =================================================
+// 6. UNSHIFT WITH MULTIPLE VALUES
+// =================================================
+
+let numbers2 = [30, 40];
+
+numbers2.unshift(10, 20);
+
+console.log(numbers2);
+
+/*
+Output:
+[10, 20, 30, 40]
+*/
+
+
+// =================================================
+// 7. ARRAY AFTER PUSH AND POP
+// =================================================
+
+let numbers3 = [10, 20, 30];
+
+numbers3.push(40);
+
+console.log(numbers3);
+
+numbers3.pop();
+
+console.log(numbers3);
+
+/*
+Output:
+
+[10, 20, 30, 40]
+[10, 20, 30]
+*/
+
+
+// =================================================
+// 8. ARRAY AFTER UNSHIFT AND SHIFT
+// =================================================
+
+let numbers4 = [20, 30, 40];
+
+numbers4.unshift(10);
+
+console.log(numbers4);
+
+numbers4.shift();
+
+console.log(numbers4);
+
+/*
+Output:
+
+[10, 20, 30, 40]
+[20, 30, 40]
+*/
+
+
+// =================================================
+// 9. PRINT ALL ARRAY ELEMENTS USING FOR LOOP
+// =================================================
+
+let marks = [85, 90, 75, 88, 92];
+
+for (let i = 0; i < marks.length; i++) {
+    console.log(marks[i]);
+}
+
+
+// =================================================
+// 10. FIND SUM OF ARRAY ELEMENTS
+// =================================================
+
+let values = [10, 20, 30, 40, 50];
+
+let sum = 0;
+
+for (let i = 0; i < values.length; i++) {
+    sum = sum + values[i];
+}
+
+console.log("Sum =", sum);
+
+
+// =================================================
+// 11. FIND LARGEST ELEMENT
+// =================================================
+
+let numbers5 = [10, 50, 30, 90, 20];
+
+let largest = numbers5[0];
+
+for (let i = 1; i < numbers5.length; i++) {
+
+    if (numbers5[i] > largest) {
+        largest = numbers5[i];
+    }
+
+}
+
+console.log("Largest =", largest);
+
+
+// =================================================
+// 12. FIND SMALLEST ELEMENT
+// =================================================
+
+let numbers6 = [10, 50, 30, 90, 20];
+
+let smallest = numbers6[0];
+
+for (let i = 1; i < numbers6.length; i++) {
+
+    if (numbers6[i] < smallest) {
+        smallest = numbers6[i];
+    }
+
+}
+
+console.log("Smallest =", smallest);
+
+
+// =================================================
+// QUICK REVISION
+// =================================================
+
+/*
+
+push()
+------
+Adds element at the END.
+
+Example:
+[10, 20]
+push(30)
+
+Result:
+[10, 20, 30]
+
+
+pop()
+-----
+Removes element from the END.
+
+Example:
+[10, 20, 30]
+pop()
+
+Result:
+[10, 20]
+
+
+unshift()
+---------
+Adds element at the BEGINNING.
+
+Example:
+[20, 30]
+unshift(10)
+
+Result:
+[10, 20, 30]
+
+
+shift()
+--------
+Removes element from the BEGINNING.
+
+Example:
+[10, 20, 30]
+shift()
+
+Result:
+[20, 30]
+
+
+=================================================
+        ARRAY OPERATION TABLE
+=================================================
+
+Method       Action
+--------------------------------
+push()       Add at end
+pop()        Remove from end
+unshift()    Add at beginning
+shift()      Remove from beginning
+
+*/
+
+
