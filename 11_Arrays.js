@@ -647,3 +647,210 @@ Q1 - Q15
 // [10, 15, 20, 25, 30]
 // Output: 2
 // =================================================
+
+
+
+
+
+/*
+=================================================
+        11_Arrays.js
+        ARRAY PRACTICE - ANSWERS
+=================================================
+*/
+
+
+// =================================================
+// Q1. Create an array of 5 numbers and print it.
+// =================================================
+
+let numbers = [10, 20, 30, 40, 50];
+
+console.log(numbers);
+
+
+// =================================================
+// Q2. Create an array of 5 names and print the
+// first element.
+// =================================================
+
+let names = ["Shashi", "Rahul", "Aman", "Rohit", "Priya"];
+
+console.log(names[0]);
+
+
+// =================================================
+// Q3. Print the last element of an array.
+// =================================================
+
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+console.log(fruits[fruits.length - 1]);
+
+
+// =================================================
+// Q4. Find the length of an array.
+// =================================================
+
+let colors = ["Red", "Blue", "Green", "Yellow"];
+
+console.log(colors.length);
+
+
+// =================================================
+// Q5. Change the second element of an array.
+// =================================================
+
+let cities = ["Delhi", "Mumbai", "Chennai", "Kolkata"];
+
+cities[1] = "Bhubaneswar";
+
+console.log(cities);
+
+
+// =================================================
+// Q6. Add an element at the end using push().
+// =================================================
+
+let animals = ["Dog", "Cat", "Cow"];
+
+animals.push("Horse");
+
+console.log(animals);
+
+
+// =================================================
+// Q7. Remove the last element using pop().
+// =================================================
+
+let cars = ["BMW", "Audi", "Tesla"];
+
+cars.pop();
+
+console.log(cars);
+
+
+// =================================================
+// Q8. Add an element at the beginning using
+// unshift().
+// =================================================
+
+let languages = ["Java", "Python", "JavaScript"];
+
+languages.unshift("C");
+
+console.log(languages);
+
+
+// =================================================
+// Q9. Remove the first element using shift().
+// =================================================
+
+let flowers = ["Rose", "Lily", "Lotus"];
+
+flowers.shift();
+
+console.log(flowers);
+
+
+// =================================================
+// Q10. Print all elements of an array using
+// a for loop.
+// =================================================
+
+let marks = [85, 90, 75, 88, 92];
+
+for (let i = 0; i < marks.length; i++) {
+    console.log(marks[i]);
+}
+
+
+// =================================================
+// Q11. Find the sum of all elements in an array.
+// =================================================
+
+let values = [10, 20, 30, 40];
+
+let sum = 0;
+
+for (let i = 0; i < values.length; i++) {
+    sum = sum + values[i];
+}
+
+console.log("Sum =", sum);
+
+
+// =================================================
+// Q12. Find the largest element in an array.
+// =================================================
+
+let numbers1 = [10, 50, 20, 80, 30];
+
+let largest = numbers1[0];
+
+for (let i = 1; i < numbers1.length; i++) {
+
+    if (numbers1[i] > largest) {
+        largest = numbers1[i];
+    }
+
+}
+
+console.log("Largest =", largest);
+
+
+// =================================================
+// Q13. Find the smallest element in an array.
+// =================================================
+
+let numbers2 = [10, 50, 20, 80, 30];
+
+let smallest = numbers2[0];
+
+for (let i = 1; i < numbers2.length; i++) {
+
+    if (numbers2[i] < smallest) {
+        smallest = numbers2[i];
+    }
+
+}
+
+console.log("Smallest =", smallest);
+
+
+// =================================================
+// Q14. Count how many even numbers are present.
+// =================================================
+
+let numbers3 = [10, 15, 20, 25, 30];
+
+let evenCount = 0;
+
+for (let i = 0; i < numbers3.length; i++) {
+
+    if (numbers3[i] % 2 === 0) {
+        evenCount++;
+    }
+
+}
+
+console.log("Even Count =", evenCount);
+
+
+// =================================================
+// Q15. Count how many odd numbers are present.
+// =================================================
+
+let numbers4 = [10, 15, 20, 25, 30];
+
+let oddCount = 0;
+
+for (let i = 0; i < numbers4.length; i++) {
+
+    if (numbers4[i] % 2 !== 0) {
+        oddCount++;
+    }
+
+}
+
+console.log("Odd Count =", oddCount);
