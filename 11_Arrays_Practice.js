@@ -74,3 +74,43 @@
 
 // Q30. Merge two arrays into one array.
 
+
+
+
+
+/*
+=================================================
+        11_Arrays_Hard.js
+        HARD LEVEL
+=================================================
+*/
+
+// Q31. Reverse an array without using reverse().
+
+// Q32. Check whether an array is sorted in ascending order.
+
+// Q33. Find the second largest element in an array.
+
+// Q34. Find the second smallest element in an array.
+
+// Q35. Count how many times a given element appears in an array.
+
+// Q36. Remove all duplicate elements from an array (without using Set).
+
+// Q37. Find the maximum difference between any two elements.
+
+// Q38. Move all zero elements to the end of the array.
+
+// Q39. Rotate the array one position to the left.
+
+// Q40. Rotate the array one position to the right.
+
+// Q41. Find the common elements between two arrays.
+
+// Q42. Find the missing number from an array containing numbers from 1 to N.
+
+// Q43. Separate even and odd numbers into two different arrays.
+
+// Q44. Find all pairs of elements whose sum is equal to a given target.
+
+// Q45. Find the largest and smallest element in a single traversal of the array.
