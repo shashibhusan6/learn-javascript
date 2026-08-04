@@ -114,3 +114,181 @@
 // Q44. Find all pairs of elements whose sum is equal to a given target.
 
 // Q45. Find the largest and smallest element in a single traversal of the array.
+
+
+
+/*
+=================================================
+        11_Arrays_Easy.js
+        EASY LEVEL - ANSWERS
+=================================================
+*/
+
+
+// =================================================
+// Q1. Create an array of 5 numbers and print it.
+// =================================================
+
+let numbers = [10, 20, 30, 40, 50];
+
+console.log(numbers);
+
+
+// =================================================
+// Q2. Create an array of 5 names and print it.
+// =================================================
+
+let names = ["Shashi", "Rahul", "Aman", "Rohit", "Priya"];
+
+console.log(names);
+
+
+// =================================================
+// Q3. Print the first element of an array.
+// =================================================
+
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+console.log(fruits[0]);
+
+
+// =================================================
+// Q4. Print the last element of an array.
+// =================================================
+
+let colors = ["Red", "Blue", "Green", "Yellow"];
+
+console.log(colors[colors.length - 1]);
+
+
+// =================================================
+// Q5. Find the length of an array.
+// =================================================
+
+let cities = ["Delhi", "Mumbai", "Chennai", "Kolkata"];
+
+console.log(cities.length);
+
+
+// =================================================
+// Q6. Change the second element of an array.
+// =================================================
+
+let animals = ["Dog", "Cat", "Cow", "Horse"];
+
+animals[1] = "Lion";
+
+console.log(animals);
+
+
+// =================================================
+// Q7. Add an element at the end using push().
+// =================================================
+
+let languages = ["Java", "Python", "JavaScript"];
+
+languages.push("C++");
+
+console.log(languages);
+
+
+// =================================================
+// Q8. Remove the last element using pop().
+// =================================================
+
+let cars = ["BMW", "Audi", "Tesla"];
+
+cars.pop();
+
+console.log(cars);
+
+
+// =================================================
+// Q9. Add an element at the beginning using unshift().
+// =================================================
+
+let flowers = ["Rose", "Lotus", "Lily"];
+
+flowers.unshift("Sunflower");
+
+console.log(flowers);
+
+
+// =================================================
+// Q10. Remove the first element using shift().
+// =================================================
+
+let games = ["Cricket", "Football", "Hockey"];
+
+games.shift();
+
+console.log(games);
+
+
+// =================================================
+// Q11. Print all elements of an array using a for loop.
+// =================================================
+
+let marks = [85, 90, 75, 88, 92];
+
+for (let i = 0; i < marks.length; i++) {
+    console.log(marks[i]);
+}
+
+
+// =================================================
+// Q12. Print all elements of an array in reverse order.
+// =================================================
+
+let values = [10, 20, 30, 40, 50];
+
+for (let i = values.length - 1; i >= 0; i--) {
+    console.log(values[i]);
+}
+
+
+// =================================================
+// Q13. Find the sum of all elements in an array.
+// =================================================
+
+let nums = [10, 20, 30, 40, 50];
+
+let sum = 0;
+
+for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+}
+
+console.log("Sum =", sum);
+
+
+// =================================================
+// Q14. Find the average of all elements in an array.
+// =================================================
+
+let scores = [80, 90, 70, 60, 100];
+
+let total = 0;
+
+for (let i = 0; i < scores.length; i++) {
+    total += scores[i];
+}
+
+let average = total / scores.length;
+
+console.log("Average =", average);
+
+
+// =================================================
+// Q15. Count the total number of elements in an array.
+// =================================================
+
+let subjects = ["Java", "DSA", "DBMS", "OS", "CN", "SQL"];
+
+let count = 0;
+
+for (let i = 0; i < subjects.length; i++) {
+    count++;
+}
+
+console.log("Total Elements =", count);
