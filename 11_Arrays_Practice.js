@@ -292,3 +292,305 @@ for (let i = 0; i < subjects.length; i++) {
 }
 
 console.log("Total Elements =", count);
+
+
+
+
+/*
+=================================================
+        11_Arrays_Medium.js
+        MEDIUM LEVEL - ANSWERS
+=================================================
+*/
+
+
+// =================================================
+// Q16. Find the largest element in an array.
+// =================================================
+
+let numbers1 = [10, 50, 20, 80, 30];
+
+let largest = numbers1[0];
+
+for (let i = 1; i < numbers1.length; i++) {
+
+    if (numbers1[i] > largest) {
+        largest = numbers1[i];
+    }
+
+}
+
+console.log("Largest =", largest);
+
+
+// =================================================
+// Q17. Find the smallest element in an array.
+// =================================================
+
+let numbers2 = [10, 50, 20, 80, 30];
+
+let smallest = numbers2[0];
+
+for (let i = 1; i < numbers2.length; i++) {
+
+    if (numbers2[i] < smallest) {
+        smallest = numbers2[i];
+    }
+
+}
+
+console.log("Smallest =", smallest);
+
+
+// =================================================
+// Q18. Count how many even numbers are present in an array.
+// =================================================
+
+let numbers3 = [10, 15, 20, 25, 30];
+
+let evenCount = 0;
+
+for (let i = 0; i < numbers3.length; i++) {
+
+    if (numbers3[i] % 2 === 0) {
+        evenCount++;
+    }
+
+}
+
+console.log("Even Count =", evenCount);
+
+
+// =================================================
+// Q19. Count how many odd numbers are present in an array.
+// =================================================
+
+let numbers4 = [10, 15, 20, 25, 30];
+
+let oddCount = 0;
+
+for (let i = 0; i < numbers4.length; i++) {
+
+    if (numbers4[i] % 2 !== 0) {
+        oddCount++;
+    }
+
+}
+
+console.log("Odd Count =", oddCount);
+
+
+// =================================================
+// Q20. Count positive numbers in an array.
+// =================================================
+
+let numbers5 = [-5, 10, -8, 25, 0, 15];
+
+let positiveCount = 0;
+
+for (let i = 0; i < numbers5.length; i++) {
+
+    if (numbers5[i] > 0) {
+        positiveCount++;
+    }
+
+}
+
+console.log("Positive Count =", positiveCount);
+
+
+// =================================================
+// Q21. Count negative numbers in an array.
+// =================================================
+
+let numbers6 = [-5, 10, -8, 25, 0, 15];
+
+let negativeCount = 0;
+
+for (let i = 0; i < numbers6.length; i++) {
+
+    if (numbers6[i] < 0) {
+        negativeCount++;
+    }
+
+}
+
+console.log("Negative Count =", negativeCount);
+
+
+// =================================================
+// Q22. Count zeros in an array.
+// =================================================
+
+let numbers7 = [0, 10, 0, 20, 30, 0];
+
+let zeroCount = 0;
+
+for (let i = 0; i < numbers7.length; i++) {
+
+    if (numbers7[i] === 0) {
+        zeroCount++;
+    }
+
+}
+
+console.log("Zero Count =", zeroCount);
+
+
+// =================================================
+// Q23. Search for a given element in an array
+// (Linear Search).
+// =================================================
+
+let numbers8 = [10, 20, 30, 40, 50];
+
+let target = 30;
+
+let found = false;
+
+for (let i = 0; i < numbers8.length; i++) {
+
+    if (numbers8[i] === target) {
+        found = true;
+        break;
+    }
+
+}
+
+console.log(found);
+
+
+// =================================================
+// Q24. Check whether a given element exists
+// in the array.
+// =================================================
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+let item = "Banana";
+
+let exists = false;
+
+for (let i = 0; i < fruits.length; i++) {
+
+    if (fruits[i] === item) {
+        exists = true;
+        break;
+    }
+
+}
+
+console.log(exists);
+
+
+// =================================================
+// Q25. Find the index of a given element.
+// =================================================
+
+let numbers9 = [10, 20, 30, 40, 50];
+
+let search = 40;
+
+let index = -1;
+
+for (let i = 0; i < numbers9.length; i++) {
+
+    if (numbers9[i] === search) {
+        index = i;
+        break;
+    }
+
+}
+
+console.log("Index =", index);
+
+
+// =================================================
+// Q26. Print all even numbers from the array.
+// =================================================
+
+let numbers10 = [10, 15, 20, 25, 30, 35];
+
+for (let i = 0; i < numbers10.length; i++) {
+
+    if (numbers10[i] % 2 === 0) {
+        console.log(numbers10[i]);
+    }
+
+}
+
+
+// =================================================
+// Q27. Print all odd numbers from the array.
+// =================================================
+
+let numbers11 = [10, 15, 20, 25, 30, 35];
+
+for (let i = 0; i < numbers11.length; i++) {
+
+    if (numbers11[i] % 2 !== 0) {
+        console.log(numbers11[i]);
+    }
+
+}
+
+
+// =================================================
+// Q28. Find the multiplication (product)
+// of all array elements.
+// =================================================
+
+let numbers12 = [2, 3, 4, 5];
+
+let product = 1;
+
+for (let i = 0; i < numbers12.length; i++) {
+
+    product *= numbers12[i];
+
+}
+
+console.log("Product =", product);
+
+
+// =================================================
+// Q29. Copy one array into another array.
+// =================================================
+
+let original = [10, 20, 30, 40];
+
+let copy = [];
+
+for (let i = 0; i < original.length; i++) {
+
+    copy.push(original[i]);
+
+}
+
+console.log(copy);
+
+
+// =================================================
+// Q30. Merge two arrays into one array.
+// =================================================
+
+let arr1 = [10, 20, 30];
+
+let arr2 = [40, 50, 60];
+
+let merged = [];
+
+for (let i = 0; i < arr1.length; i++) {
+
+    merged.push(arr1[i]);
+
+}
+
+for (let i = 0; i < arr2.length; i++) {
+
+    merged.push(arr2[i]);
+
+}
+
+console.log(merged);
+
