@@ -594,3 +594,349 @@ for (let i = 0; i < arr2.length; i++) {
 
 console.log(merged);
 
+
+
+
+
+
+/*
+=================================================
+        11_Arrays_Hard.js
+        HARD LEVEL - ANSWERS
+=================================================
+*/
+
+
+// =================================================
+// Q31. Reverse an array without using reverse().
+// =================================================
+
+let numbers1 = [10, 20, 30, 40, 50];
+
+let reversed = [];
+
+for (let i = numbers1.length - 1; i >= 0; i--) {
+    reversed.push(numbers1[i]);
+}
+
+console.log(reversed);
+
+
+// =================================================
+// Q32. Check whether an array is sorted
+// in ascending order.
+// =================================================
+
+let numbers2 = [10, 20, 30, 40, 50];
+
+let sorted = true;
+
+for (let i = 0; i < numbers2.length - 1; i++) {
+
+    if (numbers2[i] > numbers2[i + 1]) {
+        sorted = false;
+        break;
+    }
+
+}
+
+console.log(sorted);
+
+
+// =================================================
+// Q33. Find the second largest element
+// in an array.
+// =================================================
+
+let numbers3 = [10, 50, 20, 80, 30];
+
+let largest = -Infinity;
+let secondLargest = -Infinity;
+
+for (let i = 0; i < numbers3.length; i++) {
+
+    if (numbers3[i] > largest) {
+
+        secondLargest = largest;
+        largest = numbers3[i];
+
+    } else if (numbers3[i] > secondLargest && numbers3[i] !== largest) {
+
+        secondLargest = numbers3[i];
+
+    }
+
+}
+
+console.log("Second Largest =", secondLargest);
+
+
+// =================================================
+// Q34. Find the second smallest element
+// in an array.
+// =================================================
+
+let numbers4 = [10, 50, 20, 80, 30];
+
+let smallest = Infinity;
+let secondSmallest = Infinity;
+
+for (let i = 0; i < numbers4.length; i++) {
+
+    if (numbers4[i] < smallest) {
+
+        secondSmallest = smallest;
+        smallest = numbers4[i];
+
+    } else if (numbers4[i] < secondSmallest && numbers4[i] !== smallest) {
+
+        secondSmallest = numbers4[i];
+
+    }
+
+}
+
+console.log("Second Smallest =", secondSmallest);
+
+
+// =================================================
+// Q35. Count how many times a given element
+// appears in an array.
+// =================================================
+
+let numbers5 = [10, 20, 10, 30, 10, 40];
+
+let target = 10;
+let count = 0;
+
+for (let i = 0; i < numbers5.length; i++) {
+
+    if (numbers5[i] === target) {
+        count++;
+    }
+
+}
+
+console.log("Occurrences =", count);
+
+
+// =================================================
+// Q36. Remove all duplicate elements
+// without using Set.
+// =================================================
+
+let numbers6 = [10, 20, 10, 30, 20, 40];
+
+let unique = [];
+
+for (let i = 0; i < numbers6.length; i++) {
+
+    if (!unique.includes(numbers6[i])) {
+        unique.push(numbers6[i]);
+    }
+
+}
+
+console.log(unique);
+
+
+// =================================================
+// Q37. Find the maximum difference between
+// any two elements.
+// =================================================
+
+let numbers7 = [10, 25, 5, 40, 30];
+
+let max = numbers7[0];
+let min = numbers7[0];
+
+for (let i = 1; i < numbers7.length; i++) {
+
+    if (numbers7[i] > max) {
+        max = numbers7[i];
+    }
+
+    if (numbers7[i] < min) {
+        min = numbers7[i];
+    }
+
+}
+
+console.log("Maximum Difference =", max - min);
+
+
+// =================================================
+// Q38. Move all zero elements to the end
+// of the array.
+// =================================================
+
+let numbers8 = [0, 10, 0, 20, 30, 0];
+
+let result = [];
+
+for (let i = 0; i < numbers8.length; i++) {
+
+    if (numbers8[i] !== 0) {
+        result.push(numbers8[i]);
+    }
+
+}
+
+for (let i = 0; i < numbers8.length; i++) {
+
+    if (numbers8[i] === 0) {
+        result.push(0);
+    }
+
+}
+
+console.log(result);
+
+
+// =================================================
+// Q39. Rotate the array one position
+// to the left.
+// =================================================
+
+let numbers9 = [10, 20, 30, 40, 50];
+
+let leftRotate = [];
+
+for (let i = 1; i < numbers9.length; i++) {
+    leftRotate.push(numbers9[i]);
+}
+
+leftRotate.push(numbers9[0]);
+
+console.log(leftRotate);
+
+
+// =================================================
+// Q40. Rotate the array one position
+// to the right.
+// =================================================
+
+let numbers10 = [10, 20, 30, 40, 50];
+
+let rightRotate = [];
+
+rightRotate.push(numbers10[numbers10.length - 1]);
+
+for (let i = 0; i < numbers10.length - 1; i++) {
+    rightRotate.push(numbers10[i]);
+}
+
+console.log(rightRotate);
+
+
+// =================================================
+// Q41. Find the common elements between
+// two arrays.
+// =================================================
+
+let arr1 = [10, 20, 30, 40];
+let arr2 = [20, 40, 60, 80];
+
+let common = [];
+
+for (let i = 0; i < arr1.length; i++) {
+
+    if (arr2.includes(arr1[i])) {
+        common.push(arr1[i]);
+    }
+
+}
+
+console.log(common);
+
+
+// =================================================
+// Q42. Find the missing number from
+// 1 to N.
+// =================================================
+
+let numbers11 = [1, 2, 3, 5];
+
+let n = 5;
+
+let expectedSum = (n * (n + 1)) / 2;
+
+let actualSum = 0;
+
+for (let i = 0; i < numbers11.length; i++) {
+    actualSum += numbers11[i];
+}
+
+console.log("Missing Number =", expectedSum - actualSum);
+
+
+// =================================================
+// Q43. Separate even and odd numbers
+// into two arrays.
+// =================================================
+
+let numbers12 = [10, 15, 20, 25, 30];
+
+let even = [];
+let odd = [];
+
+for (let i = 0; i < numbers12.length; i++) {
+
+    if (numbers12[i] % 2 === 0) {
+        even.push(numbers12[i]);
+    } else {
+        odd.push(numbers12[i]);
+    }
+
+}
+
+console.log("Even =", even);
+console.log("Odd =", odd);
+
+
+// =================================================
+// Q44. Find all pairs whose sum equals
+// a given target.
+// =================================================
+
+let numbers13 = [2, 4, 6, 8, 10];
+
+let targetSum = 12;
+
+for (let i = 0; i < numbers13.length; i++) {
+
+    for (let j = i + 1; j < numbers13.length; j++) {
+
+        if (numbers13[i] + numbers13[j] === targetSum) {
+            console.log(numbers13[i], numbers13[j]);
+        }
+
+    }
+
+}
+
+
+// =================================================
+// Q45. Find the largest and smallest element
+// in a single traversal.
+// =================================================
+
+let numbers14 = [10, 50, 20, 80, 30];
+
+let largestValue = numbers14[0];
+let smallestValue = numbers14[0];
+
+for (let i = 1; i < numbers14.length; i++) {
+
+    if (numbers14[i] > largestValue) {
+        largestValue = numbers14[i];
+    }
+
+    if (numbers14[i] < smallestValue) {
+        smallestValue = numbers14[i];
+    }
+
+}
+
+console.log("Largest =", largestValue);
+console.log("Smallest =", smallestValue);
