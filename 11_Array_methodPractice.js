@@ -77,3 +77,44 @@
 // Q29. Get all odd numbers using filter().
 
 // Q30. Create a new array containing squares of all numbers using map().
+
+
+
+
+/*
+=================================================
+        11_ArrayMethods_Hard.js
+        ARRAY METHODS PRACTICE
+              HARD LEVEL
+=================================================
+*/
+
+// Q31. Find the first number greater than 50 using find().
+
+// Q32. Find the index of the first even number using findIndex().
+
+// Q33. Check if at least one number is negative using some().
+
+// Q34. Check if every number is positive using every().
+
+// Q35. Find the sum of all array elements using reduce().
+
+// Q36. Find the product of all array elements using reduce().
+
+// Q37. Flatten a nested array using flat().
+
+// Q38. Use flatMap() to create an array containing each number and its double.
+
+// Q39. Create an array using Array.of().
+
+// Q40. Convert the string "PLACEMENT" into an array using Array.from().
+
+// Q41. Check whether a variable is an array using Array.isArray().
+
+// Q42. Copy an array using the spread operator (...).
+
+// Q43. Merge three arrays using the spread operator (...).
+
+// Q44. Swap two variables using array destructuring.
+
+// Q45. Use rest (...) in array destructuring to store the remaining elements.
