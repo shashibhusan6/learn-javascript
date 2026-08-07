@@ -390,3 +390,144 @@ let squares = arr30.map((num) => num * num);
 console.log("Q30:", squares);
 
 // -------------------------------------------------
+
+
+
+
+/*
+=================================================
+        11_ArrayMethods_Hard.js
+        ARRAY METHODS PRACTICE
+              HARD LEVEL
+=================================================
+*/
+
+// Q31. Find the first number greater than 50 using find().
+
+let arr31 = [10, 25, 45, 60, 80];
+let firstGreater = arr31.find(num => num > 50);
+console.log("Q31:", firstGreater);
+
+// -------------------------------------------------
+
+// Q32. Find the index of the first even number using findIndex().
+
+let arr32 = [11, 13, 15, 18, 20];
+let evenIndex = arr32.findIndex(num => num % 2 === 0);
+console.log("Q32:", evenIndex);
+
+// -------------------------------------------------
+
+// Q33. Check if at least one number is negative using some().
+
+let arr33 = [10, 20, -5, 40];
+let hasNegative = arr33.some(num => num < 0);
+console.log("Q33:", hasNegative);
+
+// -------------------------------------------------
+
+// Q34. Check if every number is positive using every().
+
+let arr34 = [5, 10, 15, 20];
+let allPositive = arr34.every(num => num > 0);
+console.log("Q34:", allPositive);
+
+// -------------------------------------------------
+
+// Q35. Find the sum of all array elements using reduce().
+
+let arr35 = [10, 20, 30, 40];
+let sum = arr35.reduce((total, num) => total + num, 0);
+console.log("Q35:", sum);
+
+// -------------------------------------------------
+
+// Q36. Find the product of all array elements using reduce().
+
+let arr36 = [2, 3, 4, 5];
+let product = arr36.reduce((total, num) => total * num, 1);
+console.log("Q36:", product);
+
+// -------------------------------------------------
+
+// Q37. Flatten a nested array using flat().
+
+let arr37 = [1, 2, [3, 4], [5, 6]];
+let flatArray = arr37.flat();
+console.log("Q37:", flatArray);
+
+// -------------------------------------------------
+
+// Q38. Use flatMap() to create an array containing each number and its double.
+
+let arr38 = [1, 2, 3, 4];
+let result38 = arr38.flatMap(num => [num, num * 2]);
+console.log("Q38:", result38);
+
+// -------------------------------------------------
+
+// Q39. Create an array using Array.of().
+
+let arr39 = Array.of(10, 20, 30, 40, 50);
+console.log("Q39:", arr39);
+
+// -------------------------------------------------
+
+// Q40. Convert the string "PLACEMENT" into an array using Array.from().
+
+let arr40 = Array.from("PLACEMENT");
+console.log("Q40:", arr40);
+
+// -------------------------------------------------
+
+// Q41. Check whether a variable is an array using Array.isArray().
+
+let arr41 = [1, 2, 3];
+console.log("Q41:", Array.isArray(arr41));
+
+// -------------------------------------------------
+
+// Q42. Copy an array using the spread operator (...).
+
+let arr42 = [10, 20, 30];
+let copyArr = [...arr42];
+console.log("Q42:", copyArr);
+
+// -------------------------------------------------
+
+// Q43. Merge three arrays using the spread operator (...).
+
+let arr43A = [1, 2];
+let arr43B = [3, 4];
+let arr43C = [5, 6];
+
+let mergedArray = [...arr43A, ...arr43B, ...arr43C];
+console.log("Q43:", mergedArray);
+
+// -------------------------------------------------
+
+// Q44. Swap two variables using array destructuring.
+
+let a = 10;
+let b = 20;
+
+[a, b] = [b, a];
+
+console.log("Q44:");
+console.log("a =", a);
+console.log("b =", b);
+
+// -------------------------------------------------
+
+// Q45. Use rest (...) in array destructuring to store the remaining elements.
+
+let arr45 = [10, 20, 30, 40, 50];
+
+let [first, second, ...remaining] = arr45;
+
+console.log("Q45:");
+console.log("First:", first);
+console.log("Second:", second);
+console.log("Remaining:", remaining);
+
+// -------------------------------------------------
