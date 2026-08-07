@@ -253,3 +253,140 @@ arr15.unshift(10);   // [10,30,40]
 console.log("Q15:", arr15);
 
 // -------------------------------------------------
+
+
+
+
+
+
+
+/*
+=================================================
+        11_ArrayMethods_Medium.js
+        ARRAY METHODS PRACTICE
+             MEDIUM LEVEL
+=================================================
+*/
+
+// Q16. Replace the second element using splice().
+
+let arr16 = [10, 20, 30, 40];
+arr16.splice(1, 1, 25);
+console.log("Q16:", arr16);
+
+// -------------------------------------------------
+
+// Q17. Remove two elements starting from index 2 using splice().
+
+let arr17 = [10, 20, 30, 40, 50];
+arr17.splice(2, 2);
+console.log("Q17:", arr17);
+
+// -------------------------------------------------
+
+// Q18. Insert "Orange" at index 1 using splice().
+
+let arr18 = ["Apple", "Banana", "Mango"];
+arr18.splice(1, 0, "Orange");
+console.log("Q18:", arr18);
+
+// -------------------------------------------------
+
+// Q19. Reverse an array using reverse().
+
+let arr19 = [1, 2, 3, 4, 5];
+arr19.reverse();
+console.log("Q19:", arr19);
+
+// -------------------------------------------------
+
+// Q20. Sort numbers in ascending order using sort().
+
+let arr20 = [50, 10, 40, 20, 30];
+arr20.sort((a, b) => a - b);
+console.log("Q20:", arr20);
+
+// -------------------------------------------------
+
+// Q21. Sort numbers in descending order using sort().
+
+let arr21 = [50, 10, 40, 20, 30];
+arr21.sort((a, b) => b - a);
+console.log("Q21:", arr21);
+
+// -------------------------------------------------
+
+// Q22. Fill an array with 0 using fill().
+
+let arr22 = [1, 2, 3, 4, 5];
+arr22.fill(0);
+console.log("Q22:", arr22);
+
+// -------------------------------------------------
+
+// Q23. Fill only the first three elements with 100 using fill().
+
+let arr23 = [10, 20, 30, 40, 50];
+arr23.fill(100, 0, 3);
+console.log("Q23:", arr23);
+
+// -------------------------------------------------
+
+// Q24. Copy the last two elements to the beginning using copyWithin().
+
+let arr24 = [10, 20, 30, 40, 50];
+arr24.copyWithin(0, 3);
+console.log("Q24:", arr24);
+
+// -------------------------------------------------
+
+// Q25. Print every element using forEach().
+
+let arr25 = [10, 20, 30, 40];
+
+console.log("Q25:");
+arr25.forEach((value) => {
+    console.log(value);
+});
+
+// -------------------------------------------------
+
+// Q26. Double every number using map().
+
+let arr26 = [1, 2, 3, 4, 5];
+let doubled = arr26.map((num) => num * 2);
+console.log("Q26:", doubled);
+
+// -------------------------------------------------
+
+// Q27. Convert all names into uppercase using map().
+
+let arr27 = ["java", "python", "javascript"];
+let upperNames = arr27.map((name) => name.toUpperCase());
+console.log("Q27:", upperNames);
+
+// -------------------------------------------------
+
+// Q28. Get all even numbers using filter().
+
+let arr28 = [1, 2, 3, 4, 5, 6, 7, 8];
+let evenNumbers = arr28.filter((num) => num % 2 === 0);
+console.log("Q28:", evenNumbers);
+
+// -------------------------------------------------
+
+// Q29. Get all odd numbers using filter().
+
+let arr29 = [1, 2, 3, 4, 5, 6, 7, 8];
+let oddNumbers = arr29.filter((num) => num % 2 !== 0);
+console.log("Q29:", oddNumbers);
+
+// -------------------------------------------------
+
+// Q30. Create a new array containing squares of all numbers using map().
+
+let arr30 = [1, 2, 3, 4, 5];
+let squares = arr30.map((num) => num * num);
+console.log("Q30:", squares);
+
+// -------------------------------------------------
