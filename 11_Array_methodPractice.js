@@ -118,3 +118,138 @@
 // Q44. Swap two variables using array destructuring.
 
 // Q45. Use rest (...) in array destructuring to store the remaining elements.
+
+
+
+
+
+
+/*
+=================================================
+        11_ArrayMethods_Easy.js
+        ARRAY METHODS PRACTICE
+              EASY LEVEL
+=================================================
+*/
+
+// Q1. Create an array and add one element using push().
+
+let arr1 = [10, 20, 30];
+arr1.push(40);
+console.log("Q1:", arr1);
+
+// -------------------------------------------------
+
+// Q2. Add two elements at the end using push().
+
+let arr2 = [1, 2, 3];
+arr2.push(4, 5);
+console.log("Q2:", arr2);
+
+// -------------------------------------------------
+
+// Q3. Remove the last element using pop().
+
+let arr3 = [100, 200, 300];
+arr3.pop();
+console.log("Q3:", arr3);
+
+// -------------------------------------------------
+
+// Q4. Add one element at the beginning using unshift().
+
+let arr4 = [20, 30, 40];
+arr4.unshift(10);
+console.log("Q4:", arr4);
+
+// -------------------------------------------------
+
+// Q5. Remove the first element using shift().
+
+let arr5 = [10, 20, 30, 40];
+arr5.shift();
+console.log("Q5:", arr5);
+
+// -------------------------------------------------
+
+// Q6. Check whether 50 exists in an array using includes().
+
+let arr6 = [10, 20, 30, 40, 50];
+console.log("Q6:", arr6.includes(50));
+
+// -------------------------------------------------
+
+// Q7. Check whether "Java" exists in an array using includes().
+
+let arr7 = ["Python", "Java", "JavaScript", "C++"];
+console.log("Q7:", arr7.includes("Java"));
+
+// -------------------------------------------------
+
+// Q8. Find the index of 30 using indexOf().
+
+let arr8 = [10, 20, 30, 40, 50];
+console.log("Q8:", arr8.indexOf(30));
+
+// -------------------------------------------------
+
+// Q9. Find the last occurrence of 20 using lastIndexOf().
+
+let arr9 = [10, 20, 30, 20, 40, 20];
+console.log("Q9:", arr9.lastIndexOf(20));
+
+// -------------------------------------------------
+
+// Q10. Extract the first three elements using slice().
+
+let arr10 = [10, 20, 30, 40, 50];
+let firstThree = arr10.slice(0, 3);
+console.log("Q10:", firstThree);
+
+// -------------------------------------------------
+
+// Q11. Extract the last two elements using slice().
+
+let arr11 = [10, 20, 30, 40, 50];
+let lastTwo = arr11.slice(-2);
+console.log("Q11:", lastTwo);
+
+// -------------------------------------------------
+
+// Q12. Merge two arrays using concat().
+
+let arr12A = [1, 2, 3];
+let arr12B = [4, 5, 6];
+let merged = arr12A.concat(arr12B);
+console.log("Q12:", merged);
+
+// -------------------------------------------------
+
+// Q13. Convert an array into a comma-separated string using join().
+
+let arr13 = ["HTML", "CSS", "JavaScript"];
+let joined = arr13.join(",");
+console.log("Q13:", joined);
+
+// -------------------------------------------------
+
+// Q14. Convert an array into a string using toString().
+
+let arr14 = [10, 20, 30, 40];
+let str = arr14.toString();
+console.log("Q14:", str);
+
+// -------------------------------------------------
+
+// Q15. Perform push(), pop(), shift(), and unshift() on the same array and print the final array.
+
+let arr15 = [20, 30, 40];
+
+arr15.push(50);      // [20,30,40,50]
+arr15.pop();         // [20,30,40]
+arr15.shift();       // [30,40]
+arr15.unshift(10);   // [10,30,40]
+
+console.log("Q15:", arr15);
+
+// -------------------------------------------------
