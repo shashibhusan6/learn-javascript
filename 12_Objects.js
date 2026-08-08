@@ -250,3 +250,185 @@ console.log(student["name"]);
 // Update the salary.
 // Add a new property `department`.
 // Delete the age property.
+
+
+
+
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS - BASIC
+    COMMIT 3
+*/
+
+// =================================================
+// 1. SIMPLE REAL-WORLD OBJECT
+// =================================================
+
+let student = {
+    name: "Shashi",
+    age: 21,
+    course: "CSE",
+    cgpa: 8.2
+};
+
+console.log(student);
+
+
+// =================================================
+// 2. ACCESSING OBJECT VALUES
+// =================================================
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.course);
+console.log(student.cgpa);
+
+
+// =================================================
+// 3. UPDATING VALUES
+// =================================================
+
+student.age = 22;
+student.cgpa = 8.5;
+
+console.log(student);
+
+
+// =================================================
+// 4. ADDING NEW PROPERTIES
+// =================================================
+
+student.city = "Bhubaneswar";
+student.college = "ABC College";
+
+console.log(student);
+
+
+// =================================================
+// 5. ACCESSING USING BRACKET NOTATION
+// =================================================
+
+console.log(student["name"]);
+console.log(student["city"]);
+console.log(student["college"]);
+
+
+// =================================================
+// 6. DELETING A PROPERTY
+// =================================================
+
+delete student.city;
+
+console.log(student);
+
+
+// =================================================
+// 7. ANOTHER REAL-WORLD OBJECT
+// =================================================
+
+let product = {
+    name: "Laptop",
+    brand: "HP",
+    price: 55000,
+    inStock: true
+};
+
+console.log(product.name);
+console.log(product.price);
+
+
+// Update price
+product.price = 50000;
+
+// Add property
+product.color = "Black";
+
+// Delete property
+delete product.inStock;
+
+console.log(product);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+// Q1. Create an object `movie` with:
+// name
+// language
+// rating
+//
+// Print all the values.
+
+
+// Q2. Create an object `bike` with:
+// brand: "Honda"
+// model: "CBR"
+// price: 200000
+//
+// Update the price to 220000.
+// Print the updated object.
+
+
+// Q3. Create an object `phone` with:
+// brand
+// model
+// price
+//
+// Add a new property `color`.
+// Print the object.
+
+
+// Q4. Create an object `laptop` with:
+// brand
+// ram
+// storage
+// price
+//
+// Update the RAM.
+// Add a new property `processor`.
+// Delete the storage property.
+// Print the object.
+
+
+// Q5. Create an object `student` with:
+// name
+// age
+// branch
+// cgpa
+//
+// Update the CGPA.
+// Add a new property `city`.
+// Delete the age property.
+// Print the final object.
+
+
+// Q6. Create an object `employee` with:
+// name
+// department
+// salary
+//
+// Print the name using dot notation.
+// Print the salary using bracket notation.
+
+
+// Q7. Create an object `book` with:
+// title
+// author
+// price
+//
+// Update the price.
+// Add a new property `pages`.
+// Delete the author.
+// Print the final object.
+
+
+// Q8. Create an object `car` with:
+// brand
+// model
+// year
+//
+// Print the brand.
+// Update the year.
+// Add a new property `color`.
+// Print the final object.
