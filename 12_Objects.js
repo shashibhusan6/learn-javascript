@@ -125,3 +125,128 @@ console.log(car.isAvailable);
 // age
 // salary
 // Print the employee's name and salary.
+
+
+
+
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS - BASIC
+*/
+
+// =================================================
+// 1. UPDATING OBJECT PROPERTY
+// =================================================
+
+let student = {
+    name: "Shashi",
+    age: 21,
+    branch: "CSE"
+};
+
+console.log(student);
+
+// Update age
+student.age = 22;
+
+console.log(student);
+
+
+// =================================================
+// 2. UPDATING STRING VALUE
+// =================================================
+
+student.name = "Rahul";
+
+console.log(student);
+
+
+// =================================================
+// 3. ADDING A NEW PROPERTY
+// =================================================
+
+student.city = "Balasore";
+
+console.log(student);
+
+
+// =================================================
+// 4. ADDING MULTIPLE PROPERTIES
+// =================================================
+
+student.college = "ABC College";
+student.cgpa = 8.5;
+
+console.log(student);
+
+
+// =================================================
+// 5. DELETING A PROPERTY
+// =================================================
+
+delete student.city;
+
+console.log(student);
+
+
+// =================================================
+// 6. BRACKET NOTATION
+// =================================================
+
+console.log(student["name"]);
+console.log(student["age"]);
+console.log(student["branch"]);
+
+
+// =================================================
+// 7. DOT NOTATION vs BRACKET NOTATION
+// =================================================
+
+console.log(student.name);
+console.log(student["name"]);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+// Q1. Create an object `car` with:
+// brand: "Toyota"
+// model: "Fortuner"
+// price: 4000000
+//
+// Update the price to 4500000.
+
+
+// Q2. Create an object `person` with:
+// name
+// age
+//
+// Add a new property:
+// city
+
+
+// Q3. Create an object `mobile` with:
+// brand
+// model
+// price
+//
+// Delete the price property.
+
+
+// Q4. Create an object `book` with:
+// title
+// author
+// price
+//
+// Print the title using bracket notation.
+
+
+// Q5. Create an object `employee` with:
+// name
+// age
+// salary
+//
+// Update the salary.
+// Add a new property `department`.
+// Delete the age property.
