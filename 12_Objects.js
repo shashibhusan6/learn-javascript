@@ -432,3 +432,167 @@ console.log(product);
 // Update the year.
 // Add a new property `color`.
 // Print the final object.
+
+
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS
+*/
+
+// =================================================
+// OBJECTS + VARIABLES
+// =================================================
+
+
+// =================================================
+// 1. STORING OBJECT IN A VARIABLE
+// =================================================
+
+let student = {
+    name: "Shashi",
+    age: 21,
+    branch: "CSE"
+};
+
+console.log(student);
+
+
+// =================================================
+// 2. ACCESSING OBJECT PROPERTIES
+// =================================================
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.branch);
+
+
+// =================================================
+// 3. USING VARIABLES AS OBJECT VALUES
+// =================================================
+
+let studentName = "Rahul";
+let studentAge = 22;
+let studentBranch = "CSE";
+
+let student2 = {
+    name: studentName,
+    age: studentAge,
+    branch: studentBranch
+};
+
+console.log(student2);
+
+
+// =================================================
+// 4. CHANGING OBJECT DATA USING A VARIABLE
+// =================================================
+
+let newAge = 23;
+
+student2.age = newAge;
+
+console.log(student2);
+
+
+// =================================================
+// 5. ADDING A PROPERTY USING A VARIABLE
+// =================================================
+
+let city = "Bhubaneswar";
+
+student2.city = city;
+
+console.log(student2);
+
+
+// =================================================
+// 6. SHORT PROPERTY SYNTAX
+// =================================================
+
+// If variable name and property name are same,
+// we can directly use the variable name.
+
+let name = "Amit";
+let age = 20;
+
+let student3 = {
+    name,
+    age
+};
+
+console.log(student3);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create variables:
+// name = "Rahul"
+// age = 22
+// course = "JavaScript"
+//
+// Create a `student` object using these variables.
+// Print the object.
+
+
+// Q2. Create variables:
+// brand = "Samsung"
+// price = 30000
+//
+// Create a `mobile` object using these variables.
+// Print the brand and price.
+
+
+// Q3. Create variables:
+// productName
+// productPrice
+// inStock
+//
+// Create a `product` object using these variables.
+// Print the object.
+
+
+// Q4. Create an object `employee` using:
+// name = "Amit"
+// salary = 40000
+//
+// Create another variable `newSalary`.
+// Update the employee salary using newSalary.
+// Print the object.
+
+
+// Q5. Create an object `car` using variables:
+// brand
+// model
+// price
+//
+// Create a variable `color`.
+// Add color to the car object.
+// Print the final object.
+
+
+// Q6. Create variables:
+// bookName = "JavaScript Basics"
+// authorName = "John"
+// bookPrice = 500
+//
+// Create a `book` object using these variables.
+// Print the book name and price.
+
+
+// Q7. Create variables:
+// city = "Delhi"
+// country = "India"
+//
+// Create a `location` object using these variables.
+// Print both values.
+
+
+// Q8. Create variables:
+// name = "Rohit"
+// age = 25
+//
+// Create an object using short property syntax.
+// Print the object.
