@@ -788,5 +788,217 @@ console.log(product.colors[0]);
 
 
 
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS
+
+    BASIC OBJECT PRACTICE
+*/
+
+// =================================================
+// 1. STUDENT OBJECT
+// =================================================
+
+let student = {
+    name: "Shashi",
+    age: 21,
+    branch: "CSE",
+    marks: [80, 85, 90]
+};
+
+console.log(student.name);
+console.log(student.marks[0]);
 
 
+// =================================================
+// 2. UPDATE OBJECT PROPERTY
+// =================================================
+
+student.age = 22;
+
+console.log(student);
+
+
+// =================================================
+// 3. UPDATE ARRAY VALUE
+// =================================================
+
+student.marks[1] = 88;
+
+console.log(student.marks);
+
+
+// =================================================
+// 4. ADD VALUE TO ARRAY
+// =================================================
+
+student.marks.push(95);
+
+console.log(student.marks);
+
+
+// =================================================
+// 5. PRODUCT OBJECT
+// =================================================
+
+let product = {
+    name: "Laptop",
+    brand: "HP",
+    price: 50000,
+    colors: ["Black", "Silver"]
+};
+
+console.log(product.name);
+console.log(product.colors);
+
+
+// Add a new color
+product.colors.push("White");
+
+console.log(product.colors);
+
+
+// Update price
+product.price = 55000;
+
+console.log(product);
+
+
+// =================================================
+// 6. PERSON OBJECT
+// =================================================
+
+let person = {
+    name: "Rahul",
+    age: 22,
+    hobbies: ["Cricket", "Reading", "Coding"]
+};
+
+console.log(person.name);
+console.log(person.hobbies);
+
+
+// Change hobby
+person.hobbies[1] = "Gaming";
+
+console.log(person.hobbies);
+
+
+// Add hobby
+person.hobbies.push("Traveling");
+
+console.log(person.hobbies);
+
+
+// =================================================
+// 7. ADDING A NEW PROPERTY
+// =================================================
+
+person.city = "Bhubaneswar";
+
+console.log(person);
+
+
+// =================================================
+// 8. DELETING A PROPERTY
+// =================================================
+
+delete person.age;
+
+console.log(person);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create a `student` object with:
+// name
+// age
+// subjects: ["Math", "English", "Science"]
+//
+// Print the student name.
+// Print the first subject.
+
+
+// Q2. Create a `mobile` object with:
+// brand
+// model
+// price
+// colors: ["Black", "Blue", "White"]
+//
+// Update the price.
+// Change the first color.
+// Print the final object.
+
+
+// Q3. Create a `car` object with:
+// brand
+// model
+// features: ["AC", "ABS", "Airbag"]
+//
+// Add "Sunroof".
+// Change "ABS" to "Bluetooth".
+// Print the features.
+
+
+// Q4. Create a `book` object with:
+// title
+// author
+// price
+// genres: ["Fiction", "Drama"]
+//
+// Add "Mystery" to genres.
+// Update the price.
+// Print the final object.
+
+
+// Q5. Create an `employee` object with:
+// name
+// age
+// salary
+// skills: ["Java", "SQL"]
+//
+// Update salary.
+// Add "JavaScript" to skills.
+// Delete age.
+// Print the final object.
+
+
+// Q6. Create a `movie` object with:
+// name
+// rating
+// actors: ["Actor1", "Actor2", "Actor3"]
+//
+// Update the rating.
+// Change the second actor.
+// Add a fourth actor.
+// Print the final object.
+
+
+// Q7. Create a `product` object with:
+// name
+// price
+// sizes: ["S", "M", "L"]
+//
+// Update the price.
+// Remove the last size.
+// Add "XL".
+// Print the final object.
+
+
+// Q8. Create a `person` object with:
+// name
+// age
+// hobbies: ["Reading", "Gaming"]
+//
+// Add "Coding" to hobbies.
+// Update the age.
+// Add a city property.
+// Print the final object.
+
+
+// =================================================
+// END OF COMMIT 6
+// =================================================
