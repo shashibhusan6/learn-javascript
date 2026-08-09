@@ -596,3 +596,193 @@ console.log(student3);
 //
 // Create an object using short property syntax.
 // Print the object.
+
+
+
+
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS
+    COMMIT 5
+
+    TOPIC:
+    Objects + Arrays
+*/
+
+// =================================================
+// 1. ARRAY AS AN OBJECT PROPERTY
+// =================================================
+
+let student = {
+    name: "Shashi",
+    age: 21,
+    marks: [80, 85, 90]
+};
+
+console.log(student);
+
+
+// =================================================
+// 2. ACCESSING AN ARRAY FROM AN OBJECT
+// =================================================
+
+console.log(student.marks);
+
+
+// =================================================
+// 3. ACCESSING ARRAY ELEMENTS
+// =================================================
+
+console.log(student.marks[0]);
+console.log(student.marks[1]);
+console.log(student.marks[2]);
+
+
+// =================================================
+// 4. CHANGING ARRAY VALUES
+// =================================================
+
+student.marks[0] = 95;
+
+console.log(student.marks);
+
+
+// =================================================
+// 5. ADDING VALUES TO THE ARRAY
+// =================================================
+
+student.marks.push(88);
+
+console.log(student.marks);
+
+
+// =================================================
+// 6. REMOVING VALUES FROM THE ARRAY
+// =================================================
+
+student.marks.pop();
+
+console.log(student.marks);
+
+
+// =================================================
+// 7. OBJECT WITH DIFFERENT ARRAY TYPES
+// =================================================
+
+let person = {
+    name: "Rahul",
+    hobbies: ["Cricket", "Reading", "Coding"]
+};
+
+console.log(person.name);
+console.log(person.hobbies);
+
+console.log(person.hobbies[0]);
+console.log(person.hobbies[1]);
+
+
+// =================================================
+// 8. UPDATING ARRAY INSIDE OBJECT
+// =================================================
+
+person.hobbies[1] = "Gaming";
+
+console.log(person.hobbies);
+
+
+// =================================================
+// 9. ADDING AN ARRAY VALUE
+// =================================================
+
+person.hobbies.push("Traveling");
+
+console.log(person.hobbies);
+
+
+// =================================================
+// 10. REAL-WORLD EXAMPLE
+// =================================================
+
+let product = {
+    name: "Laptop",
+    brand: "HP",
+    price: 50000,
+    colors: ["Black", "Silver", "White"]
+};
+
+console.log(product.name);
+console.log(product.colors);
+
+console.log(product.colors[0]);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create a `student` object with:
+// name
+// age
+// marks: [70, 80, 90]
+//
+// Print the first mark.
+
+
+// Q2. Create a `person` object with:
+// name
+// hobbies: ["Cricket", "Music", "Coding"]
+//
+// Print the second hobby.
+
+
+// Q3. Create a `mobile` object with:
+// brand
+// model
+// colors: ["Black", "Blue", "White"]
+//
+// Change the first color to "Red".
+// Print the colors.
+
+
+// Q4. Create a `student` object with:
+// name
+// subjects: ["Math", "English", "Science"]
+//
+// Add "Computer" to the subjects array.
+// Print the final array.
+
+
+// Q5. Create a `product` object with:
+// name
+// price
+// sizes: ["S", "M", "L"]
+//
+// Remove the last size.
+// Print the final sizes array.
+
+
+// Q6. Create a `car` object with:
+// brand
+// model
+// features: ["AC", "ABS", "Airbag"]
+//
+// Print the first feature.
+// Add "Sunroof".
+// Print the final features array.
+
+
+// Q7. Create a `movie` object with:
+// name
+// actors: ["Actor1", "Actor2", "Actor3"]
+//
+// Change the second actor.
+// Print the final actors array.
+
+
+// Q8. Create a `book` object with:
+// title
+// authors: ["Author1", "Author2"]
+//
+// Add another author.
+// Print the authors array.
