@@ -603,7 +603,6 @@ console.log(student3);
 /*
     12_Objects.js
     JAVASCRIPT OBJECTS
-    COMMIT 5
 
     TOPIC:
     Objects + Arrays
@@ -786,3 +785,8 @@ console.log(product.colors[0]);
 //
 // Add another author.
 // Print the authors array.
+
+
+
+
+
