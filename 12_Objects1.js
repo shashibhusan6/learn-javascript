@@ -219,3 +219,230 @@ console.log(student5.age);
 // "My name is ___ and I live in ___."
 //
 // Use `this` to access the values.
+
+
+
+
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS
+
+    TOPIC:
+    NESTED OBJECTS
+*/
+
+// =================================================
+// 1. WHAT IS A NESTED OBJECT?
+// =================================================
+
+/*
+An object inside another object
+is called a nested object.
+*/
+
+let student = {
+    name: "Shashi",
+    age: 21,
+
+    address: {
+        city: "Bhubaneswar",
+        state: "Odisha"
+    }
+};
+
+console.log(student);
+
+
+// =================================================
+// 2. ACCESSING NESTED OBJECT
+// =================================================
+
+console.log(student.address);
+
+
+// =================================================
+// 3. ACCESSING NESTED PROPERTIES
+// =================================================
+
+console.log(student.address.city);
+console.log(student.address.state);
+
+
+// =================================================
+// 4. USING BRACKET NOTATION
+// =================================================
+
+console.log(student["address"]["city"]);
+console.log(student["address"]["state"]);
+
+
+// =================================================
+// 5. UPDATING NESTED PROPERTY
+// =================================================
+
+student.address.city = "Cuttack";
+
+console.log(student.address.city);
+
+
+// =================================================
+// 6. ADDING PROPERTY TO NESTED OBJECT
+// =================================================
+
+student.address.pincode = 751001;
+
+console.log(student.address);
+
+
+// =================================================
+// 7. DELETING NESTED PROPERTY
+// =================================================
+
+delete student.address.pincode;
+
+console.log(student.address);
+
+
+// =================================================
+// 8. ANOTHER NESTED OBJECT
+// =================================================
+
+let employee = {
+    name: "Rahul",
+    salary: 40000,
+
+    company: {
+        name: "ABC",
+        location: "Bangalore"
+    }
+};
+
+console.log(employee.name);
+console.log(employee.company.name);
+console.log(employee.company.location);
+
+
+// =================================================
+// 9. UPDATING NESTED DATA
+// =================================================
+
+employee.company.location = "Delhi";
+
+console.log(employee.company.location);
+
+
+// =================================================
+// 10. REAL-WORLD EXAMPLE
+// =================================================
+
+let product = {
+    name: "Laptop",
+    price: 50000,
+
+    specifications: {
+        ram: "8GB",
+        storage: "512GB",
+        processor: "i5"
+    }
+};
+
+console.log(product.name);
+console.log(product.specifications.ram);
+console.log(product.specifications.storage);
+console.log(product.specifications.processor);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create a `student` object with:
+// name
+// age
+//
+// Add a nested `address` object containing:
+// city
+// state
+//
+// Print the city.
+
+
+// Q2. Create a `person` object with:
+// name
+// age
+//
+// Add a nested `address` object containing:
+// city
+// country
+//
+// Print the country.
+
+
+// Q3. Create a `product` object with:
+// name
+// price
+//
+// Add a nested `details` object containing:
+// brand
+// color
+//
+// Print the brand and color.
+
+
+// Q4. Create an `employee` object with:
+// name
+// salary
+//
+// Add a nested `company` object containing:
+// name
+// location
+//
+// Update the company location.
+// Print the final object.
+
+
+// Q5. Create a `car` object with:
+// brand
+// model
+//
+// Add a nested `engine` object containing:
+// type
+// power
+//
+// Print the engine type and power.
+
+
+// Q6. Create a `student` object with:
+// name
+// age
+//
+// Add a nested `address` object containing:
+// city
+// state
+// pincode
+//
+// Update the pincode.
+// Print the updated pincode.
+
+
+// Q7. Create a `mobile` object with:
+// brand
+// price
+//
+// Add a nested `specifications` object containing:
+// ram
+// storage
+//
+// Print the RAM and storage.
+
+
+// Q8. Create a `book` object with:
+// title
+// price
+//
+// Add a nested `author` object containing:
+// name
+// country
+//
+// Print the author's name and country.
