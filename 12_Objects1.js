@@ -945,3 +945,305 @@ console.log(price);
 //
 // Use destructuring to get only name and city.
 // Print them.
+
+
+
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS
+
+    TOPIC:
+    OBJECT SPREAD OPERATOR
+*/
+
+// =================================================
+// 1. WHAT IS SPREAD OPERATOR?
+// =================================================
+
+/*
+The spread operator (...) is used to
+copy or combine object properties.
+*/
+
+let student = {
+    name: "Shashi",
+    age: 21
+};
+
+let studentCopy = {
+    ...student
+};
+
+console.log(studentCopy);
+
+
+// =================================================
+// 2. COPYING AN OBJECT
+// =================================================
+
+let person = {
+    name: "Rahul",
+    age: 22,
+    city: "Delhi"
+};
+
+let personCopy = {
+    ...person
+};
+
+console.log(personCopy);
+
+
+// =================================================
+// 3. COPY AND ADD A NEW PROPERTY
+// =================================================
+
+let student2 = {
+    name: "Amit",
+    age: 20
+};
+
+let studentCopy2 = {
+    ...student2,
+    branch: "CSE"
+};
+
+console.log(studentCopy2);
+
+
+// =================================================
+// 4. COPY AND UPDATE A PROPERTY
+// =================================================
+
+let student3 = {
+    name: "Rohit",
+    age: 21
+};
+
+let updatedStudent = {
+    ...student3,
+    age: 22
+};
+
+console.log(updatedStudent);
+
+
+// =================================================
+// 5. COMBINING TWO OBJECTS
+// =================================================
+
+let first = {
+    name: "Shashi",
+    age: 21
+};
+
+let second = {
+    branch: "CSE",
+    city: "Bhubaneswar"
+};
+
+let combined = {
+    ...first,
+    ...second
+};
+
+console.log(combined);
+
+
+// =================================================
+// 6. COMBINING THREE OBJECTS
+// =================================================
+
+let personal = {
+    name: "Rahul",
+    age: 22
+};
+
+let education = {
+    degree: "B.Tech",
+    branch: "CSE"
+};
+
+let location = {
+    city: "Delhi"
+};
+
+let student4 = {
+    ...personal,
+    ...education,
+    ...location
+};
+
+console.log(student4);
+
+
+// =================================================
+// 7. SAME PROPERTY IN TWO OBJECTS
+// =================================================
+
+let obj1 = {
+    name: "Amit",
+    age: 20
+};
+
+let obj2 = {
+    name: "Rahul",
+    city: "Mumbai"
+};
+
+let result = {
+    ...obj1,
+    ...obj2
+};
+
+console.log(result);
+
+/*
+When two objects have the same property,
+the value from the later object is used.
+*/
+
+
+// =================================================
+// 8. SPREAD DOES NOT CHANGE ORIGINAL OBJECT
+// =================================================
+
+let product = {
+    name: "Laptop",
+    price: 50000
+};
+
+let productCopy = {
+    ...product
+};
+
+productCopy.price = 55000;
+
+console.log(product);
+console.log(productCopy);
+
+
+// =================================================
+// 9. ADDING MULTIPLE PROPERTIES
+// =================================================
+
+let car = {
+    brand: "Toyota"
+};
+
+let newCar = {
+    ...car,
+    model: "Fortuner",
+    price: 4000000
+};
+
+console.log(newCar);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create an object `student` with:
+// name
+// age
+//
+// Create a copy using the spread operator.
+// Print both objects.
+
+
+// Q2. Create an object `person` with:
+// name
+// age
+// city
+//
+// Create a copy using spread.
+// Change the age in the copied object.
+// Print both objects.
+
+
+// Q3. Create an object `product` with:
+// name
+// price
+//
+// Create a new object using spread.
+// Add a new property `brand`.
+// Print the new object.
+
+
+// Q4. Create two objects:
+//
+// personal:
+// name
+// age
+//
+// education:
+// branch
+// college
+//
+// Combine both objects using spread.
+// Print the result.
+
+
+// Q5. Create two objects:
+//
+// first:
+// name
+// age
+//
+// second:
+// city
+// country
+//
+// Combine both objects using spread.
+
+
+// Q6. Create an object `car` with:
+// brand
+// model
+//
+// Create a new object using spread.
+// Add `price` and `color`.
+// Print the new object.
+
+
+// Q7. Create two objects with the same property `name`.
+//
+// Combine them using spread.
+// Check which name is present in the final object.
+
+
+// Q8. Create an object `employee` with:
+// name
+// salary
+//
+// Create a copy.
+// Update the salary only in the copied object.
+// Print both objects.
+
+
+// Q9. Create three objects:
+//
+// personal:
+// name
+//
+// education:
+// degree
+//
+// location:
+// city
+//
+// Combine all three using spread.
+// Print the final object.
+
+
+// Q10. Create an object `mobile` with:
+// brand
+// model
+// price
+//
+// Create a copy using spread.
+// Change the price.
+// Add a new property `color`.
+// Print the original and copied objects.
