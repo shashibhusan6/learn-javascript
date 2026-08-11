@@ -446,3 +446,243 @@ console.log(product.specifications.processor);
 // country
 //
 // Print the author's name and country.
+
+
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS
+
+    TOPIC:
+    LOOPING THROUGH OBJECTS
+    Object.keys()
+    Object.values()
+    Object.entries()
+*/
+
+// =================================================
+// 1. for...in LOOP
+// =================================================
+
+/*
+The for...in loop is used to loop
+through the keys of an object.
+*/
+
+let student = {
+    name: "Shashi",
+    age: 21,
+    branch: "CSE"
+};
+
+for (let key in student) {
+    console.log(key);
+}
+
+
+// =================================================
+// 2. GETTING VALUES USING for...in
+// =================================================
+
+for (let key in student) {
+    console.log(student[key]);
+}
+
+
+// =================================================
+// 3. GETTING BOTH KEY AND VALUE
+// =================================================
+
+for (let key in student) {
+    console.log(key, student[key]);
+}
+
+
+// =================================================
+// 4. Object.keys()
+// =================================================
+
+/*
+Object.keys() returns all keys
+of an object in an array.
+*/
+
+let keys = Object.keys(student);
+
+console.log(keys);
+
+
+// =================================================
+// 5. Object.values()
+// =================================================
+
+/*
+Object.values() returns all values
+of an object in an array.
+*/
+
+let values = Object.values(student);
+
+console.log(values);
+
+
+// =================================================
+// 6. Object.entries()
+// =================================================
+
+/*
+Object.entries() returns both keys
+and values as arrays.
+*/
+
+let entries = Object.entries(student);
+
+console.log(entries);
+
+
+// =================================================
+// 7. Object.keys() WITH LOOP
+// =================================================
+
+let person = {
+    name: "Rahul",
+    age: 22,
+    city: "Delhi"
+};
+
+let personKeys = Object.keys(person);
+
+for (let key of personKeys) {
+    console.log(key);
+}
+
+
+// =================================================
+// 8. Object.values() WITH LOOP
+// =================================================
+
+let personValues = Object.values(person);
+
+for (let value of personValues) {
+    console.log(value);
+}
+
+
+// =================================================
+// 9. Object.entries() WITH LOOP
+// =================================================
+
+let personEntries = Object.entries(person);
+
+for (let entry of personEntries) {
+    console.log(entry);
+}
+
+
+// =================================================
+// 10. SIMPLE REAL-WORLD EXAMPLE
+// =================================================
+
+let product = {
+    name: "Laptop",
+    brand: "HP",
+    price: 50000
+};
+
+console.log(Object.keys(product));
+console.log(Object.values(product));
+console.log(Object.entries(product));
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create an object `student` with:
+// name
+// age
+// branch
+//
+// Use for...in to print all the keys.
+
+
+// Q2. Create an object `student` with:
+// name
+// age
+// branch
+//
+// Use for...in to print all the values.
+
+
+// Q3. Create an object `car` with:
+// brand
+// model
+// price
+//
+// Use for...in to print both key and value.
+
+
+// Q4. Create an object `mobile` with:
+// brand
+// model
+// price
+//
+// Use Object.keys() to get all keys.
+// Print the result.
+
+
+// Q5. Create an object `product` with:
+// name
+// price
+// inStock
+//
+// Use Object.values().
+// Print all values.
+
+
+// Q6. Create an object `employee` with:
+// name
+// age
+// salary
+//
+// Use Object.entries().
+// Print the result.
+
+
+// Q7. Create an object `book` with:
+// title
+// author
+// price
+//
+// Use Object.keys() and a loop
+// to print each key.
+
+
+// Q8. Create an object `person` with:
+// name
+// age
+// city
+//
+// Use Object.values() and a loop
+// to print each value.
+
+
+// Q9. Create an object `product` with:
+// name
+// brand
+// price
+//
+// Use Object.entries() and a loop
+// to print each key and value.
+
+
+// Q10. Create an object `student` with:
+// name
+// age
+// course
+//
+// Use for...in to print:
+// key -> value
+//
+// Example:
+// name -> Shashi
