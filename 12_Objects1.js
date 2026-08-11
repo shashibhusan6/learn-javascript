@@ -686,3 +686,262 @@ console.log(Object.entries(product));
 //
 // Example:
 // name -> Shashi
+
+
+
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS
+
+    TOPIC:
+    OBJECT DESTRUCTURING
+*/
+
+// =================================================
+// 1. WHAT IS OBJECT DESTRUCTURING?
+// =================================================
+
+/*
+Object destructuring allows us to take values
+from an object and store them in variables.
+*/
+
+let student = {
+    name: "Shashi",
+    age: 21,
+    branch: "CSE"
+};
+
+let { name, age, branch } = student;
+
+console.log(name);
+console.log(age);
+console.log(branch);
+
+
+// =================================================
+// 2. DESTRUCTURING SELECTED PROPERTIES
+// =================================================
+
+let person = {
+    name: "Rahul",
+    age: 22,
+    city: "Delhi"
+};
+
+let { name: personName, city } = person;
+
+console.log(personName);
+console.log(city);
+
+
+// =================================================
+// 3. DESTRUCTURING WITH DIFFERENT VARIABLE NAME
+// =================================================
+
+let product = {
+    name: "Laptop",
+    price: 50000
+};
+
+let { name: productName, price: productPrice } = product;
+
+console.log(productName);
+console.log(productPrice);
+
+
+// =================================================
+// 4. DEFAULT VALUE
+// =================================================
+
+let employee = {
+    name: "Amit",
+    salary: 40000
+};
+
+let { name: employeeName, department = "IT" } = employee;
+
+console.log(employeeName);
+console.log(department);
+
+
+// =================================================
+// 5. DESTRUCTURING WITH ARRAY PROPERTY
+// =================================================
+
+let student2 = {
+    name: "Rohit",
+    marks: [80, 85, 90]
+};
+
+let { name: studentName, marks } = student2;
+
+console.log(studentName);
+console.log(marks);
+
+
+// =================================================
+// 6. ACCESSING ARRAY AFTER DESTRUCTURING
+// =================================================
+
+console.log(marks[0]);
+console.log(marks[1]);
+console.log(marks[2]);
+
+
+// =================================================
+// 7. DESTRUCTURING A NESTED OBJECT
+// =================================================
+
+let student3 = {
+    name: "Suresh",
+
+    address: {
+        city: "Bhubaneswar",
+        state: "Odisha"
+    }
+};
+
+let { address } = student3;
+
+console.log(address.city);
+console.log(address.state);
+
+
+// =================================================
+// 8. SIMPLE NESTED DESTRUCTURING
+// =================================================
+
+let student4 = {
+    name: "Karan",
+
+    address: {
+        city: "Delhi"
+    }
+};
+
+let {
+    address: { city: studentCity }
+} = student4;
+
+console.log(studentCity);
+
+
+// =================================================
+// 9. DESTRUCTURING IN A SIMPLE EXAMPLE
+// =================================================
+
+let car = {
+    brand: "Toyota",
+    model: "Fortuner",
+    price: 4000000
+};
+
+let { brand, model, price } = car;
+
+console.log(brand);
+console.log(model);
+console.log(price);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create an object `student` with:
+// name
+// age
+// course
+//
+// Use destructuring to store all three
+// values in separate variables.
+// Print them.
+
+
+// Q2. Create an object `car` with:
+// brand
+// model
+// price
+//
+// Use destructuring to get brand and price.
+// Print them.
+
+
+// Q3. Create an object `product` with:
+// name
+// price
+// category
+//
+// Use destructuring to get:
+// productName
+// productPrice
+//
+// Print both.
+
+
+// Q4. Create an object `employee` with:
+// name
+// salary
+//
+// Use destructuring.
+// Give `salary` a default value of 30000.
+// Print the values.
+
+
+// Q5. Create an object `person` with:
+// name
+// hobbies: ["Cricket", "Coding", "Reading"]
+//
+// Use destructuring to get the hobbies array.
+// Print the first hobby.
+
+
+// Q6. Create an object `mobile` with:
+// brand
+// model
+// price
+//
+// Use destructuring with different variable names:
+// mobileBrand
+// mobilePrice
+//
+// Print both.
+
+
+// Q7. Create an object `student` with:
+// name
+// address: {
+//     city,
+//     state
+// }
+//
+// Use destructuring to get city and state.
+// Print both.
+
+
+// Q8. Create an object `book` with:
+// title
+// author
+// price
+//
+// Use destructuring to get all three values.
+// Print them.
+
+
+// Q9. Create an object `movie` with:
+// name
+// rating
+//
+// Use destructuring to store the values
+// in variables called movieName and movieRating.
+// Print them.
+
+
+// Q10. Create an object `person` with:
+// name
+// age
+// city
+//
+// Use destructuring to get only name and city.
+// Print them.
