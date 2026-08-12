@@ -1247,3 +1247,163 @@ console.log(newCar);
 // Change the price.
 // Add a new property `color`.
 // Print the original and copied objects.
+
+
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS
+
+    TOPIC:
+    ARRAYS OF OBJECTS
+*/
+
+// =================================================
+// 1. WHAT IS AN ARRAY OF OBJECTS?
+// =================================================
+
+/*
+An array can store multiple objects.
+
+Example:
+[
+    { object1 },
+    { object2 },
+    { object3 }
+]
+*/
+
+let students = [
+    {
+        name: "Shashi",
+        age: 21,
+        branch: "CSE"
+    },
+    {
+        name: "Rahul",
+        age: 22,
+        branch: "ECE"
+    },
+    {
+        name: "Amit",
+        age: 20,
+        branch: "IT"
+    }
+];
+
+console.log(students);
+
+
+// =================================================
+// 2. ACCESSING THE FIRST OBJECT
+// =================================================
+
+console.log(students[0]);
+
+
+// =================================================
+// 3. ACCESSING OBJECT PROPERTIES
+// =================================================
+
+console.log(students[0].name);
+console.log(students[0].age);
+console.log(students[0].branch);
+
+
+// =================================================
+// 4. ACCESSING OTHER OBJECTS
+// =================================================
+
+console.log(students[1].name);
+console.log(students[2].name);
+
+
+// =================================================
+// 5. UPDATING OBJECT DATA
+// =================================================
+
+students[0].age = 22;
+
+console.log(students[0]);
+
+
+// =================================================
+// 6. ADDING A NEW PROPERTY
+// =================================================
+
+students[1].city = "Delhi";
+
+console.log(students[1]);
+
+
+// =================================================
+// 7. DELETING A PROPERTY
+// =================================================
+
+delete students[2].branch;
+
+console.log(students[2]);
+
+
+// =================================================
+// 8. ARRAY OF PRODUCT OBJECTS
+// =================================================
+
+let products = [
+    {
+        name: "Laptop",
+        price: 50000
+    },
+    {
+        name: "Mobile",
+        price: 30000
+    },
+    {
+        name: "Tablet",
+        price: 20000
+    }
+];
+
+console.log(products);
+
+
+// =================================================
+// 9. ACCESSING PRODUCT DATA
+// =================================================
+
+console.log(products[0].name);
+console.log(products[0].price);
+
+console.log(products[1].name);
+console.log(products[1].price);
+
+
+// =================================================
+// 10. MODIFYING PRODUCT DATA
+// =================================================
+
+products[0].price = 55000;
+
+console.log(products[0]);
+
+
+// =================================================
+// 11. ARRAY OF OBJECTS WITH ARRAYS
+// =================================================
+
+let students2 = [
+    {
+        name: "Rohit",
+        marks: [80, 85, 90]
+    },
+    {
+        name: "Suresh",
+        marks: [75, 88, 92]
+    }
+];
+
+console.log(students2[0].name);
+console.log(students2[0].marks);
+
+console.log(students2[0].marks[0]);
+console.log(students2[1].marks[2]);
+
