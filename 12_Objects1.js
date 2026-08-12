@@ -1407,3 +1407,117 @@ console.log(students2[0].marks);
 console.log(students2[0].marks[0]);
 console.log(students2[1].marks[2]);
 
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create an array `students` containing
+// 3 student objects.
+//
+// Each object should have:
+// name
+// age
+// branch
+//
+// Print the first student's name.
+
+
+// Q2. Create an array `products` containing
+// 3 product objects.
+//
+// Each object should have:
+// name
+// price
+//
+// Print the price of the second product.
+
+
+// Q3. Create an array `cars` containing
+// 3 car objects.
+//
+// Each object should have:
+// brand
+// model
+// price
+//
+// Print the third car's model.
+
+
+// Q4. Create an array `employees` containing
+// 3 employee objects.
+//
+// Each object should have:
+// name
+// salary
+//
+// Update the salary of the first employee.
+// Print the updated object.
+
+
+// Q5. Create an array `books` containing
+// 3 book objects.
+//
+// Each object should have:
+// title
+// author
+// price
+//
+// Print the title of the second book.
+
+
+// Q6. Create an array `students` containing
+// 2 student objects.
+//
+// Each object should have:
+// name
+// marks: [80, 85, 90]
+//
+// Print the first student's first mark.
+
+
+// Q7. Create an array `mobiles` containing
+// 3 mobile objects.
+//
+// Each object should have:
+// brand
+// model
+// price
+//
+// Change the price of the third mobile.
+// Print the final array.
+
+
+// Q8. Create an array `movies` containing
+// 3 movie objects.
+//
+// Each object should have:
+// name
+// rating
+//
+// Print the name and rating of the first movie.
+
+
+// Q9. Create an array `persons` containing
+// 3 person objects.
+//
+// Each object should have:
+// name
+// age
+// city
+//
+// Add a new property `country`
+// to the first person.
+// Print the first person.
+
+
+// Q10. Create an array `products` containing
+// 3 product objects.
+//
+// Each object should have:
+// name
+// price
+// colors: ["Black", "White"]
+//
+// Print the first color of the second product.
