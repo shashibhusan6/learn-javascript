@@ -1521,3 +1521,257 @@ console.log(students2[1].marks[2]);
 // colors: ["Black", "White"]
 //
 // Print the first color of the second product.
+
+
+
+
+/*
+    12_Objects.js
+    JAVASCRIPT OBJECTS
+
+    FINAL OBJECT PRACTICE
+*/
+
+// =================================================
+// PART 1 — BASIC OBJECT PRACTICE
+// =================================================
+
+// Q1. Create a `student` object with:
+// name
+// age
+// branch
+// cgpa
+//
+// Print all the properties.
+
+
+// Q2. Create a `product` object with:
+// name
+// price
+// brand
+//
+// Update the price.
+// Add a new property `color`.
+// Print the final object.
+
+
+// Q3. Create a `person` object with:
+// name
+// age
+// city
+//
+// Delete the age property.
+// Print the final object.
+
+
+// =================================================
+// PART 2 — OBJECT + VARIABLES
+// =================================================
+
+// Q4. Create these variables:
+// name = "Rahul"
+// age = 22
+// course = "CSE"
+//
+// Create a student object using these variables.
+// Print the object.
+
+
+// Q5. Create an object `employee` using:
+// name = "Amit"
+// salary = 40000
+//
+// Create a variable `newSalary`.
+// Update the employee's salary using newSalary.
+// Print the employee object.
+
+
+// =================================================
+// PART 3 — OBJECT METHODS + this
+// =================================================
+
+// Q6. Create an object `person` with:
+// name
+// age
+//
+// Create a method `showDetails()`.
+// Use `this` to print the name and age.
+
+
+// Q7. Create an object `product` with:
+// name
+// price
+// discount
+//
+// Create a method `finalPrice()`.
+// Calculate:
+//
+// price - discount
+//
+// Print the final price.
+
+
+// =================================================
+// PART 4 — NESTED OBJECTS
+// =================================================
+
+// Q8. Create a `student` object with:
+// name
+// age
+//
+// Add a nested `address` object containing:
+// city
+// state
+//
+// Print the city and state.
+
+
+// Q9. Create a `product` object with:
+// name
+// price
+//
+// Add a nested `details` object containing:
+// brand
+// color
+//
+// Update the color.
+// Print the final object.
+
+
+// =================================================
+// PART 5 — OBJECT METHODS
+// =================================================
+
+// Q10. Create an object `student` with:
+// name
+// age
+// branch
+//
+// Use Object.keys() to print all keys.
+// Use Object.values() to print all values.
+
+
+// Q11. Create an object `car` with:
+// brand
+// model
+// price
+//
+// Use Object.entries() to print all
+// key-value pairs.
+
+
+// Q12. Create an object `employee` with:
+// name
+// age
+// salary
+//
+// Use a for...in loop to print:
+// key -> value
+
+
+// =================================================
+// PART 6 — OBJECT DESTRUCTURING
+// =================================================
+
+// Q13. Create an object `student` with:
+// name
+// age
+// branch
+//
+// Use destructuring to store all values
+// in separate variables.
+// Print the variables.
+
+
+// Q14. Create an object `product` with:
+// name
+// price
+// brand
+//
+// Use destructuring to store:
+// name as productName
+// price as productPrice
+//
+// Print both variables.
+
+
+// =================================================
+// PART 7 — OBJECT SPREAD
+// =================================================
+
+// Q15. Create an object `student` with:
+// name
+// age
+//
+// Create a copy using the spread operator.
+// Add `branch` to the copied object.
+// Print both objects.
+
+
+// Q16. Create two objects:
+//
+// personal:
+// name
+// age
+//
+// education:
+// branch
+// college
+//
+// Combine them using the spread operator.
+// Print the final object.
+
+
+// =================================================
+// PART 8 — ARRAYS OF OBJECTS
+// =================================================
+
+// Q17. Create an array containing 3 student objects.
+//
+// Each student should have:
+// name
+// age
+// branch
+//
+// Print the name of the second student.
+
+
+// Q18. Create an array containing 3 product objects.
+//
+// Each product should have:
+// name
+// price
+//
+// Update the price of the third product.
+// Print the final array.
+
+
+// Q19. Create an array containing 3 student objects.
+//
+// Each student should have:
+// name
+// marks: [80, 85, 90]
+//
+// Print the first mark of the second student.
+
+
+// =================================================
+// PART 9 — FINAL COMBINATION
+// =================================================
+
+// Q20. Create an array `students` containing
+// 3 student objects.
+//
+// Each object should contain:
+// name
+// age
+// branch
+// marks: [80, 85, 90]
+//
+// Perform the following:
+//
+// 1. Print the first student's name.
+// 2. Print the second student's first mark.
+// 3. Update the third student's age.
+// 4. Add a `city` property to the first student.
+// 5. Print the final array.
