@@ -421,3 +421,292 @@
 // Create a method averageMarks()
 // that returns the average marks.
 // =================================================
+
+
+/*
+    JAVASCRIPT OBJECT PRACTICE
+    HARD LEVEL
+    Q41 - Q60
+*/
+
+// =================================================
+// Q41. Create an array of students.
+//
+// Each student has:
+// name
+// marks: [80, 85, 90]
+//
+// Calculate the average marks of each student.
+// Print name + average.
+// =================================================
+
+
+// =================================================
+// Q42. Create an array of products.
+//
+// Each product has:
+// name
+// price
+// quantity
+//
+// Calculate the total value of each product:
+// price * quantity
+// =================================================
+
+
+// =================================================
+// Q43. Create an array of employees.
+//
+// Each employee has:
+// name
+// salary
+//
+// Find the employee with the highest salary.
+// =================================================
+
+
+// =================================================
+// Q44. Create an array of students.
+//
+// Each student has:
+// name
+// marks
+//
+// Find the student with the highest marks.
+// =================================================
+
+
+// =================================================
+// Q45. Create an array of products.
+//
+// Each product has:
+// name
+// price
+//
+// Find the total price of all products.
+// =================================================
+
+
+// =================================================
+// Q46. Create an array of students.
+//
+// Each student has:
+// name
+// marks
+//
+// Calculate the average marks of all students.
+// =================================================
+
+
+// =================================================
+// Q47. Create an array of employees.
+//
+// Each employee has:
+// name
+// department
+// salary
+//
+// Print only employees from the "IT" department.
+// =================================================
+
+
+// =================================================
+// Q48. Create an array of products.
+//
+// Each product has:
+// name
+// price
+// inStock
+//
+// Print only products that are in stock.
+// =================================================
+
+
+// =================================================
+// Q49. Create an array of students.
+//
+// Each student has:
+// name
+// marks
+//
+// Add a new property `result`:
+//
+// marks >= 40 → "Pass"
+// marks < 40 → "Fail"
+// =================================================
+
+
+// =================================================
+// Q50. Create an array of products.
+//
+// Each product has:
+// name
+// price
+//
+// Apply a 10% discount to every product.
+// Store the new price.
+// =================================================
+
+
+// =================================================
+// Q51. Create an object:
+//
+// student: {
+//     name,
+//     marks: {
+//         math,
+//         science,
+//         english
+//     }
+// }
+//
+// Calculate total marks.
+// =================================================
+
+
+// =================================================
+// Q52. Create an object:
+//
+// employee: {
+//     name,
+//     salary,
+//     address: {
+//         city,
+//         state
+//     }
+// }
+//
+// Use destructuring to extract:
+// name
+// salary
+// city
+// =================================================
+
+
+// =================================================
+// Q53. Create two objects:
+//
+// personal:
+// name
+// age
+//
+// professional:
+// company
+// salary
+//
+// Combine them using spread.
+// Then update salary.
+// =================================================
+
+
+// =================================================
+// Q54. Create an array of students.
+//
+// Each student has:
+// name
+// marks: [80, 70, 90]
+//
+// Calculate total and average marks
+// for every student.
+// =================================================
+
+
+// =================================================
+// Q55. Create an array of products.
+//
+// Each product has:
+// name
+// price
+// quantity
+//
+// Find the product having the highest
+// total value:
+// price * quantity
+// =================================================
+
+
+// =================================================
+// Q56. Create an array of employees.
+//
+// Each employee has:
+// name
+// department
+// salary
+//
+// Find the total salary of employees
+// belonging to the "IT" department.
+// =================================================
+
+
+// =================================================
+// Q57. Create an array of students.
+//
+// Each student has:
+// name
+// marks
+//
+// Find:
+// 1. Highest marks
+// 2. Lowest marks
+// 3. Average marks
+// =================================================
+
+
+// =================================================
+// Q58. Create an array of products.
+//
+// Each product has:
+// name
+// price
+// quantity
+//
+// Create a new property `total`:
+// price * quantity
+//
+// Print each product with its total.
+// =================================================
+
+
+// =================================================
+// Q59. Create an array of students.
+//
+// Each student has:
+// name
+// marks: [80, 90, 85]
+//
+// Add these properties:
+// total
+// average
+// result
+//
+// result:
+// average >= 40 → "Pass"
+// average < 40 → "Fail"
+// =================================================
+
+
+// =================================================
+// Q60. FINAL OBJECT CHALLENGE
+// =================================================
+
+/*
+Create an array of 5 students.
+
+Each student should have:
+
+name
+age
+branch
+marks: [math, science, english]
+
+Perform:
+
+1. Calculate total marks.
+2. Calculate average marks.
+3. Add `total` property.
+4. Add `average` property.
+5. Add `result` property.
+6. Print students who passed.
+7. Find the student with highest average.
+8. Print the final array.
+*/
