@@ -1036,3 +1036,443 @@ let students = [
 ];
 
 console.log(students[1].name);
+
+
+
+
+/*
+    JAVASCRIPT OBJECT PRACTICE
+    MEDIUM LEVEL - ANSWERS
+    Q21 - Q40
+*/
+
+// =================================================
+// Q21. Student with marks array
+// =================================================
+
+let student1 = {
+    name: "Shashi",
+    age: 21,
+    marks: [80, 85, 90]
+};
+
+console.log(student1.marks[1]);
+
+
+// =================================================
+// Q22. Product colors
+// =================================================
+
+let product1 = {
+    name: "Laptop",
+    price: 50000,
+    colors: ["Black", "White", "Blue"]
+};
+
+product1.colors[0] = "Red";
+product1.colors.push("Silver");
+
+console.log(product1.colors);
+
+
+// =================================================
+// Q23. Employee method
+// =================================================
+
+let employee1 = {
+    name: "Rahul",
+    department: "IT",
+    salary: 40000,
+
+    showDetails: function() {
+        console.log(this.name + " works in " + this.department);
+    }
+};
+
+employee1.showDetails();
+
+
+// =================================================
+// Q24. Final price method
+// =================================================
+
+let product2 = {
+    price: 50000,
+    discount: 5000,
+
+    finalPrice: function() {
+        return this.price - this.discount;
+    }
+};
+
+console.log(product2.finalPrice());
+
+
+// =================================================
+// Q25. Nested object
+// =================================================
+
+let student2 = {
+    name: "Amit",
+    address: {
+        city: "Bhubaneswar",
+        state: "Odisha",
+        pincode: 751001
+    }
+};
+
+student2.address.pincode = 751002;
+
+console.log(student2.address);
+
+
+// =================================================
+// Q26. for...in loop
+// =================================================
+
+let person1 = {
+    name: "Rohit",
+    age: 22,
+    city: "Delhi"
+};
+
+for (let key in person1) {
+    console.log(key + " -> " + person1[key]);
+}
+
+
+// =================================================
+// Q27. Count object properties
+// =================================================
+
+let student3 = {
+    name: "Suresh",
+    age: 21,
+    course: "CSE"
+};
+
+let keys = Object.keys(student3);
+
+console.log(keys.length);
+
+
+// =================================================
+// Q28. Sum numeric values
+// =================================================
+
+let product3 = {
+    name: "Laptop",
+    price: 50000,
+    brand: "HP"
+};
+
+let values = Object.values(product3);
+
+let sum = 0;
+
+for (let value of values) {
+    if (typeof value === "number") {
+        sum += value;
+    }
+}
+
+console.log(sum);
+
+
+// =================================================
+// Q29. Destructuring with different names
+// =================================================
+
+let student4 = {
+    name: "Karan",
+    age: 22,
+    branch: "CSE"
+};
+
+let {
+    name: studentName,
+    branch: studentBranch
+} = student4;
+
+console.log(studentName);
+console.log(studentBranch);
+
+
+// =================================================
+// Q30. Copy object and update salary
+// =================================================
+
+let employee2 = {
+    name: "Amit",
+    salary: 40000
+};
+
+let employeeCopy = {
+    ...employee2
+};
+
+employeeCopy.salary = 50000;
+
+console.log(employee2);
+console.log(employeeCopy);
+
+
+// =================================================
+// Q31. Combine two objects
+// =================================================
+
+let student5 = {
+    name: "Shashi",
+    age: 21
+};
+
+let student6 = {
+    name: "Rahul",
+    branch: "CSE"
+};
+
+let combinedStudent = {
+    ...student5,
+    ...student6
+};
+
+console.log(combinedStudent);
+
+
+// =================================================
+// Q32. Array of products
+// =================================================
+
+let products = [
+    {
+        name: "Laptop",
+        price: 50000
+    },
+
+    {
+        name: "Mobile",
+        price: 30000
+    },
+
+    {
+        name: "Tablet",
+        price: 20000
+    }
+];
+
+for (let product of products) {
+    console.log(product.name, product.price);
+}
+
+
+// =================================================
+// Q33. Total marks of first student
+// =================================================
+
+let students1 = [
+    {
+        name: "Shashi",
+        marks: [80, 85, 90]
+    },
+
+    {
+        name: "Rahul",
+        marks: [70, 75, 80]
+    },
+
+    {
+        name: "Amit",
+        marks: [90, 85, 95]
+    }
+];
+
+let total = 0;
+
+for (let mark of students1[0].marks) {
+    total += mark;
+}
+
+console.log(total);
+
+
+// =================================================
+// Q34. Increase age of every student
+// =================================================
+
+let students2 = [
+    {
+        name: "Shashi",
+        age: 21
+    },
+
+    {
+        name: "Rahul",
+        age: 22
+    },
+
+    {
+        name: "Amit",
+        age: 20
+    }
+];
+
+for (let student of students2) {
+    student.age++;
+}
+
+console.log(students2);
+
+
+// =================================================
+// Q35. Product with highest price
+// =================================================
+
+let products2 = [
+    {
+        name: "Laptop",
+        price: 50000
+    },
+
+    {
+        name: "Mobile",
+        price: 30000
+    },
+
+    {
+        name: "Tablet",
+        price: 20000
+    }
+];
+
+let highestProduct = products2[0];
+
+for (let product of products2) {
+    if (product.price > highestProduct.price) {
+        highestProduct = product;
+    }
+}
+
+console.log(highestProduct);
+
+
+// =================================================
+// Q36. Students scoring more than 80
+// =================================================
+
+let students3 = [
+    {
+        name: "Shashi",
+        marks: 85
+    },
+
+    {
+        name: "Rahul",
+        marks: 75
+    },
+
+    {
+        name: "Amit",
+        marks: 90
+    }
+];
+
+for (let student of students3) {
+    if (student.marks > 80) {
+        console.log(student.name);
+    }
+}
+
+
+// =================================================
+// Q37. Total salary
+// =================================================
+
+let employees = [
+    {
+        name: "Amit",
+        salary: 40000
+    },
+
+    {
+        name: "Rahul",
+        salary: 50000
+    },
+
+    {
+        name: "Rohit",
+        salary: 45000
+    }
+];
+
+let totalSalary = 0;
+
+for (let employee of employees) {
+    totalSalary += employee.salary;
+}
+
+console.log(totalSalary);
+
+
+// =================================================
+// Q38. Student name and first mark
+// =================================================
+
+let students4 = [
+    {
+        name: "Shashi",
+        marks: [80, 85, 90]
+    },
+
+    {
+        name: "Rahul",
+        marks: [75, 80, 85]
+    },
+
+    {
+        name: "Amit",
+        marks: [90, 92, 95]
+    }
+];
+
+for (let student of students4) {
+    console.log(student.name, student.marks[0]);
+}
+
+
+// =================================================
+// Q39. Nested company object
+// =================================================
+
+let company = {
+    name: "ABC Company",
+
+    location: {
+        city: "Bhubaneswar",
+        state: "Odisha"
+    }
+};
+
+console.log(company.location.city);
+console.log(company.location.state);
+
+
+// =================================================
+// Q40. Average marks method
+// =================================================
+
+let student7 = {
+    name: "Shashi",
+    marks: [80, 85, 90],
+
+    averageMarks: function() {
+        let total = 0;
+
+        for (let mark of this.marks) {
+            total += mark;
+        }
+
+        return total / this.marks.length;
+    }
+};
+
+console.log(student7.averageMarks());
