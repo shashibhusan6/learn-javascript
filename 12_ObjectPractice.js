@@ -710,3 +710,329 @@ Perform:
 7. Find the student with highest average.
 8. Print the final array.
 */
+
+
+
+
+/*
+    JAVASCRIPT OBJECT PRACTICE
+    EASY LEVEL - ANSWERS
+    Q1 - Q20
+*/
+
+// =================================================
+// Q1. Create a student object.
+// =================================================
+
+let student1 = {
+    name: "Shashi",
+    age: 21,
+    branch: "CSE"
+};
+
+console.log(student1.name);
+console.log(student1.age);
+console.log(student1.branch);
+
+
+// =================================================
+// Q2. Create a product object.
+// =================================================
+
+let product1 = {
+    name: "Laptop",
+    price: 50000,
+    brand: "HP"
+};
+
+console.log(product1.name);
+
+
+// =================================================
+// Q3. Create a car object.
+// =================================================
+
+let car1 = {
+    brand: "Toyota",
+    model: "Fortuner",
+    price: 4000000
+};
+
+console.log(car1.model);
+
+
+// =================================================
+// Q4. Update person age.
+// =================================================
+
+let person1 = {
+    name: "Rahul",
+    age: 22,
+    city: "Delhi"
+};
+
+person1.age = 23;
+
+console.log(person1);
+
+
+// =================================================
+// Q5. Add color property.
+// =================================================
+
+let mobile1 = {
+    brand: "Samsung",
+    model: "S24",
+    price: 70000
+};
+
+mobile1.color = "Black";
+
+console.log(mobile1);
+
+
+// =================================================
+// Q6. Delete price property.
+// =================================================
+
+let book1 = {
+    title: "JavaScript Basics",
+    author: "John",
+    price: 500
+};
+
+delete book1.price;
+
+console.log(book1);
+
+
+// =================================================
+// Q7. Access name using bracket notation.
+// =================================================
+
+let student2 = {
+    name: "Amit",
+    age: 22,
+    course: "JavaScript"
+};
+
+console.log(student2["name"]);
+
+
+// =================================================
+// Q8. Update price using a variable.
+// =================================================
+
+let product2 = {
+    name: "Mobile",
+    price: 20000,
+    brand: "Samsung"
+};
+
+let newPrice = 25000;
+
+product2.price = newPrice;
+
+console.log(product2);
+
+
+// =================================================
+// Q9. Add country using a variable.
+// =================================================
+
+let person2 = {
+    name: "Rohit",
+    city: "Bhubaneswar"
+};
+
+let country = "India";
+
+person2.country = country;
+
+console.log(person2);
+
+
+// =================================================
+// Q10. Object method using this.
+// =================================================
+
+let employee1 = {
+    name: "Amit",
+    salary: 40000,
+
+    showDetails: function() {
+        console.log(this.name);
+        console.log(this.salary);
+    }
+};
+
+employee1.showDetails();
+
+
+// =================================================
+// Q11. Increase age using this.
+// =================================================
+
+let student3 = {
+    name: "Rahul",
+    age: 21,
+
+    increaseAge: function() {
+        this.age = this.age + 1;
+    }
+};
+
+console.log(student3.age);
+
+student3.increaseAge();
+
+console.log(student3.age);
+
+
+// =================================================
+// Q12. Car method using this.
+// =================================================
+
+let car2 = {
+    brand: "Honda",
+    model: "City",
+
+    showCar: function() {
+        console.log(this.brand);
+        console.log(this.model);
+    }
+};
+
+car2.showCar();
+
+
+// =================================================
+// Q13. Nested student object.
+// =================================================
+
+let student4 = {
+    name: "Shashi",
+    address: {
+        city: "Bhubaneswar",
+        state: "Odisha"
+    }
+};
+
+console.log(student4.address.city);
+
+
+// =================================================
+// Q14. Nested product object.
+// =================================================
+
+let product3 = {
+    name: "Laptop",
+
+    details: {
+        brand: "HP",
+        color: "Black"
+    }
+};
+
+console.log(product3.details.brand);
+
+
+// =================================================
+// Q15. Object.keys()
+// =================================================
+
+let student5 = {
+    name: "Rohit",
+    age: 21,
+    branch: "CSE"
+};
+
+console.log(Object.keys(student5));
+
+
+// =================================================
+// Q16. Object.values()
+// =================================================
+
+let product4 = {
+    name: "Laptop",
+    price: 50000,
+    brand: "Dell"
+};
+
+console.log(Object.values(product4));
+
+
+// =================================================
+// Q17. Object.entries()
+// =================================================
+
+let car3 = {
+    brand: "Toyota",
+    model: "Fortuner",
+    price: 4000000
+};
+
+console.log(Object.entries(car3));
+
+
+// =================================================
+// Q18. Object Destructuring
+// =================================================
+
+let student6 = {
+    name: "Suresh",
+    age: 22,
+    branch: "CSE"
+};
+
+let { name, age } = student6;
+
+console.log(name);
+console.log(age);
+
+
+// =================================================
+// Q19. Combine objects using Spread
+// =================================================
+
+let personal = {
+    name: "Shashi",
+    age: 21
+};
+
+let education = {
+    branch: "CSE",
+    college: "ABC College"
+};
+
+let student7 = {
+    ...personal,
+    ...education
+};
+
+console.log(student7);
+
+
+// =================================================
+// Q20. Array of Objects
+// =================================================
+
+let students = [
+    {
+        name: "Shashi",
+        age: 21
+    },
+
+    {
+        name: "Rahul",
+        age: 22
+    },
+
+    {
+        name: "Amit",
+        age: 20
+    }
+];
+
+console.log(students[1].name);
