@@ -1476,3 +1476,742 @@ let student7 = {
 };
 
 console.log(student7.averageMarks());
+
+
+
+/*
+    JAVASCRIPT OBJECT PRACTICE
+    HARD LEVEL - ANSWERS
+    Q41 - Q60
+*/
+
+// =================================================
+// Q41. Average marks of each student
+// =================================================
+
+let students1 = [
+    {
+        name: "Shashi",
+        marks: [80, 85, 90]
+    },
+
+    {
+        name: "Rahul",
+        marks: [70, 75, 80]
+    },
+
+    {
+        name: "Amit",
+        marks: [90, 85, 95]
+    }
+];
+
+for (let student of students1) {
+
+    let total = 0;
+
+    for (let mark of student.marks) {
+        total += mark;
+    }
+
+    let average = total / student.marks.length;
+
+    console.log(student.name, average);
+}
+
+
+// =================================================
+// Q42. Total value of each product
+// =================================================
+
+let products1 = [
+    {
+        name: "Laptop",
+        price: 50000,
+        quantity: 2
+    },
+
+    {
+        name: "Mobile",
+        price: 30000,
+        quantity: 3
+    },
+
+    {
+        name: "Tablet",
+        price: 20000,
+        quantity: 4
+    }
+];
+
+for (let product of products1) {
+
+    let total = product.price * product.quantity;
+
+    console.log(product.name, total);
+}
+
+
+// =================================================
+// Q43. Employee with highest salary
+// =================================================
+
+let employees1 = [
+    {
+        name: "Amit",
+        salary: 40000
+    },
+
+    {
+        name: "Rahul",
+        salary: 60000
+    },
+
+    {
+        name: "Rohit",
+        salary: 50000
+    }
+];
+
+let highestSalaryEmployee = employees1[0];
+
+for (let employee of employees1) {
+
+    if (employee.salary > highestSalaryEmployee.salary) {
+        highestSalaryEmployee = employee;
+    }
+}
+
+console.log(highestSalaryEmployee);
+
+
+// =================================================
+// Q44. Student with highest marks
+// =================================================
+
+let students2 = [
+    {
+        name: "Shashi",
+        marks: 85
+    },
+
+    {
+        name: "Rahul",
+        marks: 92
+    },
+
+    {
+        name: "Amit",
+        marks: 88
+    }
+];
+
+let highestMarksStudent = students2[0];
+
+for (let student of students2) {
+
+    if (student.marks > highestMarksStudent.marks) {
+        highestMarksStudent = student;
+    }
+}
+
+console.log(highestMarksStudent);
+
+
+// =================================================
+// Q45. Total price of all products
+// =================================================
+
+let products2 = [
+    {
+        name: "Laptop",
+        price: 50000
+    },
+
+    {
+        name: "Mobile",
+        price: 30000
+    },
+
+    {
+        name: "Tablet",
+        price: 20000
+    }
+];
+
+let totalPrice = 0;
+
+for (let product of products2) {
+    totalPrice += product.price;
+}
+
+console.log(totalPrice);
+
+
+// =================================================
+// Q46. Average marks of all students
+// =================================================
+
+let students3 = [
+    {
+        name: "Shashi",
+        marks: 80
+    },
+
+    {
+        name: "Rahul",
+        marks: 90
+    },
+
+    {
+        name: "Amit",
+        marks: 70
+    }
+];
+
+let totalMarks = 0;
+
+for (let student of students3) {
+    totalMarks += student.marks;
+}
+
+let averageMarks = totalMarks / students3.length;
+
+console.log(averageMarks);
+
+
+// =================================================
+// Q47. Employees from IT department
+// =================================================
+
+let employees2 = [
+    {
+        name: "Amit",
+        department: "IT",
+        salary: 40000
+    },
+
+    {
+        name: "Rahul",
+        department: "HR",
+        salary: 35000
+    },
+
+    {
+        name: "Rohit",
+        department: "IT",
+        salary: 50000
+    }
+];
+
+for (let employee of employees2) {
+
+    if (employee.department === "IT") {
+        console.log(employee);
+    }
+}
+
+
+// =================================================
+// Q48. Products that are in stock
+// =================================================
+
+let products3 = [
+    {
+        name: "Laptop",
+        price: 50000,
+        inStock: true
+    },
+
+    {
+        name: "Mobile",
+        price: 30000,
+        inStock: false
+    },
+
+    {
+        name: "Tablet",
+        price: 20000,
+        inStock: true
+    }
+];
+
+for (let product of products3) {
+
+    if (product.inStock === true) {
+        console.log(product);
+    }
+}
+
+
+// =================================================
+// Q49. Add result property
+// =================================================
+
+let students4 = [
+    {
+        name: "Shashi",
+        marks: 85
+    },
+
+    {
+        name: "Rahul",
+        marks: 35
+    },
+
+    {
+        name: "Amit",
+        marks: 70
+    }
+];
+
+for (let student of students4) {
+
+    if (student.marks >= 40) {
+        student.result = "Pass";
+    } else {
+        student.result = "Fail";
+    }
+}
+
+console.log(students4);
+
+
+// =================================================
+// Q50. Apply 10% discount
+// =================================================
+
+let products4 = [
+    {
+        name: "Laptop",
+        price: 50000
+    },
+
+    {
+        name: "Mobile",
+        price: 30000
+    },
+
+    {
+        name: "Tablet",
+        price: 20000
+    }
+];
+
+for (let product of products4) {
+
+    product.price = product.price - (product.price * 10 / 100);
+}
+
+console.log(products4);
+
+
+// =================================================
+// Q51. Nested marks object
+// =================================================
+
+let student5 = {
+    name: "Shashi",
+
+    marks: {
+        math: 80,
+        science: 85,
+        english: 90
+    }
+};
+
+let totalMarks2 =
+    student5.marks.math +
+    student5.marks.science +
+    student5.marks.english;
+
+console.log(totalMarks2);
+
+
+// =================================================
+// Q52. Nested destructuring
+// =================================================
+
+let employee3 = {
+    name: "Rahul",
+    salary: 50000,
+
+    address: {
+        city: "Bhubaneswar",
+        state: "Odisha"
+    }
+};
+
+let {
+    name,
+    salary,
+    address: { city }
+} = employee3;
+
+console.log(name);
+console.log(salary);
+console.log(city);
+
+
+// =================================================
+// Q53. Combine and update salary
+// =================================================
+
+let personal = {
+    name: "Amit",
+    age: 22
+};
+
+let professional = {
+    company: "ABC",
+    salary: 40000
+};
+
+let employee4 = {
+    ...personal,
+    ...professional
+};
+
+employee4.salary = 50000;
+
+console.log(employee4);
+
+
+// =================================================
+// Q54. Total and average marks
+// =================================================
+
+let students6 = [
+    {
+        name: "Shashi",
+        marks: [80, 70, 90]
+    },
+
+    {
+        name: "Rahul",
+        marks: [75, 85, 80]
+    },
+
+    {
+        name: "Amit",
+        marks: [90, 95, 85]
+    }
+];
+
+for (let student of students6) {
+
+    let total = 0;
+
+    for (let mark of student.marks) {
+        total += mark;
+    }
+
+    let average = total / student.marks.length;
+
+    console.log(student.name);
+    console.log("Total:", total);
+    console.log("Average:", average);
+}
+
+
+// =================================================
+// Q55. Product with highest total value
+// =================================================
+
+let products5 = [
+    {
+        name: "Laptop",
+        price: 50000,
+        quantity: 2
+    },
+
+    {
+        name: "Mobile",
+        price: 30000,
+        quantity: 5
+    },
+
+    {
+        name: "Tablet",
+        price: 20000,
+        quantity: 3
+    }
+];
+
+let highestValueProduct = products5[0];
+
+for (let product of products5) {
+
+    let currentTotal =
+        product.price * product.quantity;
+
+    let highestTotal =
+        highestValueProduct.price *
+        highestValueProduct.quantity;
+
+    if (currentTotal > highestTotal) {
+        highestValueProduct = product;
+    }
+}
+
+console.log(highestValueProduct);
+
+
+// =================================================
+// Q56. Total IT department salary
+// =================================================
+
+let employees3 = [
+    {
+        name: "Amit",
+        department: "IT",
+        salary: 40000
+    },
+
+    {
+        name: "Rahul",
+        department: "HR",
+        salary: 35000
+    },
+
+    {
+        name: "Rohit",
+        department: "IT",
+        salary: 50000
+    }
+];
+
+let itSalary = 0;
+
+for (let employee of employees3) {
+
+    if (employee.department === "IT") {
+        itSalary += employee.salary;
+    }
+}
+
+console.log(itSalary);
+
+
+// =================================================
+// Q57. Highest, lowest and average marks
+// =================================================
+
+let students7 = [
+    {
+        name: "Shashi",
+        marks: 85
+    },
+
+    {
+        name: "Rahul",
+        marks: 95
+    },
+
+    {
+        name: "Amit",
+        marks: 75
+    }
+];
+
+let highest = students7[0].marks;
+let lowest = students7[0].marks;
+let total7 = 0;
+
+for (let student of students7) {
+
+    if (student.marks > highest) {
+        highest = student.marks;
+    }
+
+    if (student.marks < lowest) {
+        lowest = student.marks;
+    }
+
+    total7 += student.marks;
+}
+
+let average7 = total7 / students7.length;
+
+console.log("Highest:", highest);
+console.log("Lowest:", lowest);
+console.log("Average:", average7);
+
+
+// =================================================
+// Q58. Add total property to products
+// =================================================
+
+let products6 = [
+    {
+        name: "Laptop",
+        price: 50000,
+        quantity: 2
+    },
+
+    {
+        name: "Mobile",
+        price: 30000,
+        quantity: 3
+    },
+
+    {
+        name: "Tablet",
+        price: 20000,
+        quantity: 4
+    }
+];
+
+for (let product of products6) {
+
+    product.total =
+        product.price * product.quantity;
+}
+
+console.log(products6);
+
+
+// =================================================
+// Q59. Total, average and result
+// =================================================
+
+let students8 = [
+    {
+        name: "Shashi",
+        marks: [80, 90, 85]
+    },
+
+    {
+        name: "Rahul",
+        marks: [35, 40, 30]
+    },
+
+    {
+        name: "Amit",
+        marks: [70, 75, 80]
+    }
+];
+
+for (let student of students8) {
+
+    let total = 0;
+
+    for (let mark of student.marks) {
+        total += mark;
+    }
+
+    let average =
+        total / student.marks.length;
+
+    student.total = total;
+    student.average = average;
+
+    if (average >= 40) {
+        student.result = "Pass";
+    } else {
+        student.result = "Fail";
+    }
+}
+
+console.log(students8);
+
+
+// =================================================
+// Q60. FINAL OBJECT CHALLENGE
+// =================================================
+
+let students9 = [
+    {
+        name: "Shashi",
+        age: 21,
+        branch: "CSE",
+        marks: [80, 85, 90]
+    },
+
+    {
+        name: "Rahul",
+        age: 22,
+        branch: "ECE",
+        marks: [70, 75, 80]
+    },
+
+    {
+        name: "Amit",
+        age: 20,
+        branch: "IT",
+        marks: [90, 95, 92]
+    },
+
+    {
+        name: "Rohit",
+        age: 21,
+        branch: "CSE",
+        marks: [35, 40, 30]
+    },
+
+    {
+        name: "Suresh",
+        age: 22,
+        branch: "IT",
+        marks: [75, 80, 85]
+    }
+];
+
+
+// 1. Calculate total and average
+
+for (let student of students9) {
+
+    let total = 0;
+
+    for (let mark of student.marks) {
+        total += mark;
+    }
+
+    student.total = total;
+    student.average =
+        total / student.marks.length;
+
+
+    // 2. Add result
+
+    if (student.average >= 40) {
+        student.result = "Pass";
+    } else {
+        student.result = "Fail";
+    }
+}
+
+
+// 3. Print students who passed
+
+console.log("Passed Students:");
+
+for (let student of students9) {
+
+    if (student.result === "Pass") {
+        console.log(student.name);
+    }
+}
+
+
+// 4. Find student with highest average
+
+let topStudent = students9[0];
+
+for (let student of students9) {
+
+    if (student.average > topStudent.average) {
+        topStudent = student;
+    }
+}
+
+console.log("Top Student:");
+console.log(topStudent);
+
+
+// 5. Print final array
+
+console.log("Final Students:");
+
+console.log(students9);
