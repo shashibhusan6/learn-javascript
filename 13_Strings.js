@@ -414,3 +414,232 @@ console.log(course[course.length - 3]);
 // 0 S
 // 1 h
 // 2 a
+
+
+/*
+    13_Strings.js
+    JAVASCRIPT STRINGS
+
+*/
+
+// =================================================
+// 1. toUpperCase()
+// =================================================
+
+/*
+Converts all characters into uppercase.
+*/
+
+let name = "shashi";
+
+console.log(name.toUpperCase());
+
+
+// =================================================
+// 2. toLowerCase()
+// =================================================
+
+/*
+Converts all characters into lowercase.
+*/
+
+let city = "BHUBANESWAR";
+
+console.log(city.toLowerCase());
+
+
+// =================================================
+// 3. Original String Does Not Change
+// =================================================
+
+let language = "JavaScript";
+
+console.log(language.toUpperCase());
+
+console.log(language);
+
+
+// =================================================
+// 4. toUpperCase() WITH A VARIABLE
+// =================================================
+
+let username = "rahul";
+
+let upperName = username.toUpperCase();
+
+console.log(upperName);
+
+
+// =================================================
+// 5. toLowerCase() WITH A VARIABLE
+// =================================================
+
+let course = "JAVASCRIPT";
+
+let lowerCourse = course.toLowerCase();
+
+console.log(lowerCourse);
+
+
+// =================================================
+// 6. trim()
+// =================================================
+
+/*
+trim() removes spaces from the
+beginning and end of a string.
+*/
+
+let text = "   Hello World   ";
+
+console.log(text.trim());
+
+
+// =================================================
+// 7. trim() WITH A VARIABLE
+// =================================================
+
+let userInput = "   Shashi   ";
+
+let cleanInput = userInput.trim();
+
+console.log(cleanInput);
+
+
+// =================================================
+// 8. trim() DOES NOT REMOVE MIDDLE SPACES
+// =================================================
+
+let fullName = "   Shashi Bhusan   ";
+
+console.log(fullName.trim());
+
+
+// =================================================
+// 9. Combining Methods
+// =================================================
+
+let name2 = "   shashi   ";
+
+console.log(name2.trim().toUpperCase());
+
+
+// =================================================
+// 10. Combining Methods
+// =================================================
+
+let city2 = "   BHUBANESWAR   ";
+
+console.log(city2.trim().toLowerCase());
+
+
+// =================================================
+// 11. String Method With User Data
+// =================================================
+
+let input = "   JAVASCRIPT   ";
+
+input = input.trim();
+
+console.log(input.toLowerCase());
+
+
+// =================================================
+// 12. Comparing Cleaned Strings
+// =================================================
+
+let answer = " YES ";
+
+answer = answer.trim().toLowerCase();
+
+console.log(answer);
+
+
+// =================================================
+// 13. Method Chaining
+// =================================================
+
+/*
+We can use multiple string methods
+one after another.
+*/
+
+let word = "   JavaScript   ";
+
+console.log(
+    word.trim().toUpperCase()
+);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create a string:
+// "javascript"
+//
+// Convert it to uppercase.
+
+
+// Q2. Create a string:
+// "JAVASCRIPT"
+//
+// Convert it to lowercase.
+
+
+// Q3. Create a string:
+// "   Hello World   "
+//
+// Remove the extra spaces using trim().
+
+
+// Q4. Create a string:
+// "   SHASHI   "
+//
+// Remove spaces and convert it to lowercase.
+
+
+// Q5. Create a string:
+// "   bhubaneswar   "
+//
+// Remove spaces and convert it to uppercase.
+
+
+// Q6. Create a string:
+// "   JavaScript   "
+//
+// Store the cleaned string in a new variable.
+// Print it.
+
+
+// Q7. Create a string:
+// "   COMPUTER SCIENCE   "
+//
+// Remove the spaces from the beginning
+// and end and convert the string to lowercase.
+
+
+// Q8. Create a string:
+// "   hello world   "
+//
+// Convert it to uppercase after trimming.
+
+
+// Q9. Create two strings:
+//
+// firstName = "   Shashi   "
+// lastName = "   Singha   "
+//
+// Remove the extra spaces from both.
+// Convert both to uppercase.
+// Print the full name.
+
+
+// Q10. Create a variable:
+// input = "   YES   "
+//
+// Remove spaces and convert it to lowercase.
+//
+// Expected output:
+// yes
