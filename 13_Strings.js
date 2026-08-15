@@ -209,3 +209,208 @@ console.log("My name is " + studentName);
 // topic = "Strings"
 //
 // Print all three values.
+
+
+/*
+    13_Strings.js
+    JAVASCRIPT STRINGS
+
+*/
+
+// =================================================
+// 1. STRING INDEX
+// =================================================
+
+/*
+String indexing starts from 0.
+
+Example:
+
+S h a s h i
+0 1 2 3 4 5
+*/
+
+let name = "Shashi";
+
+console.log(name[0]);
+console.log(name[1]);
+console.log(name[2]);
+console.log(name[3]);
+console.log(name[4]);
+console.log(name[5]);
+
+
+// =================================================
+// 2. ACCESSING THE LAST CHARACTER
+// =================================================
+
+console.log(name[name.length - 1]);
+
+
+// =================================================
+// 3. STRING LENGTH
+// =================================================
+
+/*
+length gives the total number of characters.
+*/
+
+console.log(name.length);
+
+
+// =================================================
+// 4. LENGTH WITH SPACES
+// =================================================
+
+let fullName = "Shashi Bhusan";
+
+console.log(fullName.length);
+
+
+// =================================================
+// 5. ACCESSING CHARACTERS FROM A VARIABLE
+// =================================================
+
+let city = "Bhubaneswar";
+
+console.log(city[0]);
+console.log(city[4]);
+console.log(city[city.length - 1]);
+
+
+// =================================================
+// 6. ACCESSING USING VARIABLES
+// =================================================
+
+let text = "JavaScript";
+
+let index = 4;
+
+console.log(text[index]);
+
+
+// =================================================
+// 7. FIRST CHARACTER
+// =================================================
+
+let language = "JavaScript";
+
+console.log(language[0]);
+
+
+// =================================================
+// 8. LAST CHARACTER
+// =================================================
+
+console.log(language[language.length - 1]);
+
+
+// =================================================
+// 9. ACCESSING A CHARACTER THAT DOES NOT EXIST
+// =================================================
+
+console.log(language[100]);
+
+
+// =================================================
+// 10. STRING LENGTH WITH EMPTY STRING
+// =================================================
+
+let emptyString = "";
+
+console.log(emptyString.length);
+
+
+// =================================================
+// 11. LOOP THROUGH A STRING
+// =================================================
+
+let word = "Hello";
+
+for (let i = 0; i < word.length; i++) {
+    console.log(word[i]);
+}
+
+
+// =================================================
+// 12. REVERSE INDEX ACCESS
+// =================================================
+
+let course = "JavaScript";
+
+console.log(course[course.length - 1]);
+console.log(course[course.length - 2]);
+console.log(course[course.length - 3]);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create a string:
+// "JavaScript"
+//
+// Print the first character.
+
+
+// Q2. Create a string:
+// "JavaScript"
+//
+// Print the last character.
+
+
+// Q3. Create a string:
+// "Bhubaneswar"
+//
+// Print its length.
+
+
+// Q4. Create a string:
+// "Programming"
+//
+// Print the character at index 3.
+
+
+// Q5. Create a string:
+// "Developer"
+//
+// Print the first and last character.
+
+
+// Q6. Create a string:
+// "JavaScript"
+//
+// Print the character at index 5.
+
+
+// Q7. Create a string:
+// "Hello World"
+//
+// Print its length.
+
+
+// Q8. Create a string:
+// "Computer"
+//
+// Print the characters one by one
+// using a for loop.
+
+
+// Q9. Create a string:
+// "JavaScript"
+//
+// Print the last 3 characters
+// using indexing.
+
+
+// Q10. Create a string:
+// "Shashi"
+//
+// Use a loop to print every character
+// along with its index.
+//
+// Example:
+// 0 S
+// 1 h
+// 2 a
