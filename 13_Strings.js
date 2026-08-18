@@ -953,3 +953,324 @@ console.log(example.startsWith("Java"));    // true
 console.log(example.endsWith("Script"));    // true
 console.log(example.indexOf("S"));           // 4
 console.log(example.indexOf("Python"));      // -1
+
+
+/*
+    13_Strings.js
+    JAVASCRIPT STRINGS
+
+*/
+
+// =================================================
+// 1. slice()
+// =================================================
+
+/*
+slice(start, end)
+
+Extracts a part of a string.
+
+start → included
+end   → not included
+*/
+
+let text = "JavaScript";
+
+console.log(text.slice(0, 4));
+
+
+// =================================================
+// 2. slice() WITH ONE VALUE
+// =================================================
+
+let language = "JavaScript";
+
+console.log(language.slice(4));
+
+
+// =================================================
+// 3. slice() WITH START AND END
+// =================================================
+
+let word = "Programming";
+
+console.log(word.slice(0, 4));
+console.log(word.slice(4, 7));
+
+
+// =================================================
+// 4. END INDEX IS NOT INCLUDED
+// =================================================
+
+let name = "Shashi";
+
+console.log(name.slice(0, 3));
+
+/*
+Index:
+
+S h a s h i
+0 1 2 3 4 5
+
+slice(0, 3)
+→ 0, 1, 2
+→ "Sha"
+*/
+
+
+// =================================================
+// 5. SLICE FROM MIDDLE
+// =================================================
+
+let course = "JavaScript";
+
+console.log(course.slice(4, 10));
+
+
+// =================================================
+// 6. NEGATIVE INDEX
+// =================================================
+
+/*
+Negative indexes count from the end.
+*/
+
+let city = "Bhubaneswar";
+
+console.log(city.slice(-3));
+
+
+// =================================================
+// 7. NEGATIVE START AND END
+// =================================================
+
+let language2 = "JavaScript";
+
+console.log(language2.slice(-6, -1));
+
+
+// =================================================
+// 8. GET FIRST THREE CHARACTERS
+// =================================================
+
+let firstName = "Shashi";
+
+console.log(firstName.slice(0, 3));
+
+
+// =================================================
+// 9. GET LAST THREE CHARACTERS
+// =================================================
+
+console.log(firstName.slice(-3));
+
+
+// =================================================
+// 10. substring()
+// =================================================
+
+/*
+substring(start, end)
+
+Works similarly to slice()
+for positive indexes.
+*/
+
+let text2 = "JavaScript";
+
+console.log(text2.substring(0, 4));
+
+
+// =================================================
+// 11. substring() FROM A POSITION
+// =================================================
+
+console.log(text2.substring(4));
+
+
+// =================================================
+// 12. substring() DOES NOT USE NEGATIVE INDEX
+// =================================================
+
+console.log(text2.substring(-3));
+
+/*
+Negative values are treated as 0.
+*/
+
+
+// =================================================
+// 13. substr() — AWARENESS ONLY
+// =================================================
+
+/*
+substr(start, length)
+
+IMPORTANT:
+substr() is a legacy/deprecated method.
+
+Do NOT use it in new code.
+Prefer slice().
+*/
+
+let text3 = "JavaScript";
+
+console.log(text3.substr(0, 4));
+
+
+// =================================================
+// 14. Extracting First Name
+// =================================================
+
+let fullName = "Shashi Singha";
+
+let first = fullName.slice(0, 6);
+
+console.log(first);
+
+
+// =================================================
+// 15. Extracting Last Name
+// =================================================
+
+let last = fullName.slice(7);
+
+console.log(last);
+
+
+// =================================================
+// 16. Extracting Domain
+// =================================================
+
+let email = "shashi@gmail.com";
+
+let domain = email.slice(7);
+
+console.log(domain);
+
+
+// =================================================
+// 17. Extracting File Extension
+// =================================================
+
+let fileName = "script.js";
+
+let extension = fileName.slice(7);
+
+console.log(extension);
+
+
+// =================================================
+// 18. Combining trim() + slice()
+// =================================================
+
+let input = "   JavaScript   ";
+
+input = input.trim();
+
+console.log(input.slice(0, 4));
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create:
+// "JavaScript"
+//
+// Use slice() to print:
+// "Java"
+
+
+// Q2. Create:
+// "JavaScript"
+//
+// Use slice() to print:
+// "Script"
+
+
+// Q3. Create:
+// "Programming"
+//
+// Print the first 4 characters.
+
+
+// Q4. Create:
+// "Programming"
+//
+// Print the last 4 characters.
+
+
+// Q5. Create:
+// "Bhubaneswar"
+//
+// Print the first 5 characters.
+
+
+// Q6. Create:
+// "Bhubaneswar"
+//
+// Print the last 3 characters.
+
+
+// Q7. Create:
+// "JavaScript"
+//
+// Use slice() to print:
+// "Script"
+
+
+// Q8. Create:
+// "Hello World"
+//
+// Extract:
+// "Hello"
+
+
+// Q9. Create:
+// "Hello World"
+//
+// Extract:
+// "World"
+
+
+// Q10. Create:
+// "Shashi Singha"
+//
+// Extract the first name.
+
+
+// Q11. Create:
+// "Shashi Singha"
+//
+// Extract the last name.
+
+
+// Q12. Create:
+// "student@gmail.com"
+//
+// Extract:
+// "gmail.com"
+
+
+// Q13. Create:
+// "website.html"
+//
+// Extract:
+// "html"
+
+
+// Q14. Create:
+// "JavaScript"
+//
+// Use substring() to print:
+// "Java"
+
+
+// Q15. Create:
+// "   JavaScript   "
+//
+// Remove the spaces first.
+// Then extract:
+// "Java"
