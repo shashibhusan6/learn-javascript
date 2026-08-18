@@ -643,3 +643,313 @@ console.log(
 //
 // Expected output:
 // yes
+
+
+/*
+    13_Strings.js
+    JAVASCRIPT STRINGS
+
+*/
+
+// =================================================
+// 1. includes()
+// =================================================
+
+/*
+includes() checks whether a string
+contains a particular value.
+
+It returns:
+true  → value exists
+false → value does not exist
+*/
+
+let message = "I am learning JavaScript";
+
+console.log(message.includes("JavaScript"));
+console.log(message.includes("Python"));
+
+
+// =================================================
+// 2. includes() WITH A SINGLE CHARACTER
+// =================================================
+
+let name = "Shashi";
+
+console.log(name.includes("S"));
+console.log(name.includes("z"));
+
+
+// =================================================
+// 3. includes() IS CASE-SENSITIVE
+// =================================================
+
+let language = "JavaScript";
+
+console.log(language.includes("Java"));
+console.log(language.includes("java"));
+
+
+// =================================================
+// 4. startsWith()
+// =================================================
+
+/*
+Checks whether a string starts
+with a particular value.
+*/
+
+let city = "Bhubaneswar";
+
+console.log(city.startsWith("Bhu"));
+console.log(city.startsWith("Bhubaneswar"));
+console.log(city.startsWith("aneswar"));
+
+
+// =================================================
+// 5. endsWith()
+// =================================================
+
+/*
+Checks whether a string ends
+with a particular value.
+*/
+
+let course = "JavaScript";
+
+console.log(course.endsWith("Script"));
+console.log(course.endsWith("Java"));
+console.log(course.endsWith("pt"));
+
+
+// =================================================
+// 6. indexOf()
+// =================================================
+
+/*
+indexOf() returns the index of
+the first occurrence of a value.
+
+If the value is not found,
+it returns -1.
+*/
+
+let text = "JavaScript";
+
+console.log(text.indexOf("J"));
+console.log(text.indexOf("S"));
+console.log(text.indexOf("a"));
+console.log(text.indexOf("Python"));
+
+
+// =================================================
+// 7. indexOf() WITH A WORD
+// =================================================
+
+let sentence = "I am learning JavaScript";
+
+console.log(sentence.indexOf("JavaScript"));
+console.log(sentence.indexOf("learning"));
+
+
+// =================================================
+// 8. Searching a Character
+// =================================================
+
+let word = "banana";
+
+console.log(word.indexOf("a"));
+console.log(word.indexOf("n"));
+
+
+// =================================================
+// 9. Character Not Found
+// =================================================
+
+let fruit = "apple";
+
+console.log(fruit.indexOf("z"));
+
+
+// =================================================
+// 10. Using Search Methods with if
+// =================================================
+
+let username = "Shashi";
+
+if (username.includes("h")) {
+    console.log("Character exists");
+}
+
+
+// =================================================
+// 11. startsWith() WITH if
+// =================================================
+
+let fileName = "javascript.js";
+
+if (fileName.startsWith("java")) {
+    console.log("File starts with java");
+}
+
+
+// =================================================
+// 12. endsWith() WITH if
+// =================================================
+
+if (fileName.endsWith(".js")) {
+    console.log("This is a JavaScript file");
+}
+
+
+// =================================================
+// 13. Combining trim() + Search
+// =================================================
+
+let input = "   JavaScript   ";
+
+input = input.trim();
+
+console.log(input.includes("Script"));
+
+
+// =================================================
+// 14. Combining toLowerCase() + includes()
+// =================================================
+
+let answer = "YES";
+
+if (answer.toLowerCase().includes("yes")) {
+    console.log("Correct answer");
+}
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create a string:
+// "JavaScript is easy"
+//
+// Check whether it includes "JavaScript".
+
+
+// Q2. Create a string:
+// "I am learning Java"
+//
+// Check whether it includes "Python".
+
+
+// Q3. Create a string:
+// "Bhubaneswar"
+//
+// Check whether it starts with "Bhu".
+
+
+// Q4. Create a string:
+// "JavaScript"
+//
+// Check whether it starts with "Java".
+
+
+// Q5. Create a string:
+// "JavaScript"
+//
+// Check whether it ends with "Script".
+
+
+// Q6. Create a string:
+// "Hello World"
+//
+// Check whether it ends with "World".
+
+
+// Q7. Create a string:
+// "JavaScript"
+//
+// Find the index of "S".
+
+
+// Q8. Create a string:
+// "Programming"
+//
+// Find the index of "g".
+
+
+// Q9. Create a string:
+// "Hello World"
+//
+// Find the index of "World".
+
+
+// Q10. Create a string:
+// "JavaScript"
+//
+// Find the index of "Python".
+// Observe the result.
+
+
+// Q11. Create a string:
+// "   JavaScript   "
+//
+// Remove the spaces and check whether
+// the string includes "Script".
+
+
+// Q12. Create a string:
+// "   JAVASCRIPT   "
+//
+// Remove spaces.
+// Convert it to lowercase.
+// Check whether it starts with "java".
+
+
+// Q13. Create a string:
+// "student@gmail.com"
+//
+// Check whether it ends with ".com".
+
+
+// Q14. Create a string:
+// "https://example.com"
+//
+// Check whether it starts with "https".
+
+
+// Q15. Create a string:
+// "I love JavaScript"
+//
+// Check whether it includes "love"
+// and "JavaScript".
+
+
+// =================================================
+// QUICK REVISION
+// =================================================
+
+/*
+includes()
+→ Checks whether value exists.
+
+startsWith()
+→ Checks beginning.
+
+endsWith()
+→ Checks ending.
+
+indexOf()
+→ Returns position/index.
+→ Returns -1 if not found.
+*/
+
+
+// Example:
+
+let example = "JavaScript";
+
+console.log(example.includes("Java"));      // true
+console.log(example.startsWith("Java"));    // true
+console.log(example.endsWith("Script"));    // true
+console.log(example.indexOf("S"));           // 4
+console.log(example.indexOf("Python"));      // -1
