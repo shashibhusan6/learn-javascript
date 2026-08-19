@@ -547,3 +547,307 @@ My name is Shashi Singha and I am 21 years old.
 // to print:
 //
 // JAVASCRIPT - BASIC
+
+
+/*
+    13_Strings.js
+    JAVASCRIPT STRINGS
+
+*/
+
+// =================================================
+// 1. VARIABLE INSIDE TEMPLATE LITERAL
+// =================================================
+
+let name = "Shashi";
+
+console.log(`My name is ${name}`);
+
+
+// =================================================
+// 2. MULTIPLE VARIABLES
+// =================================================
+
+let firstName = "Shashi";
+let age = 21;
+let branch = "CSE";
+
+console.log(
+    `My name is ${firstName}, I am ${age} years old and I study ${branch}.`
+);
+
+
+// =================================================
+// 3. EXPRESSIONS INSIDE ${}
+// =================================================
+
+let a = 10;
+let b = 20;
+
+console.log(`Sum = ${a + b}`);
+
+console.log(`Difference = ${b - a}`);
+
+console.log(`Product = ${a * b}`);
+
+
+// =================================================
+// 4. VARIABLE + STRING USING +
+// =================================================
+
+let city = "Bhubaneswar";
+let state = "Odisha";
+
+console.log("I live in " + city + ", " + state);
+
+
+// =================================================
+// 5. THE SAME USING TEMPLATE LITERAL
+// =================================================
+
+console.log(`I live in ${city}, ${state}`);
+
+
+// =================================================
+// 6. STRING METHOD INSIDE TEMPLATE LITERAL
+// =================================================
+
+let username = "shashi";
+
+console.log(`Username: ${username.toUpperCase()}`);
+
+
+// =================================================
+// 7. trim() + TEMPLATE LITERAL
+// =================================================
+
+let userInput = "   Shashi   ";
+
+console.log(`Hello ${userInput.trim()}`);
+
+
+// =================================================
+// 8. toLowerCase() + TEMPLATE LITERAL
+// =================================================
+
+let language = "JAVASCRIPT";
+
+console.log(`Learning ${language.toLowerCase()}`);
+
+
+// =================================================
+// 9. OBJECT PROPERTY + TEMPLATE LITERAL
+// =================================================
+
+let student = {
+    name: "Rahul",
+    age: 22,
+    branch: "CSE"
+};
+
+console.log(`Name: ${student.name}`);
+console.log(`Age: ${student.age}`);
+console.log(`Branch: ${student.branch}`);
+
+
+// =================================================
+// 10. ARRAY VALUE + TEMPLATE LITERAL
+// =================================================
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+console.log(`First fruit: ${fruits[0]}`);
+console.log(`Second fruit: ${fruits[1]}`);
+
+
+// =================================================
+// 11. CALCULATION WITH VARIABLES
+// =================================================
+
+let price = 50000;
+let quantity = 2;
+
+let total = price * quantity;
+
+console.log(`Total price = ${total}`);
+
+
+// =================================================
+// 12. DISCOUNT CALCULATION
+// =================================================
+
+let productPrice = 1000;
+let discount = 100;
+
+let finalPrice = productPrice - discount;
+
+console.log(`Final price = ${finalPrice}`);
+
+
+// =================================================
+// 13. CONDITIONAL MESSAGE
+// =================================================
+
+let marks = 85;
+
+if (marks >= 40) {
+    console.log(`Marks: ${marks} - Pass`);
+} else {
+    console.log(`Marks: ${marks} - Fail`);
+}
+
+
+// =================================================
+// 14. TEMPLATE LITERAL WITH TERNARY
+// =================================================
+
+let age2 = 21;
+
+let result = age2 >= 18 ? "Adult" : "Minor";
+
+console.log(`Age: ${age2} - ${result}`);
+
+
+// =================================================
+// 15. DYNAMIC MESSAGE
+// =================================================
+
+let product = "Laptop";
+let productPrice2 = 50000;
+
+console.log(
+    `The ${product} costs ₹${productPrice2}.`
+);
+
+
+// =================================================
+// 16. TEMPLATE LITERAL WITH METHOD
+// =================================================
+
+let course = "javascript";
+
+console.log(
+    `Course: ${course.toUpperCase()}`
+);
+
+
+// =================================================
+// 17. MULTIPLE EXPRESSIONS
+// =================================================
+
+let x = 10;
+let y = 5;
+
+console.log(
+    `Sum: ${x + y}, Difference: ${x - y}, Product: ${x * y}`
+);
+
+
+// =================================================
+// 18. MULTI-LINE TEMPLATE STRING
+// =================================================
+
+let studentName = "Shashi";
+let studentCourse = "JavaScript";
+
+let message = `
+Student Name: ${studentName}
+Course: ${studentCourse}
+`;
+
+console.log(message);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create:
+// name = "Shashi"
+// age = 21
+//
+// Use a template literal to print:
+// My name is Shashi and I am 21 years old.
+
+
+// Q2. Create:
+// city = "Bhubaneswar"
+// state = "Odisha"
+//
+// Print:
+// I live in Bhubaneswar, Odisha.
+
+
+// Q3. Create:
+// a = 20
+// b = 10
+//
+// Print using a template literal:
+// Sum = 30
+// Difference = 10
+// Product = 200
+
+
+// Q4. Create:
+// name = "shashi"
+//
+// Use toUpperCase() inside a template literal.
+// Expected:
+// SHASHI
+
+
+// Q5. Create:
+// name = "   Shashi   "
+//
+// Use trim() inside a template literal.
+// Expected:
+// Shashi
+
+
+// Q6. Create:
+// language = "JAVASCRIPT"
+//
+// Convert it to lowercase inside
+// a template literal.
+
+
+// Q7. Create an object:
+//
+// student = {
+//     name: "Shashi",
+//     age: 21,
+//     branch: "CSE"
+// }
+//
+// Print all values using template literals.
+
+
+// Q8. Create:
+//
+// price = 500
+// quantity = 3
+//
+// Calculate total and print:
+//
+// Total = 1500
+
+
+// Q9. Create:
+//
+// marks = 75
+//
+// Use if-else and template literal.
+//
+// Expected:
+// Marks: 75 - Pass
+
+
+// Q10. Create:
+//
+// product = "Laptop"
+// price = 50000
+//
+// Print:
+//
+// The Laptop costs ₹50000.
