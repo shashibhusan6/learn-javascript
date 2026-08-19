@@ -277,3 +277,273 @@ console.log(message.replace("javascript", "java"));
 //
 // Split the string using "-".
 // Print the resulting array.
+
+
+/*
+    13_Strings.js
+    JAVASCRIPT STRINGS
+
+*/
+
+// =================================================
+// 1. CONCATENATION USING +
+// =================================================
+
+let firstName = "Shashi";
+let lastName = "Singha";
+
+let fullName = firstName + " " + lastName;
+
+console.log(fullName);
+
+
+// =================================================
+// 2. CONCATENATING MULTIPLE STRINGS
+// =================================================
+
+let first = "Hello";
+let second = "World";
+let third = "JavaScript";
+
+console.log(first + " " + second + " " + third);
+
+
+// =================================================
+// 3. CONCATENATING STRING + NUMBER
+// =================================================
+
+let name = "Shashi";
+let age = 21;
+
+console.log(name + " is " + age + " years old.");
+
+
+// =================================================
+// 4. concat()
+// =================================================
+
+/*
+concat() joins strings together.
+*/
+
+let greeting = "Hello";
+
+let result = greeting.concat(" ", "World");
+
+console.log(result);
+
+
+// =================================================
+// 5. concat() WITH VARIABLES
+// =================================================
+
+let city = "Bhubaneswar";
+let state = "Odisha";
+
+let location = city.concat(", ", state);
+
+console.log(location);
+
+
+// =================================================
+// 6. CONCATENATING MULTIPLE VALUES
+// =================================================
+
+let a = "JavaScript";
+let b = "is";
+let c = "easy";
+
+let sentence = a.concat(" ", b, " ", c);
+
+console.log(sentence);
+
+
+// =================================================
+// 7. TEMPLATE LITERAL
+// =================================================
+
+/*
+Template literals use backticks ` `.
+
+Variables can be inserted using:
+${variable}
+*/
+
+let studentName = "Shashi";
+let studentAge = 21;
+
+console.log(`My name is ${studentName}.`);
+
+console.log(`I am ${studentAge} years old.`);
+
+
+// =================================================
+// 8. MULTIPLE VARIABLES IN TEMPLATE LITERAL
+// =================================================
+
+let student = "Rahul";
+let course = "JavaScript";
+
+console.log(`My name is ${student} and I am learning ${course}.`);
+
+
+// =================================================
+// 9. EXPRESSIONS IN TEMPLATE LITERALS
+// =================================================
+
+let x = 10;
+let y = 20;
+
+console.log(`Sum = ${x + y}`);
+
+
+// =================================================
+// 10. TEMPLATE LITERAL WITH OBJECT DATA
+// =================================================
+
+let person = {
+    name: "Amit",
+    age: 22
+};
+
+console.log(`Name: ${person.name}`);
+console.log(`Age: ${person.age}`);
+
+
+// =================================================
+// 11. TEMPLATE LITERAL WITH STRING METHODS
+// =================================================
+
+let username = "shashi";
+
+console.log(`Name: ${username.toUpperCase()}`);
+
+
+// =================================================
+// 12. MULTI-LINE STRING
+// =================================================
+
+let message = `
+Hello Shashi,
+Welcome to JavaScript.
+Keep practicing.
+`;
+
+console.log(message);
+
+
+// =================================================
+// 13. + VS concat()
+// =================================================
+
+let language = "JavaScript";
+let level = "Basic";
+
+console.log(language + " " + level);
+
+console.log(language.concat(" ", level));
+
+
+// =================================================
+// 14. TEMPLATE LITERAL
+// =================================================
+
+console.log(`${language} ${level}`);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Create:
+// firstName = "Shashi"
+// lastName = "Singha"
+//
+// Combine them using +.
+// Print the full name.
+
+
+// Q2. Create:
+// firstName = "Rahul"
+// lastName = "Kumar"
+//
+// Combine them using concat().
+
+
+// Q3. Create:
+// name = "Amit"
+// age = 22
+//
+// Print:
+// My name is Amit and I am 22 years old.
+//
+// Use +.
+
+
+// Q4. Create:
+// city = "Bhubaneswar"
+// state = "Odisha"
+//
+// Combine them using concat().
+// Expected:
+// Bhubaneswar, Odisha
+
+
+// Q5. Create:
+// name = "Shashi"
+// course = "JavaScript"
+//
+// Use template literals to print:
+// Shashi is learning JavaScript.
+
+
+// Q6. Create:
+// product = "Laptop"
+// price = 50000
+//
+// Use template literals to print:
+// Laptop costs 50000.
+
+
+/*
+Q7. Create:
+
+firstName = "Shashi"
+lastName = "Singha"
+age = 21
+
+Use a template literal to print:
+
+My name is Shashi Singha and I am 21 years old.
+*/
+
+
+// Q8. Create:
+// x = 20
+// y = 30
+//
+// Use a template literal to print:
+// Sum = 50
+
+
+// Q9. Create an object:
+//
+// student = {
+//     name: "Shashi",
+//     branch: "CSE"
+// }
+//
+// Use a template literal to print:
+// Shashi is a CSE student.
+
+
+// Q10. Create:
+//
+// name = "javascript"
+// level = "basic"
+//
+// Use a template literal and toUpperCase()
+// to print:
+//
+// JAVASCRIPT - BASIC
