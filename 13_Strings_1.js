@@ -851,3 +851,342 @@ console.log(message);
 // Print:
 //
 // The Laptop costs ₹50000.
+
+
+/*
+    13_Strings.js
+    JAVASCRIPT STRINGS
+
+*/
+
+
+// =================================================
+// Q1. First and Last Character
+// =================================================
+
+let name1 = "Shashi";
+
+console.log(name1[0]);
+console.log(name1[name1.length - 1]);
+
+
+// =================================================
+// Q2. String Length
+// =================================================
+
+let city1 = "Bhubaneswar";
+
+console.log(city1.length);
+
+
+// =================================================
+// Q3. Convert to Uppercase
+// =================================================
+
+let language1 = "javascript";
+
+console.log(language1.toUpperCase());
+
+
+// =================================================
+// Q4. Convert to Lowercase
+// =================================================
+
+let course1 = "JAVASCRIPT";
+
+console.log(course1.toLowerCase());
+
+
+// =================================================
+// Q5. Remove Extra Spaces
+// =================================================
+
+let text1 = "   Hello World   ";
+
+console.log(text1.trim());
+
+
+// =================================================
+// Q6. Check Whether Word Exists
+// =================================================
+
+let sentence1 = "I am learning JavaScript";
+
+console.log(sentence1.includes("JavaScript"));
+
+
+// =================================================
+// Q7. Check Starting Text
+// =================================================
+
+let website = "https://example.com";
+
+console.log(website.startsWith("https"));
+
+
+// =================================================
+// Q8. Check Ending Text
+// =================================================
+
+let file = "script.js";
+
+console.log(file.endsWith(".js"));
+
+
+// =================================================
+// Q9. Find Character Index
+// =================================================
+
+let word1 = "JavaScript";
+
+console.log(word1.indexOf("S"));
+
+
+// =================================================
+// Q10. Extract Part of String
+// =================================================
+
+let language2 = "JavaScript";
+
+console.log(language2.slice(0, 4));
+
+
+// =================================================
+// Q11. Extract Last Part
+// =================================================
+
+let language3 = "JavaScript";
+
+console.log(language3.slice(-6));
+
+
+// =================================================
+// Q12. Replace a Word
+// =================================================
+
+let message1 = "I like JavaScript";
+
+console.log(
+    message1.replace("JavaScript", "Java")
+);
+
+
+// =================================================
+// Q13. Replace All
+// =================================================
+
+let message2 = "Java is easy. Java is popular.";
+
+console.log(
+    message2.replaceAll("Java", "JavaScript")
+);
+
+
+// =================================================
+// Q14. Split a String
+// =================================================
+
+let fruits1 = "Apple,Banana,Mango";
+
+let fruitArray = fruits1.split(",");
+
+console.log(fruitArray);
+
+
+// =================================================
+// Q15. Split Words
+// =================================================
+
+let sentence2 = "I am learning JavaScript";
+
+let words = sentence2.split(" ");
+
+console.log(words);
+
+
+// =================================================
+// Q16. Combine Strings
+// =================================================
+
+let firstName1 = "Shashi";
+let lastName1 = "Singha";
+
+console.log(firstName1 + " " + lastName1);
+
+
+// =================================================
+// Q17. Template Literal
+// =================================================
+
+let studentName1 = "Shashi";
+let studentAge1 = 21;
+
+console.log(
+    `My name is ${studentName1} and I am ${studentAge1} years old.`
+);
+
+
+// =================================================
+// Q18. Template Literal + Method
+// =================================================
+
+let userName1 = "   shashi   ";
+
+console.log(
+    `Hello ${userName1.trim().toUpperCase()}`
+);
+
+
+// =================================================
+// Q19. Email Check
+// =================================================
+
+let email1 = "student@gmail.com";
+
+if (email1.includes("@") && email1.endsWith(".com")) {
+    console.log("Valid email format");
+} else {
+    console.log("Invalid email format");
+}
+
+
+// =================================================
+// Q20. Simple Username Check
+// =================================================
+
+let username1 = "Shashi123";
+
+if (username1.length >= 5 && username1.includes("Shashi")) {
+    console.log("Valid username");
+} else {
+    console.log("Invalid username");
+}
+
+
+// =================================================
+// Q21. Get File Extension
+// =================================================
+
+let fileName1 = "index.html";
+
+let extension1 = fileName1.slice(
+    fileName1.lastIndexOf(".") + 1
+);
+
+console.log(extension1);
+
+
+// =================================================
+// Q22. Get First Word
+// =================================================
+
+let sentence3 = "JavaScript is easy";
+
+let firstWord = sentence3.split(" ")[0];
+
+console.log(firstWord);
+
+
+// =================================================
+// Q23. Get Last Word
+// =================================================
+
+let sentence4 = "JavaScript is very easy";
+
+let wordArray = sentence4.split(" ");
+
+let lastWord = wordArray[wordArray.length - 1];
+
+console.log(lastWord);
+
+
+// =================================================
+// Q24. Clean User Input
+// =================================================
+
+let input1 = "   JAVASCRIPT   ";
+
+let cleanedInput = input1.trim().toLowerCase();
+
+console.log(cleanedInput);
+
+
+// =================================================
+// Q25. Count Characters Without Spaces
+// =================================================
+
+let fullName1 = "Shashi Singha";
+
+let nameWithoutSpace = fullName1.replaceAll(" ", "");
+
+console.log(nameWithoutSpace.length);
+
+
+// =================================================
+// Q26. Check Password Length
+// =================================================
+
+let password = "Java123";
+
+if (password.length >= 6) {
+    console.log("Password length is valid");
+} else {
+    console.log("Password is too short");
+}
+
+
+// =================================================
+// Q27. Check JavaScript File
+// =================================================
+
+let fileName2 = "app.js";
+
+if (fileName2.endsWith(".js")) {
+    console.log("JavaScript file");
+} else {
+    console.log("Not a JavaScript file");
+}
+
+
+// =================================================
+// Q28. Create Initials
+// =================================================
+
+let firstName2 = "Shashi";
+let lastName2 = "Singha";
+
+let initials =
+    firstName2[0] + lastName2[0];
+
+console.log(initials);
+
+
+// =================================================
+// Q29. Simple Name Formatter
+// =================================================
+
+let firstName3 = "   shashi   ";
+let lastName3 = "   singha   ";
+
+let formattedName =
+    firstName3.trim().toUpperCase() +
+    " " +
+    lastName3.trim().toUpperCase();
+
+console.log(formattedName);
+
+
+// =================================================
+// Q30. Final Basic Challenge
+// =================================================
+
+let student = "   shashi bhusan singha   ";
+
+student = student.trim();
+
+let studentWords = student.split(" ");
+
+console.log(`Full Name: ${student.toUpperCase()}`);
+console.log(`First Name: ${studentWords[0]}`);
+console.log(`Last Name: ${studentWords[2]}`);
+console.log(`Total Characters: ${student.replaceAll(" ", "").length}`);
