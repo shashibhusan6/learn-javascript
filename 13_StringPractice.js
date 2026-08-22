@@ -365,3 +365,217 @@
 // "banana"
 // Output:
 // "a"
+
+
+/*
+    13_StringPractice_Hard.js
+
+    STRING PRACTICE
+    HARD LEVEL
+
+    Total Questions: 20
+*/
+
+// =================================================
+// Q1. Reverse every word in a sentence.
+// =================================================
+
+// Example:
+// "Hello World"
+// Output:
+// "olleH dlroW"
+
+
+// =================================================
+// Q2. Reverse the order of words.
+// =================================================
+
+// Example:
+// "I am learning JavaScript"
+// Output:
+// "JavaScript learning am I"
+
+
+// =================================================
+// Q3. Find the longest word in a sentence
+// and print the word and its length.
+// =================================================
+
+// Example:
+// "I am learning JavaScript"
+
+
+// =================================================
+// Q4. Find the second longest word.
+// =================================================
+
+// Example:
+// "JavaScript is very powerful language"
+
+
+// =================================================
+// Q5. Find the most frequent character.
+// Ignore spaces.
+// =================================================
+
+// Example:
+// "javascript programming"
+
+
+// =================================================
+// Q6. Find the least frequent character.
+// Ignore spaces.
+// =================================================
+
+// Example:
+// "javascript"
+
+
+// =================================================
+// Q7. Check whether two strings are anagrams.
+// =================================================
+
+// Example:
+// "listen"
+// "silent"
+//
+// Output:
+// Anagram
+
+
+// =================================================
+// Q8. Remove duplicate characters from a string.
+// =================================================
+
+// Example:
+// "programming"
+// Output:
+// "progamin"
+
+
+// =================================================
+// Q9. Find all duplicate characters.
+// =================================================
+
+// Example:
+// "programming"
+// Output:
+// Characters that appear more than once
+
+
+// =================================================
+// Q10. Find the first non-repeating character.
+// =================================================
+
+// Example:
+// "programming"
+
+
+// =================================================
+// Q11. Find the first repeating character.
+// =================================================
+
+// Example:
+// "programming"
+
+
+// =================================================
+// Q12. Count vowels, consonants, digits and spaces.
+// =================================================
+
+// Example:
+// "JavaScript 123"
+
+
+// =================================================
+// Q13. Check whether a string is a palindrome
+// ignoring spaces and case.
+// =================================================
+
+// Example:
+// "Never Odd Or Even"
+// Output:
+// Palindrome
+
+
+// =================================================
+// Q14. Find the longest palindrome word
+// in a sentence.
+// =================================================
+
+// Example:
+// "madam level hello world"
+
+
+// =================================================
+// Q15. Capitalize the first letter of every word.
+// =================================================
+
+// Example:
+// "javascript is very easy"
+// Output:
+// "Javascript Is Very Easy"
+
+
+// =================================================
+// Q16. Find the word with the highest number
+// of vowels.
+// =================================================
+
+// Example:
+// "apple education javascript"
+// Output:
+// "education"
+
+
+// =================================================
+// Q17. Remove all duplicate words from a sentence.
+// =================================================
+
+// Example:
+// "JavaScript is easy and JavaScript is powerful"
+
+
+// =================================================
+// Q18. Find the character with the highest frequency
+// and its count.
+// =================================================
+
+// Example:
+// "mississippi"
+// Output:
+// i -> 4
+
+
+// =================================================
+// Q19. Check whether one string is a rotation
+// of another string.
+// =================================================
+
+// Example:
+// "abcd"
+// "cdab"
+//
+// Output:
+// Rotation
+
+
+// =================================================
+// Q20. FINAL STRING CHALLENGE
+// =================================================
+
+/*
+Given:
+
+"I am learning JavaScript and JavaScript is easy"
+
+Perform all of the following:
+
+1. Remove extra spaces.
+2. Count total words.
+3. Find the longest word.
+4. Count vowels.
+5. Count consonants.
+6. Replace all "JavaScript" with "Java".
+7. Convert the final sentence to uppercase.
+*/
