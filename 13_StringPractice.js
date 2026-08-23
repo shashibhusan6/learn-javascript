@@ -791,3 +791,405 @@ for (let i = 0; i < str20.length; i++) {
     console.log(str20[i]);
 }
 
+
+/*
+    13_StringPractice_Medium.js
+
+    STRING PRACTICE
+    MEDIUM LEVEL — ANSWERS
+
+    Total Questions: 20
+*/
+
+
+// =================================================
+// Q1. Count the number of vowels in a string.
+// =================================================
+
+{
+    let str = "javascript";
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+
+        let ch = str[i].toLowerCase();
+
+        if (
+            ch === "a" ||
+            ch === "e" ||
+            ch === "i" ||
+            ch === "o" ||
+            ch === "u"
+        ) {
+            count++;
+        }
+    }
+
+    console.log("Q1:", count);
+}
+
+
+// =================================================
+// Q2. Count the number of consonants in a string.
+// =================================================
+
+{
+    let str = "javascript";
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+
+        let ch = str[i].toLowerCase();
+
+        if (
+            ch >= "a" &&
+            ch <= "z" &&
+            !(
+                ch === "a" ||
+                ch === "e" ||
+                ch === "i" ||
+                ch === "o" ||
+                ch === "u"
+            )
+        ) {
+            count++;
+        }
+    }
+
+    console.log("Q2:", count);
+}
+
+
+// =================================================
+// Q3. Count the number of spaces in a string.
+// =================================================
+
+{
+    let str = "I am learning JavaScript";
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+
+        if (str[i] === " ") {
+            count++;
+        }
+    }
+
+    console.log("Q3:", count);
+}
+
+
+// =================================================
+// Q4. Count how many times a character occurs.
+// =================================================
+
+{
+    let str = "banana";
+    let target = "a";
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+
+        if (str[i] === target) {
+            count++;
+        }
+    }
+
+    console.log("Q4:", count);
+}
+
+
+// =================================================
+// Q5. Reverse a string.
+// =================================================
+
+{
+    let str = "hello";
+    let reversed = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+
+    console.log("Q5:", reversed);
+}
+
+
+// =================================================
+// Q6. Check whether a string is a palindrome.
+// =================================================
+
+{
+    let str = "madam";
+    let reversed = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+
+    if (str === reversed) {
+        console.log("Q6: Palindrome");
+    } else {
+        console.log("Q6: Not Palindrome");
+    }
+}
+
+
+// =================================================
+// Q7. Find the first occurrence of a character.
+// =================================================
+
+{
+    let str = "programming";
+
+    console.log("Q7:", str.indexOf("g"));
+}
+
+
+// =================================================
+// Q8. Find the last occurrence of a character.
+// =================================================
+
+{
+    let str = "programming";
+
+    console.log("Q8:", str.lastIndexOf("g"));
+}
+
+
+// =================================================
+// Q9. Find the longest word in a sentence.
+// =================================================
+
+{
+    let str = "I am learning JavaScript programming";
+
+    let words = str.split(" ");
+    let longest = words[0];
+
+    for (let word of words) {
+
+        if (word.length > longest.length) {
+            longest = word;
+        }
+    }
+
+    console.log("Q9:", longest);
+}
+
+
+// =================================================
+// Q10. Find the shortest word in a sentence.
+// =================================================
+
+{
+    let str = "I am learning JavaScript";
+
+    let words = str.split(" ");
+    let shortest = words[0];
+
+    for (let word of words) {
+
+        if (word.length < shortest.length) {
+            shortest = word;
+        }
+    }
+
+    console.log("Q10:", shortest);
+}
+
+
+// =================================================
+// Q11. Count the number of words in a sentence.
+// =================================================
+
+{
+    let str = "I am learning JavaScript";
+
+    let words = str.trim().split(" ");
+
+    console.log("Q11:", words.length);
+}
+
+
+// =================================================
+// Q12. Convert the first character to uppercase.
+// =================================================
+
+{
+    let str = "javascript";
+
+    let result =
+        str[0].toUpperCase() + str.slice(1);
+
+    console.log("Q12:", result);
+}
+
+
+// =================================================
+// Q13. Convert the first letter of every word
+// to uppercase.
+// =================================================
+
+{
+    let str = "hello world";
+
+    let words = str.split(" ");
+    let result = "";
+
+    for (let word of words) {
+
+        result +=
+            word[0].toUpperCase() +
+            word.slice(1) +
+            " ";
+    }
+
+    console.log("Q13:", result.trim());
+}
+
+
+// =================================================
+// Q14. Remove all spaces from a string.
+// =================================================
+
+{
+    let str = "Java Script";
+
+    let result = str.replaceAll(" ", "");
+
+    console.log("Q14:", result);
+}
+
+
+// =================================================
+// Q15. Replace all spaces with "-".
+// =================================================
+
+{
+    let str = "Hello World JavaScript";
+
+    let result = str.replaceAll(" ", "-");
+
+    console.log("Q15:", result);
+}
+
+
+// =================================================
+// Q16. Check whether a string contains only numbers.
+// =================================================
+
+{
+    let str = "12345";
+    let onlyNumbers = true;
+
+    for (let i = 0; i < str.length; i++) {
+
+        if (str[i] < "0" || str[i] > "9") {
+            onlyNumbers = false;
+            break;
+        }
+    }
+
+    console.log("Q16:", onlyNumbers);
+}
+
+
+// =================================================
+// Q17. Check whether an email contains "@"
+// and ends with ".com".
+// =================================================
+
+{
+    let email = "student@gmail.com";
+
+    if (
+        email.includes("@") &&
+        email.endsWith(".com")
+    ) {
+        console.log("Q17: Valid email");
+    } else {
+        console.log("Q17: Invalid email");
+    }
+}
+
+
+// =================================================
+// Q18. Find the number of vowels and consonants.
+// =================================================
+
+{
+    let str = "javascript";
+
+    let vowels = 0;
+    let consonants = 0;
+
+    for (let i = 0; i < str.length; i++) {
+
+        let ch = str[i].toLowerCase();
+
+        if (
+            ch === "a" ||
+            ch === "e" ||
+            ch === "i" ||
+            ch === "o" ||
+            ch === "u"
+        ) {
+            vowels++;
+        }
+
+        else if (ch >= "a" && ch <= "z") {
+            consonants++;
+        }
+    }
+
+    console.log("Q18 Vowels:", vowels);
+    console.log("Q18 Consonants:", consonants);
+}
+
+
+// =================================================
+// Q19. Remove duplicate spaces.
+// =================================================
+
+{
+    let str = "Hello    World";
+
+    let words = str.trim().split(/\s+/);
+
+    let result = words.join(" ");
+
+    console.log("Q19:", result);
+}
+
+
+// =================================================
+// Q20. Find the most frequently occurring character.
+// =================================================
+
+{
+    let str = "banana";
+
+    let maxChar = "";
+    let maxCount = 0;
+
+    for (let i = 0; i < str.length; i++) {
+
+        let count = 0;
+
+        for (let j = 0; j < str.length; j++) {
+
+            if (str[i] === str[j]) {
+                count++;
+            }
+        }
+
+        if (count > maxCount) {
+            maxCount = count;
+            maxChar = str[i];
+        }
+    }
+
+    console.log("Q20 Character:", maxChar);
+    console.log("Q20 Count:", maxCount);
+}
