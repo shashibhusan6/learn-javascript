@@ -1193,3 +1193,634 @@ for (let i = 0; i < str20.length; i++) {
     console.log("Q20 Character:", maxChar);
     console.log("Q20 Count:", maxCount);
 }
+
+
+/*
+    13_StringPractice_Hard.js
+
+    STRING PRACTICE
+    HARD LEVEL — ANSWERS
+
+    Total Questions: 20
+*/
+
+
+// =================================================
+// Q1. Reverse every word in a sentence.
+// =================================================
+
+{
+    let str = "Hello World";
+
+    let words = str.split(" ");
+    let result = "";
+
+    for (let word of words) {
+
+        let reversed = "";
+
+        for (let i = word.length - 1; i >= 0; i--) {
+            reversed += word[i];
+        }
+
+        result += reversed + " ";
+    }
+
+    console.log("Q1:", result.trim());
+}
+
+
+// =================================================
+// Q2. Reverse the order of words.
+// =================================================
+
+{
+    let str = "I am learning JavaScript";
+
+    let words = str.split(" ");
+    let result = "";
+
+    for (let i = words.length - 1; i >= 0; i--) {
+        result += words[i] + " ";
+    }
+
+    console.log("Q2:", result.trim());
+}
+
+
+// =================================================
+// Q3. Find the longest word and its length.
+// =================================================
+
+{
+    let str = "I am learning JavaScript programming";
+
+    let words = str.split(" ");
+    let longest = words[0];
+
+    for (let word of words) {
+
+        if (word.length > longest.length) {
+            longest = word;
+        }
+    }
+
+    console.log("Q3 Word:", longest);
+    console.log("Q3 Length:", longest.length);
+}
+
+
+// =================================================
+// Q4. Find the second longest word.
+// =================================================
+
+{
+    let str = "JavaScript is very powerful language";
+
+    let words = str.split(" ");
+
+    let longest = "";
+    let secondLongest = "";
+
+    for (let word of words) {
+
+        if (word.length > longest.length) {
+            secondLongest = longest;
+            longest = word;
+        }
+
+        else if (
+            word.length > secondLongest.length &&
+            word !== longest
+        ) {
+            secondLongest = word;
+        }
+    }
+
+    console.log("Q4:", secondLongest);
+}
+
+
+// =================================================
+// Q5. Find the most frequent character.
+// Ignore spaces.
+// =================================================
+
+{
+    let str = "javascript programming";
+
+    str = str.replaceAll(" ", "");
+
+    let maxChar = "";
+    let maxCount = 0;
+
+    for (let i = 0; i < str.length; i++) {
+
+        let count = 0;
+
+        for (let j = 0; j < str.length; j++) {
+
+            if (str[i] === str[j]) {
+                count++;
+            }
+        }
+
+        if (count > maxCount) {
+            maxCount = count;
+            maxChar = str[i];
+        }
+    }
+
+    console.log("Q5 Character:", maxChar);
+    console.log("Q5 Count:", maxCount);
+}
+
+
+// =================================================
+// Q6. Find the least frequent character.
+// Ignore spaces.
+// =================================================
+
+{
+    let str = "javascript";
+
+    let minChar = "";
+    let minCount = Infinity;
+
+    for (let i = 0; i < str.length; i++) {
+
+        let count = 0;
+
+        for (let j = 0; j < str.length; j++) {
+
+            if (str[i] === str[j]) {
+                count++;
+            }
+        }
+
+        if (count < minCount) {
+            minCount = count;
+            minChar = str[i];
+        }
+    }
+
+    console.log("Q6 Character:", minChar);
+    console.log("Q6 Count:", minCount);
+}
+
+
+// =================================================
+// Q7. Check whether two strings are anagrams.
+// =================================================
+
+{
+    let str1 = "listen";
+    let str2 = "silent";
+
+    let sorted1 = str1.split("").sort().join("");
+    let sorted2 = str2.split("").sort().join("");
+
+    if (sorted1 === sorted2) {
+        console.log("Q7: Anagram");
+    } else {
+        console.log("Q7: Not Anagram");
+    }
+}
+
+
+// =================================================
+// Q8. Remove duplicate characters.
+// =================================================
+
+{
+    let str = "programming";
+
+    let result = "";
+
+    for (let char of str) {
+
+        if (!result.includes(char)) {
+            result += char;
+        }
+    }
+
+    console.log("Q8:", result);
+}
+
+
+// =================================================
+// Q9. Find all duplicate characters.
+// =================================================
+
+{
+    let str = "programming";
+
+    let duplicates = "";
+
+    for (let i = 0; i < str.length; i++) {
+
+        let count = 0;
+
+        for (let j = 0; j < str.length; j++) {
+
+            if (str[i] === str[j]) {
+                count++;
+            }
+        }
+
+        if (
+            count > 1 &&
+            !duplicates.includes(str[i])
+        ) {
+            duplicates += str[i];
+        }
+    }
+
+    console.log("Q9:", duplicates);
+}
+
+
+// =================================================
+// Q10. Find the first non-repeating character.
+// =================================================
+
+{
+    let str = "programming";
+
+    let result = "";
+
+    for (let i = 0; i < str.length; i++) {
+
+        let count = 0;
+
+        for (let j = 0; j < str.length; j++) {
+
+            if (str[i] === str[j]) {
+                count++;
+            }
+        }
+
+        if (count === 1) {
+            result = str[i];
+            break;
+        }
+    }
+
+    console.log("Q10:", result);
+}
+
+
+// =================================================
+// Q11. Find the first repeating character.
+// =================================================
+
+{
+    let str = "programming";
+
+    let result = "";
+
+    for (let i = 0; i < str.length; i++) {
+
+        if (str.indexOf(str[i]) !== str.lastIndexOf(str[i])) {
+            result = str[i];
+            break;
+        }
+    }
+
+    console.log("Q11:", result);
+}
+
+
+// =================================================
+// Q12. Count vowels, consonants, digits and spaces.
+// =================================================
+
+{
+    let str = "JavaScript 123";
+
+    let vowels = 0;
+    let consonants = 0;
+    let digits = 0;
+    let spaces = 0;
+
+    for (let char of str) {
+
+        let ch = char.toLowerCase();
+
+        if (
+            ch === "a" ||
+            ch === "e" ||
+            ch === "i" ||
+            ch === "o" ||
+            ch === "u"
+        ) {
+            vowels++;
+        }
+
+        else if (ch >= "a" && ch <= "z") {
+            consonants++;
+        }
+
+        else if (ch >= "0" && ch <= "9") {
+            digits++;
+        }
+
+        else if (ch === " ") {
+            spaces++;
+        }
+    }
+
+    console.log("Q12 Vowels:", vowels);
+    console.log("Q12 Consonants:", consonants);
+    console.log("Q12 Digits:", digits);
+    console.log("Q12 Spaces:", spaces);
+}
+
+
+// =================================================
+// Q13. Palindrome ignoring spaces and case.
+// =================================================
+
+{
+    let str = "Never Odd Or Even";
+
+    let cleaned = str
+        .replaceAll(" ", "")
+        .toLowerCase();
+
+    let reversed = "";
+
+    for (let i = cleaned.length - 1; i >= 0; i--) {
+        reversed += cleaned[i];
+    }
+
+    if (cleaned === reversed) {
+        console.log("Q13: Palindrome");
+    } else {
+        console.log("Q13: Not Palindrome");
+    }
+}
+
+
+// =================================================
+// Q14. Find the longest palindrome word.
+// =================================================
+
+{
+    let str = "madam level hello world";
+
+    let words = str.split(" ");
+
+    let longestPalindrome = "";
+
+    for (let word of words) {
+
+        let reversed = "";
+
+        for (let i = word.length - 1; i >= 0; i--) {
+            reversed += word[i];
+        }
+
+        if (
+            word === reversed &&
+            word.length > longestPalindrome.length
+        ) {
+            longestPalindrome = word;
+        }
+    }
+
+    console.log("Q14:", longestPalindrome);
+}
+
+
+// =================================================
+// Q15. Capitalize the first letter of every word.
+// =================================================
+
+{
+    let str = "javascript is very easy";
+
+    let words = str.split(" ");
+
+    let result = "";
+
+    for (let word of words) {
+
+        result +=
+            word[0].toUpperCase() +
+            word.slice(1) +
+            " ";
+    }
+
+    console.log("Q15:", result.trim());
+}
+
+
+// =================================================
+// Q16. Find the word with the highest number
+// of vowels.
+// =================================================
+
+{
+    let str = "apple education javascript";
+
+    let words = str.split(" ");
+
+    let bestWord = "";
+    let maxVowels = 0;
+
+    for (let word of words) {
+
+        let vowelCount = 0;
+
+        for (let char of word) {
+
+            let ch = char.toLowerCase();
+
+            if (
+                ch === "a" ||
+                ch === "e" ||
+                ch === "i" ||
+                ch === "o" ||
+                ch === "u"
+            ) {
+                vowelCount++;
+            }
+        }
+
+        if (vowelCount > maxVowels) {
+            maxVowels = vowelCount;
+            bestWord = word;
+        }
+    }
+
+    console.log("Q16 Word:", bestWord);
+    console.log("Q16 Vowels:", maxVowels);
+}
+
+
+// =================================================
+// Q17. Remove duplicate words from a sentence.
+// =================================================
+
+{
+    let str =
+        "JavaScript is easy and JavaScript is powerful";
+
+    let words = str.split(" ");
+
+    let result = [];
+
+    for (let word of words) {
+
+        if (!result.includes(word)) {
+            result.push(word);
+        }
+    }
+
+    console.log("Q17:", result.join(" "));
+}
+
+
+// =================================================
+// Q18. Find the character with the highest frequency
+// and its count.
+// =================================================
+
+{
+    let str = "mississippi";
+
+    let maxChar = "";
+    let maxCount = 0;
+
+    for (let char of str) {
+
+        let count = 0;
+
+        for (let current of str) {
+
+            if (char === current) {
+                count++;
+            }
+        }
+
+        if (count > maxCount) {
+            maxCount = count;
+            maxChar = char;
+        }
+    }
+
+    console.log("Q18 Character:", maxChar);
+    console.log("Q18 Count:", maxCount);
+}
+
+
+// =================================================
+// Q19. Check whether one string is a rotation
+// of another string.
+// =================================================
+
+{
+    let str1 = "abcd";
+    let str2 = "cdab";
+
+    if (
+        str1.length === str2.length &&
+        (str1 + str1).includes(str2)
+    ) {
+        console.log("Q19: Rotation");
+    } else {
+        console.log("Q19: Not Rotation");
+    }
+}
+
+
+// =================================================
+// Q20. FINAL STRING CHALLENGE
+// =================================================
+
+{
+    let str =
+        "I am learning JavaScript and JavaScript is easy";
+
+
+    // 1. Remove extra spaces
+    str = str.trim();
+
+
+    // 2. Count total words
+    let words = str.split(" ");
+
+    console.log("Q20 Total Words:", words.length);
+
+
+    // 3. Find longest word
+    let longest = words[0];
+
+    for (let word of words) {
+
+        if (word.length > longest.length) {
+            longest = word;
+        }
+    }
+
+    console.log("Q20 Longest Word:", longest);
+
+
+    // 4. Count vowels
+    let vowels = 0;
+
+    for (let char of str.toLowerCase()) {
+
+        if (
+            char === "a" ||
+            char === "e" ||
+            char === "i" ||
+            char === "o" ||
+            char === "u"
+        ) {
+            vowels++;
+        }
+    }
+
+    console.log("Q20 Vowels:", vowels);
+
+
+    // 5. Count consonants
+    let consonants = 0;
+
+    for (let char of str.toLowerCase()) {
+
+        if (
+            char >= "a" &&
+            char <= "z" &&
+            !(
+                char === "a" ||
+                char === "e" ||
+                char === "i" ||
+                char === "o" ||
+                char === "u"
+            )
+        ) {
+            consonants++;
+        }
+    }
+
+    console.log("Q20 Consonants:", consonants);
+
+
+    // 6. Replace all JavaScript with Java
+    let finalString = str.replaceAll(
+        "JavaScript",
+        "Java"
+    );
+
+    console.log("Q20 Replaced:", finalString);
+
+
+    // 7. Convert final sentence to uppercase
+    console.log(
+        "Q20 Uppercase:",
+        finalString.toUpperCase()
+    );
+}
