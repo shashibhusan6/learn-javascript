@@ -579,3 +579,215 @@ Perform all of the following:
 6. Replace all "JavaScript" with "Java".
 7. Convert the final sentence to uppercase.
 */
+
+
+/*
+    13_StringPractice_Easy.js
+
+    STRING PRACTICE
+    EASY LEVEL — ANSWERS
+
+    Q1 - Q20
+*/
+
+
+// =================================================
+// Q1. Print the first character of a string.
+// =================================================
+
+let str1 = "JavaScript";
+
+console.log(str1[0]);
+
+
+// =================================================
+// Q2. Print the last character of a string.
+// =================================================
+
+let str2 = "JavaScript";
+
+console.log(str2[str2.length - 1]);
+
+
+// =================================================
+// Q3. Find the length of a string.
+// =================================================
+
+let str3 = "Programming";
+
+console.log(str3.length);
+
+
+// =================================================
+// Q4. Convert a string to uppercase.
+// =================================================
+
+let str4 = "javascript";
+
+console.log(str4.toUpperCase());
+
+
+// =================================================
+// Q5. Convert a string to lowercase.
+// =================================================
+
+let str5 = "JAVASCRIPT";
+
+console.log(str5.toLowerCase());
+
+
+// =================================================
+// Q6. Remove extra spaces from a string.
+// =================================================
+
+let str6 = "   Hello World   ";
+
+console.log(str6.trim());
+
+
+// =================================================
+// Q7. Check whether a string contains
+// "JavaScript".
+// =================================================
+
+let str7 = "I am learning JavaScript";
+
+console.log(str7.includes("JavaScript"));
+
+
+// =================================================
+// Q8. Check whether a string starts
+// with "Hello".
+// =================================================
+
+let str8 = "Hello World";
+
+console.log(str8.startsWith("Hello"));
+
+
+// =================================================
+// Q9. Check whether a string ends with ".com".
+// =================================================
+
+let email = "student@gmail.com";
+
+console.log(email.endsWith(".com"));
+
+
+// =================================================
+// Q10. Find the index of a particular character.
+// =================================================
+
+let str10 = "JavaScript";
+
+console.log(str10.indexOf("S"));
+
+
+// =================================================
+// Q11. Extract the first 4 characters.
+// =================================================
+
+let str11 = "JavaScript";
+
+console.log(str11.slice(0, 4));
+
+
+// =================================================
+// Q12. Extract the last 4 characters.
+// =================================================
+
+let str12 = "JavaScript";
+
+console.log(str12.slice(-4));
+
+
+// =================================================
+// Q13. Replace one word with another.
+// =================================================
+
+let str13 = "I like JavaScript";
+
+console.log(
+    str13.replace("JavaScript", "Java")
+);
+
+
+// =================================================
+// Q14. Replace all occurrences of a word.
+// =================================================
+
+let str14 = "Java is easy. Java is popular.";
+
+console.log(
+    str14.replaceAll("Java", "JavaScript")
+);
+
+
+// =================================================
+// Q15. Convert comma-separated string into an array.
+// =================================================
+
+let fruits = "Apple,Banana,Mango";
+
+let fruitArray = fruits.split(",");
+
+console.log(fruitArray);
+
+
+// =================================================
+// Q16. Combine first name and last name.
+// =================================================
+
+let firstName = "Shashi";
+let lastName = "Singha";
+
+console.log(firstName + " " + lastName);
+
+
+// =================================================
+// Q17. Print a message using template literals.
+// =================================================
+
+let name = "Shashi";
+let age = 21;
+
+console.log(
+    `My name is ${name} and I am ${age} years old.`
+);
+
+
+// =================================================
+// Q18. Count characters excluding spaces.
+// =================================================
+
+let str18 = "Hello World";
+
+let withoutSpaces = str18.replaceAll(" ", "");
+
+console.log(withoutSpaces.length);
+
+
+// =================================================
+// Q19. Check whether a string is empty.
+// =================================================
+
+let str19 = "";
+
+if (str19.length === 0) {
+    console.log("String is empty");
+} else {
+    console.log("String is not empty");
+}
+
+
+// =================================================
+// Q20. Print every character of a string
+// using a loop.
+// =================================================
+
+let str20 = "Hello";
+
+for (let i = 0; i < str20.length; i++) {
+    console.log(str20[i]);
+}
+
