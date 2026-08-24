@@ -569,3 +569,296 @@ document.readyState
 
 */
 
+
+/*
+    14_DOM.js
+
+
+    Topics:
+    1. getElementById()
+    2. getElementsByClassName()
+    3. getElementsByTagName()
+    4. Basic practice
+*/
+
+
+// =================================================
+// HTML USED FOR EXAMPLES
+// =================================================
+
+/*
+
+<body>
+
+    <h1 id="title">Hello JavaScript</h1>
+
+    <p class="text">Learning DOM</p>
+    <p class="text">Learning JavaScript</p>
+
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+
+</body>
+
+*/
+
+
+// =================================================
+// 1. getElementById()
+// =================================================
+
+/*
+getElementById() selects ONE element
+using its id.
+
+Syntax:
+
+document.getElementById("id");
+*/
+
+
+let title = document.getElementById("title");
+
+console.log(title);
+
+
+// =================================================
+// 2. Accessing the Selected Element
+// =================================================
+
+/*
+Once an element is selected,
+we can store it inside a variable
+and use that variable.
+*/
+
+let heading = document.getElementById("title");
+
+console.log(heading);
+
+
+// =================================================
+// 3. getElementsByClassName()
+// =================================================
+
+/*
+getElementsByClassName()
+selects elements using their class name.
+
+It can return multiple elements.
+
+Syntax:
+
+document.getElementsByClassName("className");
+*/
+
+let textElements =
+    document.getElementsByClassName("text");
+
+console.log(textElements);
+
+
+// =================================================
+// 4. Accessing an Element from
+// getElementsByClassName()
+// =================================================
+
+/*
+Because there can be multiple elements,
+we can access them using an index.
+*/
+
+console.log(textElements[0]);
+
+console.log(textElements[1]);
+
+
+// =================================================
+// 5. getElementsByTagName()
+// =================================================
+
+/*
+getElementsByTagName()
+selects elements using their HTML tag.
+
+Example:
+
+document.getElementsByTagName("p");
+*/
+
+let paragraphs =
+    document.getElementsByTagName("p");
+
+console.log(paragraphs);
+
+
+// =================================================
+// 6. Accessing Elements by Index
+// =================================================
+
+console.log(paragraphs[0]);
+
+console.log(paragraphs[1]);
+
+
+// =================================================
+// 7. Selecting All DIV Elements
+// =================================================
+
+let divs =
+    document.getElementsByTagName("div");
+
+console.log(divs);
+
+
+// =================================================
+// 8. Selecting the First DIV
+// =================================================
+
+console.log(divs[0]);
+
+
+// =================================================
+// 9. Selecting the Second DIV
+// =================================================
+
+console.log(divs[1]);
+
+
+// =================================================
+// 10. length
+// =================================================
+
+/*
+getElementsByClassName()
+and
+getElementsByTagName()
+
+can return multiple elements.
+
+.length tells us how many
+elements were selected.
+*/
+
+console.log(textElements.length);
+
+console.log(paragraphs.length);
+
+console.log(divs.length);
+
+
+// =================================================
+// IMPORTANT DIFFERENCE
+// =================================================
+
+/*
+
+getElementById()
+        ↓
+Selects one element.
+
+
+getElementsByClassName()
+        ↓
+Can select multiple elements.
+
+
+getElementsByTagName()
+        ↓
+Can select multiple elements.
+
+*/
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Select an element using its id.
+
+
+// Q2. Store the selected element in a variable.
+
+
+// Q3. Select all elements having the class "text".
+
+
+// Q4. Print the first element from the
+// selected class elements.
+
+
+// Q5. Print the second element from the
+// selected class elements.
+
+
+// Q6. Print the number of elements
+// having the class "text".
+
+
+// Q7. Select all <p> elements.
+
+
+// Q8. Print the first <p> element.
+
+
+// Q9. Print the number of <p> elements.
+
+
+// Q10. Select all <div> elements.
+
+
+// Q11. Print the first <div> element.
+
+
+// Q12. Print the number of <div> elements.
+
+
+// Q13. Select all <h1> elements.
+
+
+// Q14. What happens if you use:
+// document.getElementById()
+// with an id that does not exist?
+
+
+// Q15. What is the difference between:
+//
+// getElementById()
+// getElementsByClassName()
+// getElementsByTagName()
+
+
+// =================================================
+// QUICK REVISION
+// =================================================
+
+/*
+
+1. Select by ID:
+
+document.getElementById("title");
+
+
+2. Select by Class:
+
+document.getElementsByClassName("text");
+
+
+3. Select by Tag:
+
+document.getElementsByTagName("p");
+
+
+4. Access an element by index:
+
+elements[0];
+
+elements[1];
+
+
+5. Count selected elements:
+
+elements.length;
+
+*/
