@@ -251,3 +251,321 @@ document.documentElement
 → Represents <html>.
 */
 
+
+/*
+    14_DOM.js
+
+    DOM BASICS
+
+    Topics:
+    1. DOM nodes
+    2. Elements
+    3. Parent and child relationship
+    4. DOM tree understanding
+    5. Basic document properties
+*/
+
+
+// =================================================
+// 1. DOM NODES
+// =================================================
+
+/*
+Everything in the DOM is represented as a node.
+
+Common types:
+
+1. Document Node
+2. Element Node
+3. Text Node
+4. Attribute Node
+*/
+
+
+// =================================================
+// 2. ELEMENT NODE
+// =================================================
+
+/*
+HTML elements such as:
+
+<h1>
+<p>
+<div>
+<button>
+
+are represented as elements in the DOM.
+*/
+
+
+// =================================================
+// 3. TEXT NODE
+// =================================================
+
+/*
+The text inside an HTML element
+is also represented in the DOM.
+
+Example:
+
+<p>Hello</p>
+
+<p> → Element
+"Hello" → Text
+*/
+
+
+// =================================================
+// 4. PARENT AND CHILD
+// =================================================
+
+/*
+DOM elements have relationships.
+
+Example:
+
+<body>
+
+    <h1>Hello</h1>
+
+    <p>Welcome</p>
+
+</body>
+
+Here:
+
+body → Parent
+h1   → Child
+p    → Child
+*/
+
+
+// =================================================
+// 5. DOM TREE EXAMPLE
+// =================================================
+
+/*
+
+HTML:
+
+<html>
+
+    <head>
+        <title>My Page</title>
+    </head>
+
+    <body>
+
+        <h1>Hello</h1>
+
+        <p>Welcome</p>
+
+    </body>
+
+</html>
+
+
+DOM Tree:
+
+                    document
+                        |
+                       html
+                    /       \
+                 head       body
+                  |        /    \
+               title      h1      p
+                           |      |
+                         Hello  Welcome
+
+*/
+
+
+// =================================================
+// 6. document.title
+// =================================================
+
+console.log(document.title);
+
+
+// =================================================
+// 7. document.body
+// =================================================
+
+console.log(document.body);
+
+
+// =================================================
+// 8. document.head
+// =================================================
+
+console.log(document.head);
+
+
+// =================================================
+// 9. document.documentElement
+// =================================================
+
+console.log(document.documentElement);
+
+
+// =================================================
+// 10. document.URL
+// =================================================
+
+/*
+document.URL gives the URL
+of the current webpage.
+*/
+
+console.log(document.URL);
+
+
+// =================================================
+// 11. document.domain
+// =================================================
+
+/*
+document.domain gives the domain
+of the current webpage.
+
+This is mainly for understanding
+the document object.
+*/
+
+console.log(document.domain);
+
+
+// =================================================
+// 12. document.characterSet
+// =================================================
+
+/*
+Returns the character encoding
+used by the document.
+*/
+
+console.log(document.characterSet);
+
+
+// =================================================
+// 13. document.readyState
+// =================================================
+
+/*
+Shows the loading state of the document.
+
+Common values:
+
+"loading"
+"interactive"
+"complete"
+*/
+
+console.log(document.readyState);
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Print document.URL.
+
+
+// Q2. Print document.domain.
+
+
+// Q3. Print document.characterSet.
+
+
+// Q4. Print document.readyState.
+
+
+// Q5. Explain in comments:
+// What is an element node?
+
+
+// Q6. Explain in comments:
+// What is a text node?
+
+
+// Q7. In this HTML:
+//
+// <body>
+//     <h1>Hello</h1>
+//     <p>Welcome</p>
+// </body>
+//
+// Identify:
+// Parent element
+// Child elements
+
+
+// Q8. Draw the DOM tree for:
+//
+// <html>
+//     <head>
+//         <title>JavaScript</title>
+//     </head>
+//     <body>
+//         <h1>Hello</h1>
+//         <p>Learning DOM</p>
+//     </body>
+// </html>
+
+
+// Q9. What is the difference between:
+// document
+// document.documentElement
+
+
+// Q10. What is the difference between:
+// an element node
+// a text node
+
+
+// =================================================
+// QUICK REVISION
+// =================================================
+
+/*
+
+DOM
+↓
+Document Object Model
+
+Node
+↓
+A part of the DOM tree.
+
+Element Node
+↓
+<h1>, <p>, <div>, <button>, etc.
+
+Text Node
+↓
+Text inside an element.
+
+Parent
+↓
+Element containing another element.
+
+Child
+↓
+Element inside another element.
+
+
+Important properties:
+
+document
+document.title
+document.head
+document.body
+document.documentElement
+document.URL
+document.domain
+document.characterSet
+document.readyState
+
+*/
+
