@@ -1263,3 +1263,416 @@ document.querySelector(".box p");
 
 */
 
+
+
+/*
+    14_DOM.js
+
+    Topics:
+    1. innerText
+    2. textContent
+    3. innerHTML
+    4. Reading content
+    5. Changing content
+*/
+
+
+// =================================================
+// HTML USED FOR EXAMPLES
+// =================================================
+
+/*
+
+<body>
+
+    <h1 id="title">Hello JavaScript</h1>
+
+    <p id="message">Welcome to DOM</p>
+
+    <div id="box">
+        Hello
+    </div>
+
+</body>
+
+*/
+
+
+// =================================================
+// 1. innerText
+// =================================================
+
+/*
+innerText is used to get or change
+the visible text of an element.
+
+Syntax:
+
+element.innerText
+*/
+
+
+// =================================================
+// 2. Reading innerText
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    console.log(element.innerText);
+}
+
+
+// =================================================
+// 3. Changing innerText
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    element.innerText = "Hello JavaScript DOM";
+}
+
+
+// =================================================
+// 4. Changing Paragraph Text
+// =================================================
+
+{
+    let element = document.querySelector("#message");
+
+    element.innerText = "I am learning DOM";
+}
+
+
+// =================================================
+// 5. textContent
+// =================================================
+
+/*
+textContent is used to get or change
+the text content of an element.
+
+Syntax:
+
+element.textContent
+*/
+
+
+// =================================================
+// 6. Reading textContent
+// =================================================
+
+{
+    let element = document.querySelector("#message");
+
+    console.log(element.textContent);
+}
+
+
+// =================================================
+// 7. Changing textContent
+// =================================================
+
+{
+    let element = document.querySelector("#message");
+
+    element.textContent = "Learning JavaScript";
+}
+
+
+// =================================================
+// 8. innerHTML
+// =================================================
+
+/*
+innerHTML is used to get or change
+the HTML inside an element.
+
+Example:
+
+element.innerHTML = "<b>Hello</b>";
+
+The <b> tag will be treated as HTML.
+*/
+
+
+// =================================================
+// 9. Reading innerHTML
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    console.log(element.innerHTML);
+}
+
+
+// =================================================
+// 10. Changing innerHTML
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.innerHTML = "<b>Hello JavaScript</b>";
+}
+
+
+// =================================================
+// 11. Adding HTML using innerHTML
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.innerHTML = "<p>Learning DOM</p>";
+}
+
+
+// =================================================
+// 12. innerText vs textContent
+// =================================================
+
+/*
+
+Both can work with text.
+
+innerText
+→ Focuses on visible text.
+
+textContent
+→ Gets the text content of the element.
+
+*/
+
+
+// =================================================
+// 13. innerText vs innerHTML
+// =================================================
+
+/*
+
+innerText:
+
+element.innerText = "<b>Hello</b>";
+
+This displays:
+
+<b>Hello</b>
+
+
+innerHTML:
+
+element.innerHTML = "<b>Hello</b>";
+
+This displays:
+
+Hello
+
+with bold formatting.
+*/
+
+
+// =================================================
+// 14. Simple Example
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    element.innerText = "New Heading";
+
+    console.log(element.innerText);
+}
+
+
+// =================================================
+// 15. Simple HTML Example
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.innerHTML =
+        "<h2>DOM Practice</h2>";
+}
+
+
+// =================================================
+// 16. Add Multiple HTML Elements
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.innerHTML = `
+        <h2>JavaScript</h2>
+        <p>Learning DOM</p>
+    `;
+}
+
+
+// =================================================
+// 17. Replace Existing Content
+// =================================================
+
+{
+    let element = document.querySelector("#message");
+
+    element.innerText = "Content Changed";
+}
+
+
+// =================================================
+// 18. Read Before Changing
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    console.log("Before:", element.innerText);
+
+    element.innerText = "Updated Title";
+
+    console.log("After:", element.innerText);
+}
+
+
+// =================================================
+// 19. Simple Dynamic Message
+// =================================================
+
+{
+    let element = document.querySelector("#message");
+
+    let name = "Shashi";
+
+    element.innerText = `Hello ${name}`;
+}
+
+
+// =================================================
+// 20. Simple HTML Content
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.innerHTML = `
+        <h2>Welcome</h2>
+        <p>JavaScript DOM Practice</p>
+    `;
+}
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Select an element with id="title"
+// and print its innerText.
+
+
+// Q2. Change the innerText of #title
+// to "Hello DOM".
+
+
+// Q3. Select #message and change
+// its text using innerText.
+
+
+// Q4. Read the textContent of an element.
+
+
+// Q5. Change the textContent of an element.
+
+
+// Q6. Select #box and print its innerHTML.
+
+
+// Q7. Change the innerHTML of #box
+// to:
+//
+// <h2>Hello</h2>
+
+
+// Q8. Add a <p> element inside #box
+// using innerHTML.
+
+
+// Q9. Add a heading and paragraph
+// inside #box using innerHTML.
+
+
+// Q10. Create a dynamic message:
+//
+// "Hello Shashi"
+//
+// using a variable and innerText.
+
+
+// Q11. What is innerText?
+
+
+// Q12. What is textContent?
+
+
+// Q13. What is innerHTML?
+
+
+// Q14. What is the difference between:
+//
+// innerText
+// textContent
+
+
+// Q15. What is the difference between:
+//
+// innerText
+// innerHTML
+
+
+// =================================================
+// QUICK REVISION
+// =================================================
+
+/*
+
+READ TEXT:
+
+element.innerText
+
+element.textContent
+
+
+CHANGE TEXT:
+
+element.innerText = "Hello";
+
+element.textContent = "Hello";
+
+
+READ HTML:
+
+element.innerHTML
+
+
+CHANGE HTML:
+
+element.innerHTML = "<h2>Hello</h2>";
+
+
+IMPORTANT:
+
+innerText
+→ Text
+
+textContent
+→ Text content
+
+innerHTML
+→ HTML + Text
+
+*/
