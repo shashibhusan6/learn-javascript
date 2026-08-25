@@ -1676,3 +1676,427 @@ innerHTML
 → HTML + Text
 
 */
+
+
+
+/*
+    14_DOM.js
+
+
+    Topics:
+    1. element.style
+    2. Changing color
+    3. Changing background
+    4. Changing font size
+    5. Changing width and height
+    6. Changing multiple styles
+*/
+
+
+// =================================================
+// HTML USED FOR EXAMPLES
+// =================================================
+
+/*
+
+<body>
+
+    <h1 id="title">Hello JavaScript</h1>
+
+    <p id="message">Learning DOM</p>
+
+    <div id="box">This is a box</div>
+
+</body>
+
+*/
+
+
+// =================================================
+// 1. element.style
+// =================================================
+
+/*
+The style property is used to
+change CSS using JavaScript.
+
+Syntax:
+
+element.style.property = "value";
+*/
+
+
+// =================================================
+// 2. Change Text Color
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    element.style.color = "blue";
+}
+
+
+// =================================================
+// 3. Change Background Color
+// =================================================
+
+{
+    let element = document.querySelector("#message");
+
+    element.style.backgroundColor = "yellow";
+}
+
+
+// =================================================
+// 4. Change Font Size
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    element.style.fontSize = "40px";
+}
+
+
+// =================================================
+// 5. Change Font Weight
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    element.style.fontWeight = "bold";
+}
+
+
+// =================================================
+// 6. Change Text Alignment
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    element.style.textAlign = "center";
+}
+
+
+// =================================================
+// 7. Change Width
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.style.width = "300px";
+}
+
+
+// =================================================
+// 8. Change Height
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.style.height = "150px";
+}
+
+
+// =================================================
+// 9. Change Background of Box
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.style.backgroundColor = "lightgray";
+}
+
+
+// =================================================
+// 10. Add Border
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.style.border = "2px solid black";
+}
+
+
+// =================================================
+// 11. Add Padding
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.style.padding = "20px";
+}
+
+
+// =================================================
+// 12. Add Margin
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.style.margin = "20px";
+}
+
+
+// =================================================
+// 13. Change Multiple Styles
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.style.color = "white";
+    element.style.backgroundColor = "black";
+    element.style.fontSize = "20px";
+}
+
+
+// =================================================
+// 14. CSS Property Names in JavaScript
+// =================================================
+
+/*
+CSS:
+
+background-color
+
+JavaScript:
+
+backgroundColor
+
+
+CSS:
+
+font-size
+
+JavaScript:
+
+fontSize
+
+
+CSS:
+
+text-align
+
+JavaScript:
+
+textAlign
+*/
+
+
+// =================================================
+// 15. Change Color and Font Size
+// =================================================
+
+{
+    let element = document.querySelector("#message");
+
+    element.style.color = "red";
+    element.style.fontSize = "25px";
+}
+
+
+// =================================================
+// 16. Change Box Size
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.style.width = "250px";
+    element.style.height = "100px";
+}
+
+
+// =================================================
+// 17. Change Box Appearance
+// =================================================
+
+{
+    let element = document.querySelector("#box");
+
+    element.style.backgroundColor = "lightblue";
+    element.style.border = "2px solid black";
+    element.style.padding = "15px";
+}
+
+
+// =================================================
+// 18. Change Heading Appearance
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    element.style.color = "green";
+    element.style.fontSize = "35px";
+    element.style.textAlign = "center";
+}
+
+
+// =================================================
+// 19. Read Inline Style
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    element.style.color = "purple";
+
+    console.log(element.style.color);
+}
+
+
+// =================================================
+// 20. Simple Style Example
+// =================================================
+
+{
+    let element = document.querySelector("#message");
+
+    element.style.color = "white";
+    element.style.backgroundColor = "black";
+    element.style.padding = "10px";
+    element.style.fontSize = "20px";
+}
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Change the text color of #title.
+
+
+// Q2. Change the background color of #title.
+
+
+// Q3. Change the font size of #title to 30px.
+
+
+// Q4. Make the text of #title bold.
+
+
+// Q5. Center-align the text of #title.
+
+
+// Q6. Change the color of #message.
+
+
+// Q7. Change the background color of #message.
+
+
+// Q8. Change the width of #box to 300px.
+
+
+// Q9. Change the height of #box to 150px.
+
+
+// Q10. Add a 2px border to #box.
+
+
+// Q11. Add 20px padding to #box.
+
+
+// Q12. Add 20px margin to #box.
+
+
+// Q13. Change multiple styles of #box.
+
+
+// Q14. Write the JavaScript version of:
+//
+// background-color
+
+
+// Q15. Write the JavaScript version of:
+//
+// font-size
+
+
+// Q16. Write the JavaScript version of:
+//
+// text-align
+
+
+// Q17. Change #title to:
+// color = red
+// font-size = 40px
+// text-align = center
+
+
+// Q18. Change #box to:
+// width = 200px
+// height = 100px
+// background = lightblue
+
+
+// Q19. Print the current color of #title.
+
+
+// Q20. Create your own style combination
+// for #message.
+
+
+// =================================================
+// QUICK REVISION
+// =================================================
+
+/*
+
+CHANGE STYLE:
+
+element.style.color = "red";
+
+element.style.backgroundColor = "yellow";
+
+element.style.fontSize = "30px";
+
+element.style.fontWeight = "bold";
+
+element.style.textAlign = "center";
+
+element.style.width = "300px";
+
+element.style.height = "150px";
+
+element.style.border = "2px solid black";
+
+element.style.padding = "20px";
+
+element.style.margin = "20px";
+
+
+IMPORTANT:
+
+CSS:
+background-color
+
+JavaScript:
+backgroundColor
+
+
+CSS:
+font-size
+
+JavaScript:
+fontSize
+
+
+CSS:
+text-align
+
+JavaScript:
+textAlign
+
+*/
