@@ -862,3 +862,404 @@ elements[1];
 elements.length;
 
 */
+
+
+/*
+    14_DOM.js
+
+
+    Topics:
+    1. querySelector()
+    2. querySelectorAll()
+    3. Selecting by ID
+    4. Selecting by Class
+    5. Selecting by Tag
+    6. CSS selectors
+    7. Indexing
+    8. length
+*/
+
+
+// =================================================
+// HTML USED FOR EXAMPLES
+// =================================================
+
+/*
+
+<body>
+
+    <h1 id="title">Hello JavaScript</h1>
+
+    <p class="text">Learning DOM</p>
+    <p class="text">Learning JavaScript</p>
+
+    <div class="box">
+        <p>Box 1</p>
+    </div>
+
+    <div class="box">
+        <p>Box 2</p>
+    </div>
+
+</body>
+
+*/
+
+
+// =================================================
+// 1. querySelector()
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    console.log(element);
+}
+
+
+// =================================================
+// 2. Select by ID
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    console.log(element);
+}
+
+
+// =================================================
+// 3. Select by Class
+// =================================================
+
+{
+    let element = document.querySelector(".text");
+
+    console.log(element);
+}
+
+
+// =================================================
+// 4. Select by Tag
+// =================================================
+
+{
+    let element = document.querySelector("p");
+
+    console.log(element);
+}
+
+
+// =================================================
+// 5. querySelector() returns FIRST element
+// =================================================
+
+{
+    let element = document.querySelector(".text");
+
+    console.log(element);
+}
+
+
+// =================================================
+// 6. querySelectorAll()
+// =================================================
+
+{
+    let elements = document.querySelectorAll(".text");
+
+    console.log(elements);
+}
+
+
+// =================================================
+// 7. Access first element
+// =================================================
+
+{
+    let elements = document.querySelectorAll(".text");
+
+    console.log(elements[0]);
+}
+
+
+// =================================================
+// 8. Access second element
+// =================================================
+
+{
+    let elements = document.querySelectorAll(".text");
+
+    console.log(elements[1]);
+}
+
+
+// =================================================
+// 9. Count selected elements
+// =================================================
+
+{
+    let elements = document.querySelectorAll(".text");
+
+    console.log(elements.length);
+}
+
+
+// =================================================
+// 10. Select all paragraphs
+// =================================================
+
+{
+    let elements = document.querySelectorAll("p");
+
+    console.log(elements);
+}
+
+
+// =================================================
+// 11. Select all divs
+// =================================================
+
+{
+    let elements = document.querySelectorAll("div");
+
+    console.log(elements);
+}
+
+
+// =================================================
+// 12. ID Selector
+// =================================================
+
+{
+    let element = document.querySelector("#title");
+
+    console.log(element);
+}
+
+
+// =================================================
+// 13. Class Selector
+// =================================================
+
+{
+    let element = document.querySelector(".box");
+
+    console.log(element);
+}
+
+
+// =================================================
+// 14. Tag Selector
+// =================================================
+
+{
+    let element = document.querySelector("h1");
+
+    console.log(element);
+}
+
+
+// =================================================
+// 15. Combined Selector
+// =================================================
+
+/*
+p.text
+
+Means:
+
+Select a <p> element
+with class="text".
+*/
+
+{
+    let element = document.querySelector("p.text");
+
+    console.log(element);
+}
+
+
+// =================================================
+// 16. Descendant Selector
+// =================================================
+
+/*
+.box p
+
+Means:
+
+Select a <p> inside .box.
+*/
+
+{
+    let element = document.querySelector(".box p");
+
+    console.log(element);
+}
+
+
+// =================================================
+// 17. querySelectorAll() with class
+// =================================================
+
+{
+    let elements = document.querySelectorAll(".box");
+
+    console.log(elements);
+}
+
+
+// =================================================
+// 18. querySelectorAll() with tag
+// =================================================
+
+{
+    let elements = document.querySelectorAll("p");
+
+    console.log(elements);
+}
+
+
+// =================================================
+// 19. querySelectorAll() with combined selector
+// =================================================
+
+{
+    let elements = document.querySelectorAll("p.text");
+
+    console.log(elements);
+}
+
+
+// =================================================
+// 20. querySelectorAll() with descendant selector
+// =================================================
+
+{
+    let elements = document.querySelectorAll(".box p");
+
+    console.log(elements);
+}
+
+
+// =================================================
+// PRACTICE QUESTIONS
+// =================================================
+
+
+// Q1. Select the element with id="title"
+// using querySelector().
+
+
+// Q2. Select the first element having
+// class="text".
+
+
+// Q3. Select the first <p> element.
+
+
+// Q4. Select all elements having
+// class="text".
+
+
+// Q5. Select all <p> elements.
+
+
+// Q6. Select all <div> elements.
+
+
+// Q7. Print the first element from
+// querySelectorAll().
+
+
+// Q8. Print the second element from
+// querySelectorAll().
+
+
+// Q9. Print the number of elements
+// selected using querySelectorAll().
+
+
+// Q10. Select a <p> having class="text"
+// using:
+//
+// p.text
+
+
+// Q11. What is the difference between:
+//
+// querySelector()
+// querySelectorAll()
+
+
+// Q12. What does # mean in CSS selectors?
+
+
+// Q13. What does . mean in CSS selectors?
+
+
+// Q14. What happens when querySelector()
+// finds multiple matching elements?
+
+
+// Q15. Select a <p> inside an element
+// having class="box".
+
+
+// =================================================
+// QUICK REVISION
+// =================================================
+
+/*
+
+querySelector()
+→ Selects the FIRST matching element.
+
+querySelectorAll()
+→ Selects ALL matching elements.
+
+
+ID:
+
+document.querySelector("#title");
+
+
+CLASS:
+
+document.querySelector(".text");
+
+
+TAG:
+
+document.querySelector("p");
+
+
+ALL:
+
+document.querySelectorAll(".text");
+
+
+INDEX:
+
+elements[0];
+
+elements[1];
+
+
+COUNT:
+
+elements.length;
+
+
+COMBINED:
+
+document.querySelector("p.text");
+
+
+DESCENDANT:
+
+document.querySelector(".box p");
+
+*/
+
